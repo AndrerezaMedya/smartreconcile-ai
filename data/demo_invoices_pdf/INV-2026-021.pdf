@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 725 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-021) '
+(PO REFERENCE: PO-2026-021) '
+(VENDOR: CV Multi Makmur Sejahtera) '
+(DATE: 2026-08-21) '
+(CATEGORY: unmatched_invoice_line) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Industrial Safety Helmet MSA White ANSI SNI | 20.0 | pcs | 145,000 | 2,900,000) '
+(2 | Cotton Working Gloves 7 Benang per Lusin | 30.0 | lusin | 42,000 | 1,260,000) '
+(3 | Ear Plug Corded 3M 1110 Box 100 | 5.0 | dus | 185,000 | 925,000) '
+(4 | Sepatu Safety Boots Krushers Texas Brown 42 | 2.0 | pasang | 550,000 | 1,100,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001016 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1086
+%%EOF

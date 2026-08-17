@@ -1,0 +1,39 @@
+.git/
+.gitignore
+.gitattributes
+.github/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Test & IDE caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.idea/
+
+# Heavy excluded ML experiments (saves 14.7 GB from Docker build context)
+models/finetuned_minilm/
+models/finetuned_v2_seed42/
+models/finetuned_v2_seed43/
+
+# External tooling & prompt notes
+ui-ux-pro-max-skill/
+*.log
+scratchpad*
+browser/
+prompt*.md
+2-prompt.md
+response-prompt.md
+01-requirements.md
+02-architecture.md
+03-technical-validation-plan.md
+AI_Innovation_Challenge_Rulebook.md

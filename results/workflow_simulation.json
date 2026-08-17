@@ -1,0 +1,2171 @@
+{
+  "simulation_name": "Phase 8 — Invoice-to-PO End-to-End Workflow Simulation",
+  "parameters": {
+    "model_backbone": "models\\finetuned_v2_seed44",
+    "tau_margin": 0.1,
+    "tau_top1": 0.15,
+    "blended_alpha": 0.4,
+    "confidence_margin_threshold": 0.15,
+    "price_tolerance_pct": 0.01
+  },
+  "summary_counts": {
+    "total_invoices": 24,
+    "total_invoice_lines": 106,
+    "total_po_lines": 107,
+    "matched_ground_truth_lines": 0,
+    "unmatched_ground_truth_lines": 0
+  },
+  "invoices_detail": [
+    {
+      "invoice_id": "INV-2026-001",
+      "po_id": "PO-2026-001",
+      "vendor_name": "PT Sumber Baja Perkasa",
+      "scenario_category": "standard_clean",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Pipa Galvanis 2 inch Sch 40 p.6m",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "GALVANIZED STEEL PIPE 2 INCH SCH 40 L=6M",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.4167,
+          "confidence_margin": 0.2167,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Galvanized Malleable Iron Union 2 inch Class 150",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "GALVANIZED MALLEABLE IRON UNION 2 INCH CLASS 150",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 1.0,
+          "confidence_margin": 0.7692,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Pipa Stainless Steel SS304 1 inch Sch 10",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "STAINLESS STEEL PIPE SS304 1 INCH SCH 10 L=6M",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.6364,
+          "confidence_margin": 0.4221,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Ball Valve Brass 1 inch PN16",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "BRASS BALL VALVE 1 INCH PN16 THREADED",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.8571,
+          "confidence_margin": 0.7143,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 5,
+          "invoice_description": "Flange Blind Carbon Steel ANSI 150 2 inch",
+          "assigned_po_line_no": 5,
+          "assigned_po_description": "CARBON STEEL BLIND FLANGE ANSI 150 2 INCH",
+          "gold_po_line_no": 5,
+          "is_match_correct": true,
+          "score": 1.0,
+          "confidence_margin": 0.7692,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-002",
+      "po_id": "PO-2026-002",
+      "vendor_name": "PT Cipta Mandiri Teknik",
+      "scenario_category": "standard_clean",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Deep Groove Ball Bearing 6205 2RS SKF",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "DEEP GROOVE BALL BEARING 6205 2RS SKF",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 1.0,
+          "confidence_margin": 0.6,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Deep Groove Ball Bearing 6305 ZZ NSK",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "DEEP GROOVE BALL BEARING 6305 ZZ NSK",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 1.0,
+          "confidence_margin": 0.6,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Pillow Block Bearing UCP205",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "PILLOW BLOCK BEARING UCP205 CAST IRON HOUSING",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.5714,
+          "confidence_margin": 0.4714,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "V-Belt B-52 Mitsuboshi",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "INDUSTRIAL V-BELT CLASSICAL SECTION B-52",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.5,
+          "confidence_margin": 0.5,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-003",
+      "po_id": "PO-2026-003",
+      "vendor_name": "CV Multi Makmur Fastener",
+      "scenario_category": "standard_clean",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Hex Bolt M12x50 Grade 8.8 Full Thread",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "HEX HEAD BOLT FULL THREAD M12X50 GRADE 8.8 ZINC",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.7778,
+          "confidence_margin": 0.3232,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Hex Bolt M16x60 Grade 8.8 Half Thread",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "HEX HEAD BOLT HALF THREAD M16X60 GRADE 8.8 ZINC",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.7778,
+          "confidence_margin": 0.3232,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Hex Nut M12 Grade 8 Zinc Plated",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "HEXAGON NUT M12 GRADE 8 ZINC PLATED",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.75,
+          "confidence_margin": 0.1944,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Hex Nut M16 Grade 8 Zinc Plated",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "HEXAGON NUT M16 GRADE 8 ZINC PLATED",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.75,
+          "confidence_margin": 0.1944,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 5,
+          "invoice_description": "Flat Washer M12 Galvanized",
+          "assigned_po_line_no": 5,
+          "assigned_po_description": "PLAIN FLAT WASHER M12 GALVANIZED CARBON STEEL",
+          "gold_po_line_no": 5,
+          "is_match_correct": true,
+          "score": 0.5714,
+          "confidence_margin": 0.3214,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 6,
+          "invoice_description": "Spring Washer M16 Galvanized",
+          "assigned_po_line_no": 6,
+          "assigned_po_description": "SPRING LOCK WASHER M16 GALVANIZED STEEL",
+          "gold_po_line_no": 6,
+          "is_match_correct": true,
+          "score": 0.6667,
+          "confidence_margin": 0.4444,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-004",
+      "po_id": "PO-2026-004",
+      "vendor_name": "PT Duta Elektrik Pratama",
+      "scenario_category": "standard_clean",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "MCB 3 Pole 16A 6kA Schneider",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "MCB 3 POLE 16A 6KA CIRCUIT BREAKER SCHNEIDER",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.75,
+          "confidence_margin": 0.1944,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "MCB 3 Pole 32A 6kA Schneider",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "MCB 3 POLE 32A 6KA CIRCUIT BREAKER SCHNEIDER",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.75,
+          "confidence_margin": 0.1944,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "MCCB 3 Pole 100A 18kA Schneider",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "MCCB 3 POLE 100A 18KA MOLDED CASE SCHNEIDER",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.75,
+          "confidence_margin": 0.4773,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Magnetic Contactor LC1D18 220V Schneider",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "MAGNETIC CONTACTOR 18A COIL 220VAC SCHNEIDER LC1D18",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.5,
+          "confidence_margin": 0.4091,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 5,
+          "invoice_description": "Thermal Overload Relay 4-6A LRD08",
+          "assigned_po_line_no": 5,
+          "assigned_po_description": "THERMAL OVERLOAD RELAY 4-6A SCHNEIDER LRD08",
+          "gold_po_line_no": 5,
+          "is_match_correct": true,
+          "score": 0.8571,
+          "confidence_margin": 0.8571,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-005",
+      "po_id": "PO-2026-005",
+      "vendor_name": "PT Surya Kimia Lestari",
+      "scenario_category": "standard_clean",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Diesel Engine Oil SAE 15W-40 API CI-4 Drum 209L",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "DIESEL ENGINE OIL SAE 15W-40 API CI-4 DRUM 209L",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 1.0,
+          "confidence_margin": 0.8125,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Hydraulic Oil ISO VG 68 Drum 209L",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "HYDRAULIC OIL ISO VG 68 INDUSTRIAL DRUM 209L",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.875,
+          "confidence_margin": 0.675,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Mineral Gear Oil SAE 90 API GL-5 Pail 20L",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "MINERAL GEAR OIL SAE 90 API GL-5 PAIL 20L",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 1.0,
+          "confidence_margin": 0.8333,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Hydrochloric Acid HCl 32% Jerigen 30L",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "HYDROCHLORIC ACID HCL SOLUTION 32% JERRYCAN 30L",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.625,
+          "confidence_margin": 0.625,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-006",
+      "po_id": "PO-2026-006",
+      "vendor_name": "CV Prima Pack Solution",
+      "scenario_category": "standard_clean",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Bubble Wrap Bening 125cm x 50m Roll",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "AIR BUBBLE FILM BUBBLE WRAP 10MM WIDTH 125CM LENGTH 50M ROLL CLEAR",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.3846,
+          "confidence_margin": 0.3179,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Stretch Film Wrapping 50cm x 250m 17mic",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "STRETCH FILM WRAPPING PLASTIC 50CM X 250M 17 MICRON",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.6,
+          "confidence_margin": 0.5412,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Lakban Bening 2 inch 100 yard",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "CLEAR PACKAGING OPP TAPE 2 INCH 100 YARDS",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.2727,
+          "confidence_margin": 0.2727,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Aluminium Blind Rivet 4.0x10mm Box 1000",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "ALUMINIUM BLIND RIVET 4.0X10MM STEEL MANDREL (BOX 1000 PCS)",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.7,
+          "confidence_margin": 0.7,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-007",
+      "po_id": "PO-2026-007",
+      "vendor_name": "PT Steelindo Jaya Mandiri",
+      "scenario_category": "abbreviation_variation",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Kanal U UNP 100x50 JIS pj 6m",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "U CHANNEL UNP 100X50MM JIS G3101 SS400 LENGTH 6M",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.3333,
+          "confidence_margin": 0.2564,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Kawat BRC M6 lembar 2.1x5.4m",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "WELDED WIRE MESH BRC 6MM OPENING 150X150MM SHEET 2.1X5.4M",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.2857,
+          "confidence_margin": 0.2857,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Plat kembang 3mm uk 4x8 ft",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "HOT ROLLED CHECKERED PLATE 3MM 4X8 FEET DIAMOND PATTERN",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.1538,
+          "confidence_margin": 0.1538,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Besi beton D12 ulir BJTD40",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "DEFORMED STEEL BAR D12 GRADE BJTD40 LENGTH 12M",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.1818,
+          "confidence_margin": 0.1818,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 5,
+          "invoice_description": "Besi siku 50x50x5 SS400 6m",
+          "assigned_po_line_no": 5,
+          "assigned_po_description": "EQUAL ANGLE BAR 50X50X5MM SS400 LENGTH 6M",
+          "gold_po_line_no": 5,
+          "is_match_correct": true,
+          "score": 0.4234,
+          "confidence_margin": 0.0594,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-008",
+      "po_id": "PO-2026-008",
+      "vendor_name": "CV Delta Elektrikal",
+      "scenario_category": "abbreviation_variation",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Tray kabel perforasi 200mm HDG 2.4m",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "PERFORATED CABLE TRAY WIDTH 200MM L=2.4M HOT DIP GALVANIZED",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.2857,
+          "confidence_margin": 0.2232,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Box panel listrik 40x50x20 IP54",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "STEEL ELECTRICAL ENCLOSURE 40X50X20CM POWDER COATED IP54",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.3428,
+          "confidence_margin": 0.105,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Kabel NYY 4x2.5mm Supreme per meter",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "NYY POWER CABLE 4 CORE 2.5MM2 0.6/1KV COPPER CONDUCTOR",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.3144,
+          "confidence_margin": 0.1211,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Pipa conduit PVC 20mm putih 2.9m",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "HIGH IMPACT PVC CONDUIT PIPE 20MM WHITE LENGTH 2.9M",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.4167,
+          "confidence_margin": 0.3578,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-009",
+      "po_id": "PO-2026-009",
+      "vendor_name": "PT Mega Sentosa Bearing",
+      "scenario_category": "abbreviation_variation",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Rantai roller chain RS 50 simplex 10ft",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "ROLLER CHAIN ANSI 50 SIMPLEX PITCH 15.875MM BOX 10FT",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.4167,
+          "confidence_margin": 0.1859,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Gear rantai sprocket no 50 gigi 17T",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "SIMPLEX SPROCKET CHAIN NO 50 17 TEETH KEYED BORE",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.2308,
+          "confidence_margin": 0.1683,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Laher duduk pillow block UCP206",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "PILLOW BLOCK BEARING UCP206 CAST IRON HOUSING",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.3333,
+          "confidence_margin": 0.3333,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Oli transmisi gardan GL-5 90 pail 20L",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "MINERAL GEAR OIL SAE 90 API GL-5 PAIL 20L",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.3846,
+          "confidence_margin": 0.3846,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 5,
+          "invoice_description": "Klem U bolt pipa 2 inch plat galvanis",
+          "assigned_po_line_no": 5,
+          "assigned_po_description": "U-BOLT CARBON STEEL ZINC PLATED WITH PLATE AND NUTS FOR 2 INCH PIPE",
+          "gold_po_line_no": 5,
+          "is_match_correct": true,
+          "score": 0.2222,
+          "confidence_margin": 0.2222,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-010",
+      "po_id": "PO-2026-010",
+      "vendor_name": "CV Garda Safety Sentosa",
+      "scenario_category": "abbreviation_variation",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Helm proyek MSA warna putih SNI",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "INDUSTRIAL SAFETY HELMET MSA ANSI Z89.1 SNI WHITE COLOR",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.3226,
+          "confidence_margin": 0.0565,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Helm proyek MSA warna kuning SNI",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "INDUSTRIAL SAFETY HELMET MSA ANSI Z89.1 SNI YELLOW COLOR",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.3384,
+          "confidence_margin": 0.0222,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Filter oli sakura spin-on diesel",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "SPIN-ON ENGINE OIL FILTER SAKURA FOR DIESEL ENGINE",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.5556,
+          "confidence_margin": 0.4786,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Elemen filter udara genset Donaldson",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "AIR FILTER ELEMENT DONALDSON FOR COMPRESSOR AND ENGINE",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.3326,
+          "confidence_margin": 0.1555,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 5,
+          "invoice_description": "Kacamata safety bening ANSI Z87",
+          "assigned_po_line_no": 5,
+          "assigned_po_description": "SAFETY SPECTACLES CLEAR LENS ANSI Z87.1 WITH SIDE SHIELD",
+          "gold_po_line_no": 5,
+          "is_match_correct": true,
+          "score": 0.4804,
+          "confidence_margin": 0.142,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-011",
+      "po_id": "PO-2026-011",
+      "vendor_name": "PT Pipa Megah Steel",
+      "scenario_category": "spec_distractor",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Stainless Steel Pipe SS316 1 inch Sch 10",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "STAINLESS STEEL PIPE SS316 1 INCH SCH 10 L=6M",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.8,
+          "confidence_margin": 0.1636,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Stainless Steel Pipe SS304 1 inch Sch 10",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "STAINLESS STEEL PIPE SS304 1 INCH SCH 10 L=6M",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.8,
+          "confidence_margin": 0.1636,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Carbon Steel Pipe 1 inch Sch 40 L=6m",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "CARBON STEEL PIPE 1 INCH SCH 40 L=6M ASTM A53",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.8182,
+          "confidence_margin": 0.1515,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Carbon Steel Pipe 1 inch Sch 80 L=6m",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "CARBON STEEL PIPE 1 INCH SCH 80 L=6M ASTM A106",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.8182,
+          "confidence_margin": 0.1515,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-012",
+      "po_id": "PO-2026-012",
+      "vendor_name": "PT Roda Bearindo",
+      "scenario_category": "spec_distractor",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Deep Groove Ball Bearing 6205 2RS SKF",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "DEEP GROOVE BALL BEARING 6205 2RS RUBBER SEAL SKF",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.7778,
+          "confidence_margin": 0.1778,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Deep Groove Ball Bearing 6205 ZZ SKF",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "DEEP GROOVE BALL BEARING 6205 ZZ METAL SHIELD SKF",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.7778,
+          "confidence_margin": 0.1778,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Deep Groove Ball Bearing 6305 2RS SKF",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "DEEP GROOVE BALL BEARING 6305 2RS RUBBER SEAL SKF",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.7778,
+          "confidence_margin": 0.1778,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Deep Groove Ball Bearing 6305 ZZ SKF",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "DEEP GROOVE BALL BEARING 6305 ZZ METAL SHIELD SKF",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.7778,
+          "confidence_margin": 0.1778,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-013",
+      "po_id": "PO-2026-013",
+      "vendor_name": "CV Baja Utama Steel",
+      "scenario_category": "spec_distractor",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Besi Beton D10 Ulir BJTD40 pj 12m",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "DEFORMED STEEL REBAR D10 GRADE BJTD40 LENGTH 12M",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.4365,
+          "confidence_margin": 0.0671,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Besi Beton D12 Ulir BJTD40 pj 12m",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "DEFORMED STEEL REBAR D12 GRADE BJTD40 LENGTH 12M",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.4361,
+          "confidence_margin": 0.0622,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Besi Beton D16 Ulir BJTD40 pj 12m",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "DEFORMED STEEL REBAR D16 GRADE BJTD40 LENGTH 12M",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.4363,
+          "confidence_margin": 0.0679,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Besi Beton Polos 10mm BJTP24 pj 12m",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "PLAIN ROUND STEEL BAR 10MM GRADE BJTP24 LENGTH 12M",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.2308,
+          "confidence_margin": 0.1593,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-014",
+      "po_id": "PO-2026-014",
+      "vendor_name": "PT Kimia Industri Perkasa",
+      "scenario_category": "spec_distractor",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Hydrochloric Acid HCl 32% Jerigen 30L",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "HYDROCHLORIC ACID HCL SOLUTION 32% JERRYCAN 30L",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.625,
+          "confidence_margin": 0.225,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Hydrochloric Acid HCl 37% Jerigen 30L",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "HYDROCHLORIC ACID HCL SOLUTION 37% TECHNICAL JERRYCAN 30L",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.5556,
+          "confidence_margin": 0.1111,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Nitric Acid HNO3 68% Jerigen 30L",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "NITRIC ACID HNO3 SOLUTION 68% JERRYCAN 30L",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.625,
+          "confidence_margin": 0.4432,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Sulfuric Acid H2SO4 98% Jerigen 30L",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "SULFURIC ACID H2SO4 SOLUTION 98% TECHNICAL JERRYCAN 30L",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.5556,
+          "confidence_margin": 0.3737,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-015",
+      "po_id": "PO-2026-015",
+      "vendor_name": "CV Multi Kabel Jaya",
+      "scenario_category": "uom_discrepancy",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "NYY Power Cable 4x2.5mm2 (Roll @ 100m)",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "NYY POWER CABLE 4 CORE 2.5MM2 0.6/1KV COPPER CONDUCTOR",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.2667,
+          "confidence_margin": 0.1897,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "FLAG_QTY_UNDERBILLING",
+            "price_flag": "FLAG_PRICE_VARIANCE",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "FLAG_UOM_MISMATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Cable Tie 300mm Black (Pack @ 100pcs)",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "NYLON CABLE TIE 300MM UV RESISTANT BLACK",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.4444,
+          "confidence_margin": 0.3856,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "FLAG_QTY_UNDERBILLING",
+            "price_flag": "FLAG_PRICE_VARIANCE",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "FLAG_UOM_MISMATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Terminal Block 10P 25A",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "BARRIER TERMINAL BLOCK 10 POLE 25A DIN RAIL",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.3333,
+          "confidence_margin": 0.3333,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Isolasi Listrik PVC 3M Scotch 20m",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "PVC ELECTRICAL INSULATION TAPE 3M SCOTCH 3/4 INCH X 20M",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.3077,
+          "confidence_margin": 0.3077,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-016",
+      "po_id": "PO-2026-016",
+      "vendor_name": "PT Logam Fastindo",
+      "scenario_category": "uom_discrepancy",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Hex Bolt M10x40 Grade 8.8 (Dus @ 200pcs)",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "HEX HEAD BOLT FULL THREAD M10X40 GRADE 8.8 ZINC",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.4545,
+          "confidence_margin": 0.2879,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "FLAG_QTY_UNDERBILLING",
+            "price_flag": "FLAG_PRICE_VARIANCE",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "FLAG_UOM_MISMATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Hex Nut M10 Grade 8 (Dus @ 500pcs)",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "HEXAGON NUT M10 GRADE 8 ZINC PLATED",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.4,
+          "confidence_margin": 0.1692,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "FLAG_QTY_UNDERBILLING",
+            "price_flag": "FLAG_PRICE_VARIANCE",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "FLAG_UOM_MISMATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Flat Washer M10 Zinc",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "PLAIN FLAT WASHER M10 GALVANIZED CARBON STEEL",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.375,
+          "confidence_margin": 0.125,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Spring Washer M10 Zinc",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "SPRING LOCK WASHER M10 GALVANIZED STEEL",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.4286,
+          "confidence_margin": 0.2063,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-017",
+      "po_id": "PO-2026-017",
+      "vendor_name": "PT Mitra Bangun Konstruksi",
+      "scenario_category": "price_variance",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Mild Steel Plate SS400 6mm 4x8 ft",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "MILD STEEL FLAT PLATE SS400 6MM 4X8 FEET",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.6667,
+          "confidence_margin": 0.1667,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "FLAG_PRICE_VARIANCE",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Mild Steel Plate SS400 8mm 4x8 ft",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "MILD STEEL FLAT PLATE SS400 8MM 4X8 FEET",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.6667,
+          "confidence_margin": 0.1667,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "FLAG_PRICE_VARIANCE",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Equal Angle Bar 50x50x5 SS400 6m",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "EQUAL ANGLE BAR 50X50X5MM SS400 LENGTH 6M",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.625,
+          "confidence_margin": 0.4712,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "U Channel UNP 100x50 SS400 6m",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "U CHANNEL UNP 100X50MM JIS G3101 SS400 LENGTH 6M",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.5,
+          "confidence_margin": 0.3182,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-018",
+      "po_id": "PO-2026-018",
+      "vendor_name": "CV Anugerah Valve Pratama",
+      "scenario_category": "quantity_variance",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Brass Ball Valve 1/2 inch PN16",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "BRASS BALL VALVE 1/2 INCH PN16 THREADED",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.875,
+          "confidence_margin": 0.125,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "FLAG_QTY_OVERBILLING",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Brass Ball Valve 3/4 inch PN16",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "BRASS BALL VALVE 3/4 INCH PN16 THREADED",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.875,
+          "confidence_margin": 0.3194,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Brass Ball Valve 1 inch PN16",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "BRASS BALL VALVE 1 INCH PN16 THREADED",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.8571,
+          "confidence_margin": 0.1071,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Cast Iron Gate Valve 2 inch JIS 10K",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "CAST IRON GATE VALVE FLANGED JIS 10K 2 INCH",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.8889,
+          "confidence_margin": 0.6581,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-019",
+      "po_id": "PO-2026-019",
+      "vendor_name": "PT Prima Perkakas Teknik",
+      "scenario_category": "math_error",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Hacksaw Blade Sandflex 18 TPI 12 inch",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "BI-METAL HACKSAW BLADE 18 TPI 12 INCH SANDFLEX",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.7778,
+          "confidence_margin": 0.7111,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "FLAG_MATH_ERROR",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Cutting Wheel 4 inch x 1.2mm Norton",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "ABRASIVE CUTTING WHEEL 4 INCH X 1.2MM STAINLESS/STEEL",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.6364,
+          "confidence_margin": 0.3287,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Grinding Wheel 4 inch x 6mm Norton",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "DEPRESSED CENTER GRINDING WHEEL 4 INCH X 6MM STEEL",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.6,
+          "confidence_margin": 0.2923,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Welding Electrode E6013 3.2mm Dus 5kg",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "MILD STEEL WELDING ELECTRODE AWS E6013 3.2MM (5KG PACK)",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.5455,
+          "confidence_margin": 0.483,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-020",
+      "po_id": "PO-2026-020",
+      "vendor_name": "PT Surya Mandiri Logistik",
+      "scenario_category": "unmatched_invoice_line",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Air Filter Element Donaldson Compressor",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "AIR FILTER ELEMENT DONALDSON FOR COMPRESSOR AND ENGINE",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.625,
+          "confidence_margin": 0.4432,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Spin-on Oil Filter Donaldson Engine",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "SPIN-ON ENGINE OIL FILTER DONALDSON FOR DIESEL ENGINE",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.75,
+          "confidence_margin": 0.4773,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Fuel Water Separator Filter Donaldson",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "FUEL WATER SEPARATOR FILTER DONALDSON WITH DRAIN BOWL",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.625,
+          "confidence_margin": 0.4432,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Biaya Pengiriman Ekspedisi Darat Truk Colt",
+          "assigned_po_line_no": null,
+          "assigned_po_description": null,
+          "gold_po_line_no": null,
+          "is_match_correct": true,
+          "score": 0.0,
+          "confidence_margin": 0.0,
+          "status": "UNMATCHED",
+          "inspections_required": 3,
+          "flags": {
+            "unmatched_flag": "FLAG_UNMATCHED_INVOICE_LINE"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-021",
+      "po_id": "PO-2026-021",
+      "vendor_name": "CV Multi Makmur Sejahtera",
+      "scenario_category": "unmatched_invoice_line",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Industrial Safety Helmet MSA White ANSI SNI",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "INDUSTRIAL SAFETY HELMET MSA ANSI Z89.1 SNI WHITE COLOR",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.7,
+          "confidence_margin": 0.7,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Cotton Working Gloves 7 Benang per Lusin",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "COTTON WORKING GLOVES 7 THREAD KNITTED (DOZEN)",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.4,
+          "confidence_margin": 0.4,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Ear Plug Corded 3M 1110 Box 100",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "CORDED FOAM EAR PLUG 3M 1110 NRR 29DB (BOX 100 PAIRS)",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.6364,
+          "confidence_margin": 0.6364,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Sepatu Safety Boots Krushers Texas Brown 42",
+          "assigned_po_line_no": null,
+          "assigned_po_description": null,
+          "gold_po_line_no": null,
+          "is_match_correct": true,
+          "score": 0.0,
+          "confidence_margin": 0.0,
+          "status": "UNMATCHED",
+          "inspections_required": 3,
+          "flags": {
+            "unmatched_flag": "FLAG_UNMATCHED_INVOICE_LINE"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-022",
+      "po_id": "PO-2026-022",
+      "vendor_name": "PT Mega Konstruksi Perkasa",
+      "scenario_category": "partial_delivery",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "U Channel UNP 100x50 SS400 L=6m",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "U CHANNEL UNP 100X50MM JIS G3101 SS400 LENGTH 6M",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.4545,
+          "confidence_margin": 0.2879,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Equal Angle Bar 50x50x5 SS400 L=6m",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "EQUAL ANGLE BAR 50X50X5MM SS400 LENGTH 6M",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.5556,
+          "confidence_margin": 0.4127,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Welded Wire Mesh BRC M6 2.1x5.4m",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "WELDED WIRE MESH BRC 6MM OPENING 150X150MM SHEET 2.1X5.4M",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.5833,
+          "confidence_margin": 0.5833,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Checkered Plate Plat Bordes 3mm 4x8 ft",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "HOT ROLLED CHECKERED PLATE 3MM 4X8 FEET DIAMOND PATTERN",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.3333,
+          "confidence_margin": 0.1795,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-023",
+      "po_id": "PO-2026-023",
+      "vendor_name": "PT Sinar Baja Mandiri",
+      "scenario_category": "abbreviation_variation",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Union Galv 1-1/2 inch 150# drat",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "GALVANIZED MALLEABLE IRON UNION 1.5 INCH CLASS 150",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.3333,
+          "confidence_margin": 0.1905,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Pipa HDPE PE100 4 inch PN10 6m",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "HIGH DENSITY POLYETHYLENE PIPE PE100 4 INCH PN10 L=6M",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.4167,
+          "confidence_margin": 0.2738,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Gate Valve Cast Iron 3 inch 10K",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "CAST IRON GATE VALVE FLANGED JIS 10K 3 INCH",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.7778,
+          "confidence_margin": 0.6349,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Flange Weldneck ANSI 150 4 inch",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "CARBON STEEL WELD NECK FLANGE ANSI 150 4 INCH",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.5,
+          "confidence_margin": 0.1923,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 5,
+          "invoice_description": "Gasket Spiral Wound 4 inch 150#",
+          "assigned_po_line_no": 5,
+          "assigned_po_description": "SPIRAL WOUND GASKET SS304 WITH GRAPHITE FILLER 4 INCH ANSI 150",
+          "gold_po_line_no": 5,
+          "is_match_correct": true,
+          "score": 0.5455,
+          "confidence_margin": 0.2955,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    },
+    {
+      "invoice_id": "INV-2026-024",
+      "po_id": "PO-2026-024",
+      "vendor_name": "CV Sukses Mandiri Teknik",
+      "scenario_category": "price_variance",
+      "lines": [
+        {
+          "line_no": 1,
+          "invoice_description": "Kawat Las E7018 3.2mm Kobe Steel 5kg",
+          "assigned_po_line_no": 1,
+          "assigned_po_description": "LOW HYDROGEN WELDING ELECTRODE AWS E7018 3.2MM KOBE (5KG PACK)",
+          "gold_po_line_no": 1,
+          "is_match_correct": true,
+          "score": 0.3571,
+          "confidence_margin": 0.2395,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "FLAG_PRICE_VARIANCE",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 2,
+          "invoice_description": "Batu Gerinda Potong 4 inch WD",
+          "assigned_po_line_no": 2,
+          "assigned_po_description": "ABRASIVE CUTTING WHEEL 4 INCH X 1.2MM STAINLESS/STEEL WD",
+          "gold_po_line_no": 2,
+          "is_match_correct": true,
+          "score": 0.3587,
+          "confidence_margin": 0.1076,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 3,
+          "invoice_description": "Batu Gerinda Asah 4 inch Nippon Resibon",
+          "assigned_po_line_no": 3,
+          "assigned_po_description": "DEPRESSED CENTER GRINDING WHEEL 4 INCH X 6MM STEEL NIPPON RESIBON",
+          "gold_po_line_no": 3,
+          "is_match_correct": true,
+          "score": 0.2857,
+          "confidence_margin": 0.1607,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 4,
+          "invoice_description": "Sikat Kawat Mangkok 3 inch Kuningan",
+          "assigned_po_line_no": 4,
+          "assigned_po_description": "CRIMPED WIRE CUP BRUSH 3 INCH BRASS COATED WITH M10 ARBOR",
+          "gold_po_line_no": 4,
+          "is_match_correct": true,
+          "score": 0.2865,
+          "confidence_margin": 0.054,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 5,
+          "invoice_description": "Sarung Tangan Las Kulit 14 inch",
+          "assigned_po_line_no": 5,
+          "assigned_po_description": "SPLIT COWHIDE LEATHER WELDING GLOVES 14 INCH",
+          "gold_po_line_no": 5,
+          "is_match_correct": true,
+          "score": 0.1818,
+          "confidence_margin": 0.1193,
+          "status": "AMBIGUOUS",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        },
+        {
+          "line_no": 6,
+          "invoice_description": "Kedok Las Otomatis Solar Auto Darkening",
+          "assigned_po_line_no": 6,
+          "assigned_po_description": "AUTO DARKENING WELDING HELMET SOLAR POWERED ANSI Z87.1",
+          "gold_po_line_no": 6,
+          "is_match_correct": true,
+          "score": 0.25,
+          "confidence_margin": 0.25,
+          "status": "MATCHED",
+          "inspections_required": 1,
+          "flags": {
+            "qty_flag": "QTY_MATCH",
+            "price_flag": "PRICE_MATCH",
+            "math_flag": "MATH_CORRECT",
+            "uom_flag": "UOM_MATCH"
+          }
+        }
+      ]
+    }
+  ],
+  "workflow_proxy_metrics": {
+    "first_pass_match_rate_pct": 75.47,
+    "confidently_prematched_pct": 75.47,
+    "lines_requiring_manual_intervention_pct": 24.53,
+    "lines_requiring_manual_intervention_count": 26,
+    "ai_top1_accuracy_pct": 100.0,
+    "fdr_high_confidence_pct": 0.0,
+    "simulated_manual_corrections_total": 0,
+    "avg_candidate_inspections_ambiguous": 1,
+    "verification_flag_metrics": {
+      "price_variance": {
+        "precision": 0.4286,
+        "recall": 1.0,
+        "f1_score": 0.6,
+        "tp": 3,
+        "fp": 4,
+        "fn": 0,
+        "tn": 97
+      },
+      "qty_variance": {
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1_score": 0.3333,
+        "tp": 1,
+        "fp": 4,
+        "fn": 0,
+        "tn": 99
+      },
+      "uom_mismatch": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 100
+      },
+      "math_error": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "tp": 1,
+        "fp": 0,
+        "fn": 0,
+        "tn": 103
+      },
+      "unmatched_line": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0,
+        "tn": 104
+      }
+    }
+  }
+}

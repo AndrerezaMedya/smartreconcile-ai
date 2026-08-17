@@ -1,0 +1,990 @@
+{
+  "model": "models\\finetuned_minilm",
+  "n_scenarios": 10,
+  "greedy_mean_line_acc": 0.9,
+  "hungarian_mean_line_acc": 0.8333,
+  "greedy_doc_acc": "8/10",
+  "hungarian_doc_acc": "7/10",
+  "greedy_wins_line_level": 1,
+  "hungarian_wins_line_level": 0,
+  "ties": 9,
+  "h5_verdict": "KEEP_GREEDY — Greedy more correct against ground truth",
+  "scenarios": [
+    {
+      "scenario_id": "SC-001",
+      "name": "Piping package — competing specs",
+      "greedy_line_acc": 1.0,
+      "hungarian_line_acc": 1.0,
+      "greedy_doc_acc": 1,
+      "hungarian_doc_acc": 1,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Pipa Galvanis 2\" Sch.40 p.6m",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Galvanized Steel Pipe 3 inch Sch 40",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Union Galv 1 inch",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Pipa Galvanis 2\" Sch.40 p.6m",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Galvanized Steel Pipe 3 inch Sch 40",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Union Galv 1 inch",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.6948,
+          "PL-2": 0.6708,
+          "PL-3": 0.4144,
+          "PL-4": 0.5387
+        },
+        "IL-2": {
+          "PL-1": 0.8102,
+          "PL-2": 0.8644,
+          "PL-3": 0.4276,
+          "PL-4": 0.6173
+        },
+        "IL-3": {
+          "PL-1": 0.3987,
+          "PL-2": 0.3816,
+          "PL-3": 0.6624,
+          "PL-4": 0.2844
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-002",
+      "name": "Bearing package — size ambiguity",
+      "greedy_line_acc": 1.0,
+      "hungarian_line_acc": 1.0,
+      "greedy_doc_acc": 1,
+      "hungarian_doc_acc": 1,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Bearing 6205 2RS SKF",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Laher 6305 ZZ",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Pillow Block UCP205",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Bearing 6205 2RS SKF",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Laher 6305 ZZ",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Pillow Block UCP205",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.5126,
+          "PL-2": 0.4353,
+          "PL-3": 0.3346,
+          "PL-4": 0.4435
+        },
+        "IL-2": {
+          "PL-1": 0.407,
+          "PL-2": 0.5525,
+          "PL-3": 0.2312,
+          "PL-4": 0.5501
+        },
+        "IL-3": {
+          "PL-1": 0.2436,
+          "PL-2": 0.2618,
+          "PL-3": 0.7545,
+          "PL-4": 0.2603
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-003",
+      "name": "Electrical package — competing ratings",
+      "greedy_line_acc": 1.0,
+      "hungarian_line_acc": 1.0,
+      "greedy_doc_acc": 1,
+      "hungarian_doc_acc": 1,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3",
+        "IL-4": "PL-4"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3",
+        "IL-4": "PL-4"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "MCB 3P 16A Schneider",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "MCB 3P 32A",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "MCCB 3P 100A",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-4",
+          "text": "Kontaktor 18A 220V AC",
+          "gold": "PL-4",
+          "pred": "PL-4",
+          "correct": true
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "MCB 3P 16A Schneider",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "MCB 3P 32A",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "MCCB 3P 100A",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-4",
+          "text": "Kontaktor 18A 220V AC",
+          "gold": "PL-4",
+          "pred": "PL-4",
+          "correct": true
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.8489,
+          "PL-2": 0.8098,
+          "PL-3": 0.7959,
+          "PL-4": 0.3939,
+          "PL-5": 0.8017
+        },
+        "IL-2": {
+          "PL-1": 0.8855,
+          "PL-2": 0.9445,
+          "PL-3": 0.8504,
+          "PL-4": 0.3583,
+          "PL-5": 0.8953
+        },
+        "IL-3": {
+          "PL-1": 0.8228,
+          "PL-2": 0.8313,
+          "PL-3": 0.9588,
+          "PL-4": 0.372,
+          "PL-5": 0.8465
+        },
+        "IL-4": {
+          "PL-1": 0.5174,
+          "PL-2": 0.5119,
+          "PL-3": 0.5716,
+          "PL-4": 0.7147,
+          "PL-5": 0.5652
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-004",
+      "name": "Fasteners — size variants all in one PO",
+      "greedy_line_acc": 0.5,
+      "hungarian_line_acc": 0.5,
+      "greedy_doc_acc": 0,
+      "hungarian_doc_acc": 0,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-4",
+        "IL-4": "PL-3"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-4",
+        "IL-4": "PL-3"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Baut Hex M10x50 Grade 8.8",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Hex Bolt M12x60 Gr.8.8",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Mur M10",
+          "gold": "PL-3",
+          "pred": "PL-4",
+          "correct": false
+        },
+        {
+          "invoice_id": "IL-4",
+          "text": "Ring Plat M10",
+          "gold": "PL-4",
+          "pred": "PL-3",
+          "correct": false
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Baut Hex M10x50 Grade 8.8",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Hex Bolt M12x60 Gr.8.8",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Mur M10",
+          "gold": "PL-3",
+          "pred": "PL-4",
+          "correct": false
+        },
+        {
+          "invoice_id": "IL-4",
+          "text": "Ring Plat M10",
+          "gold": "PL-4",
+          "pred": "PL-3",
+          "correct": false
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.8332,
+          "PL-2": 0.819,
+          "PL-3": 0.8104,
+          "PL-4": 0.4185,
+          "PL-5": 0.8276
+        },
+        "IL-2": {
+          "PL-1": 0.8687,
+          "PL-2": 0.8981,
+          "PL-3": 0.766,
+          "PL-4": 0.4194,
+          "PL-5": 0.8739
+        },
+        "IL-3": {
+          "PL-1": 0.6585,
+          "PL-2": 0.6349,
+          "PL-3": 0.7165,
+          "PL-4": 0.7642,
+          "PL-5": 0.6522
+        },
+        "IL-4": {
+          "PL-1": 0.5375,
+          "PL-2": 0.5063,
+          "PL-3": 0.5656,
+          "PL-4": 0.556,
+          "PL-5": 0.5332
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-005",
+      "name": "Chemicals — oil types competing",
+      "greedy_line_acc": 1.0,
+      "hungarian_line_acc": 1.0,
+      "greedy_doc_acc": 1,
+      "hungarian_doc_acc": 1,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Oli Mesin Diesel SAE 15W-40 drum 209L",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Hydraulic Oil ISO VG 46",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Gear Oil SAE 90 API GL-4",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Oli Mesin Diesel SAE 15W-40 drum 209L",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Hydraulic Oil ISO VG 46",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Gear Oil SAE 90 API GL-4",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.7661,
+          "PL-2": 0.681,
+          "PL-3": 0.5993,
+          "PL-4": 0.76
+        },
+        "IL-2": {
+          "PL-1": 0.5557,
+          "PL-2": 0.8527,
+          "PL-3": 0.5424,
+          "PL-4": 0.5434
+        },
+        "IL-3": {
+          "PL-1": 0.6705,
+          "PL-2": 0.5136,
+          "PL-3": 0.7996,
+          "PL-4": 0.6898
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-006",
+      "name": "Steel — structural profiles competing",
+      "greedy_line_acc": 0.5,
+      "hungarian_line_acc": 0.5,
+      "greedy_doc_acc": 0,
+      "hungarian_doc_acc": 0,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-5",
+        "IL-3": "PL-2",
+        "IL-4": "PL-4"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-5",
+        "IL-3": "PL-2",
+        "IL-4": "PL-4"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "H-Beam 150x150 SS400 6m",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Angle Bar 50x50x5mm L=6m",
+          "gold": "PL-2",
+          "pred": "PL-5",
+          "correct": false
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Plat Baja 6mm 4x8 feet",
+          "gold": "PL-3",
+          "pred": "PL-2",
+          "correct": false
+        },
+        {
+          "invoice_id": "IL-4",
+          "text": "Besi Kotak 40x40 t=2mm 6m",
+          "gold": "PL-4",
+          "pred": "PL-4",
+          "correct": true
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "H-Beam 150x150 SS400 6m",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Angle Bar 50x50x5mm L=6m",
+          "gold": "PL-2",
+          "pred": "PL-5",
+          "correct": false
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Plat Baja 6mm 4x8 feet",
+          "gold": "PL-3",
+          "pred": "PL-2",
+          "correct": false
+        },
+        {
+          "invoice_id": "IL-4",
+          "text": "Besi Kotak 40x40 t=2mm 6m",
+          "gold": "PL-4",
+          "pred": "PL-4",
+          "correct": true
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.8401,
+          "PL-2": 0.6375,
+          "PL-3": 0.607,
+          "PL-4": 0.4409,
+          "PL-5": 0.5212
+        },
+        "IL-2": {
+          "PL-1": 0.5234,
+          "PL-2": 0.8376,
+          "PL-3": 0.4451,
+          "PL-4": 0.7427,
+          "PL-5": 0.9035
+        },
+        "IL-3": {
+          "PL-1": 0.3971,
+          "PL-2": 0.5567,
+          "PL-3": 0.41,
+          "PL-4": 0.5511,
+          "PL-5": 0.6036
+        },
+        "IL-4": {
+          "PL-1": 0.4545,
+          "PL-2": 0.6073,
+          "PL-3": 0.423,
+          "PL-4": 0.7692,
+          "PL-5": 0.6317
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-007",
+      "name": "Mixed package — one unmatched invoice line",
+      "greedy_line_acc": 1.0,
+      "hungarian_line_acc": 1.0,
+      "greedy_doc_acc": 1,
+      "hungarian_doc_acc": 1,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Safety Helmet putih MSA",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Work Gloves nitrile L",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Sepatu Safety Kings 42",
+          "gold": null,
+          "pred": "PL-3",
+          "correct": false
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Safety Helmet putih MSA",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Work Gloves nitrile L",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Sepatu Safety Kings 42",
+          "gold": null,
+          "pred": "PL-3",
+          "correct": false
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.5774,
+          "PL-2": 0.0826,
+          "PL-3": 0.2012
+        },
+        "IL-2": {
+          "PL-1": 0.2731,
+          "PL-2": 0.6543,
+          "PL-3": 0.3961
+        },
+        "IL-3": {
+          "PL-1": 0.4251,
+          "PL-2": 0.2187,
+          "PL-3": 0.3347
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-008",
+      "name": "Local-best vs global-best conflict",
+      "greedy_line_acc": 1.0,
+      "hungarian_line_acc": 0.3333,
+      "greedy_doc_acc": 1,
+      "hungarian_doc_acc": 0,
+      "winner": "GREEDY",
+      "greedy_assignment": {
+        "IL-1": "PL-2",
+        "IL-2": "PL-1",
+        "IL-3": "PL-3"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Filter Oli Sakura diesel",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Oil Filter diesel engine",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Air Filter element kompressor",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Filter Oli Sakura diesel",
+          "gold": "PL-2",
+          "pred": "PL-1",
+          "correct": false
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Oil Filter diesel engine",
+          "gold": "PL-1",
+          "pred": "PL-2",
+          "correct": false
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Air Filter element kompressor",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.5753,
+          "PL-2": 0.4603,
+          "PL-3": 0.4044
+        },
+        "IL-2": {
+          "PL-1": 0.7452,
+          "PL-2": 0.6677,
+          "PL-3": 0.4234
+        },
+        "IL-3": {
+          "PL-1": 0.4807,
+          "PL-2": 0.3678,
+          "PL-3": 0.8338
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-009",
+      "name": "Cable types — core/size combinations",
+      "greedy_line_acc": 1.0,
+      "hungarian_line_acc": 1.0,
+      "greedy_doc_acc": 1,
+      "hungarian_doc_acc": 1,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Kabel NYY 4x2.5mm2 0.6/1kV",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Cable NYA 2.5mm2 merah",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Kabel NYAF 1.5mm2 serabut",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Kabel NYY 4x2.5mm2 0.6/1kV",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Cable NYA 2.5mm2 merah",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Kabel NYAF 1.5mm2 serabut",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.8247,
+          "PL-2": 0.6486,
+          "PL-3": 0.7928,
+          "PL-4": 0.792
+        },
+        "IL-2": {
+          "PL-1": 0.6816,
+          "PL-2": 0.7594,
+          "PL-3": 0.7148,
+          "PL-4": 0.6717
+        },
+        "IL-3": {
+          "PL-1": 0.7347,
+          "PL-2": 0.6984,
+          "PL-3": 0.8592,
+          "PL-4": 0.7109
+        }
+      }
+    },
+    {
+      "scenario_id": "SC-010",
+      "name": "Packaging items — 5 line invoice",
+      "greedy_line_acc": 1.0,
+      "hungarian_line_acc": 1.0,
+      "greedy_doc_acc": 1,
+      "hungarian_doc_acc": 1,
+      "winner": "TIE",
+      "greedy_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3",
+        "IL-4": "PL-4",
+        "IL-5": "PL-5"
+      },
+      "hungarian_assignment": {
+        "IL-1": "PL-1",
+        "IL-2": "PL-2",
+        "IL-3": "PL-3",
+        "IL-4": "PL-4",
+        "IL-5": "PL-5"
+      },
+      "greedy_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Kardus double wall 40x60cm",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Stretch Film 50cm 5kg roll",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Lakban OPP 48mm coklat 90yd",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-4",
+          "text": "PP Strapping Band 15mm",
+          "gold": "PL-4",
+          "pred": "PL-4",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-5",
+          "text": "Bubble Wrap 25mm 125cm roll",
+          "gold": "PL-5",
+          "pred": "PL-5",
+          "correct": true
+        }
+      ],
+      "hungarian_details": [
+        {
+          "invoice_id": "IL-1",
+          "text": "Kardus double wall 40x60cm",
+          "gold": "PL-1",
+          "pred": "PL-1",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-2",
+          "text": "Stretch Film 50cm 5kg roll",
+          "gold": "PL-2",
+          "pred": "PL-2",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-3",
+          "text": "Lakban OPP 48mm coklat 90yd",
+          "gold": "PL-3",
+          "pred": "PL-3",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-4",
+          "text": "PP Strapping Band 15mm",
+          "gold": "PL-4",
+          "pred": "PL-4",
+          "correct": true
+        },
+        {
+          "invoice_id": "IL-5",
+          "text": "Bubble Wrap 25mm 125cm roll",
+          "gold": "PL-5",
+          "pred": "PL-5",
+          "correct": true
+        }
+      ],
+      "score_matrix": {
+        "IL-1": {
+          "PL-1": 0.6218,
+          "PL-2": 0.3211,
+          "PL-3": 0.3126,
+          "PL-4": 0.2291,
+          "PL-5": 0.3915,
+          "PL-6": 0.3245
+        },
+        "IL-2": {
+          "PL-1": 0.2146,
+          "PL-2": 0.8056,
+          "PL-3": 0.3456,
+          "PL-4": 0.1951,
+          "PL-5": 0.3946,
+          "PL-6": 0.3448
+        },
+        "IL-3": {
+          "PL-1": 0.3483,
+          "PL-2": 0.3874,
+          "PL-3": 0.707,
+          "PL-4": 0.3481,
+          "PL-5": 0.5371,
+          "PL-6": 0.6647
+        },
+        "IL-4": {
+          "PL-1": 0.2427,
+          "PL-2": 0.2721,
+          "PL-3": 0.4654,
+          "PL-4": 0.8736,
+          "PL-5": 0.4904,
+          "PL-6": 0.4348
+        },
+        "IL-5": {
+          "PL-1": 0.3653,
+          "PL-2": 0.4614,
+          "PL-3": 0.419,
+          "PL-4": 0.265,
+          "PL-5": 0.628,
+          "PL-6": 0.4264
+        }
+      }
+    }
+  ]
+}

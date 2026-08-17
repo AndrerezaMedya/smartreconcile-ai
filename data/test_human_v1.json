@@ -1,0 +1,759 @@
+[
+  {
+    "query_id": "HUM-0001",
+    "invoice_line": "Union galv drat 1 inch 150#",
+    "po_line_id": "HUM-0001-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0001-PL-C",
+        "description": "GALVANIZED MALLEABLE IRON UNION 1 INCH CLASS 150",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0001-PL-N1",
+        "description": "GALVANIZED MALLEABLE IRON UNION 2 INCH CLASS 150",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0001-PL-N2",
+        "description": "GALVANIZED MALLEABLE IRON ELBOW 1 INCH CLASS 150",
+        "is_correct": false,
+        "neg_type": "different_type"
+      },
+      {
+        "po_line_id": "HUM-0001-PL-N3",
+        "description": "STAINLESS STEEL UNION 1 INCH CLASS 150",
+        "is_correct": false,
+        "neg_type": "different_material"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation",
+      "english_terms"
+    ],
+    "material_id": "MAT-067",
+    "category": "piping"
+  },
+  {
+    "query_id": "HUM-0002",
+    "invoice_line": "Pipa HDPE PE100 3 inch PN16 btg 6 meter",
+    "po_line_id": "HUM-0002-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0002-PL-C",
+        "description": "HIGH DENSITY POLYETHYLENE PIPE PE100 3 INCH PN16 L=6M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0002-PL-N1",
+        "description": "HIGH DENSITY POLYETHYLENE PIPE PE100 3 INCH PN10 L=6M",
+        "is_correct": false,
+        "neg_type": "spec_diff_pressure"
+      },
+      {
+        "po_line_id": "HUM-0002-PL-N2",
+        "description": "HIGH DENSITY POLYETHYLENE PIPE PE100 4 INCH PN16 L=6M",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0002-PL-N3",
+        "description": "PVC CONDUIT PIPE 3 INCH WHITE 6M",
+        "is_correct": false,
+        "neg_type": "different_material"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix",
+      "spec_dense"
+    ],
+    "material_id": "MAT-068",
+    "category": "piping"
+  },
+  {
+    "query_id": "HUM-0003",
+    "invoice_line": "Kanal U UNP 100x50 JIS SS400 pj 6m",
+    "po_line_id": "HUM-0003-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0003-PL-C",
+        "description": "U CHANNEL UNP 100X50MM JIS G3101 SS400 LENGTH 6M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0003-PL-N1",
+        "description": "U CHANNEL UNP 120X55MM JIS G3101 SS400 LENGTH 6M",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0003-PL-N2",
+        "description": "U CHANNEL UNP 80X45MM JIS G3101 SS400 LENGTH 6M",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0003-PL-N3",
+        "description": "EQUAL ANGLE BAR 100X100X10MM SS400 LENGTH 6M",
+        "is_correct": false,
+        "neg_type": "different_type"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix",
+      "abbreviation"
+    ],
+    "material_id": "MAT-069",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HUM-0004",
+    "invoice_line": "Kawat BRC M6 spasi 150x150 lembar 2.1x5.4m",
+    "po_line_id": "HUM-0004-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0004-PL-C",
+        "description": "WELDED WIRE MESH BRC 6MM OPENING 150X150MM SHEET 2.1X5.4M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0004-PL-N1",
+        "description": "WELDED WIRE MESH BRC 8MM OPENING 150X150MM SHEET 2.1X5.4M",
+        "is_correct": false,
+        "neg_type": "spec_diff_diameter"
+      },
+      {
+        "po_line_id": "HUM-0004-PL-N2",
+        "description": "EXPANDED METAL MESH 6MM SHEET 1.2X2.4M",
+        "is_correct": false,
+        "neg_type": "different_type"
+      },
+      {
+        "po_line_id": "HUM-0004-PL-N3",
+        "description": "BARBED WIRE GALVANIZED 100M ROLL",
+        "is_correct": false,
+        "neg_type": "different_type"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "indonesian_terms",
+      "domain_alias"
+    ],
+    "material_id": "MAT-070",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HUM-0005",
+    "invoice_line": "Plat kembang tebal 3mm uk 4x8 ft",
+    "po_line_id": "HUM-0005-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0005-PL-C",
+        "description": "HOT ROLLED CHECKERED PLATE 3MM 4X8 FEET DIAMOND PATTERN",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0005-PL-N1",
+        "description": "HOT ROLLED CHECKERED PLATE 4.5MM 4X8 FEET DIAMOND PATTERN",
+        "is_correct": false,
+        "neg_type": "spec_diff_thickness"
+      },
+      {
+        "po_line_id": "HUM-0005-PL-N2",
+        "description": "MILD STEEL FLAT PLATE 3MM 4X8 FEET SS400",
+        "is_correct": false,
+        "neg_type": "different_type"
+      },
+      {
+        "po_line_id": "HUM-0005-PL-N3",
+        "description": "ALUMINIUM CHECKERED PLATE 3MM 1200X2400MM",
+        "is_correct": false,
+        "neg_type": "different_material"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "indonesian_slang",
+      "vocabulary_gap"
+    ],
+    "material_id": "MAT-071",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HUM-0006",
+    "invoice_line": "Rantai penggerak roller chain RS 50 simplex box 10ft",
+    "po_line_id": "HUM-0006-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0006-PL-C",
+        "description": "ROLLER CHAIN ANSI 50 SIMPLEX PITCH 15.875MM BOX 10FT",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0006-PL-N1",
+        "description": "ROLLER CHAIN ANSI 40 SIMPLEX PITCH 12.7MM BOX 10FT",
+        "is_correct": false,
+        "neg_type": "spec_diff_pitch"
+      },
+      {
+        "po_line_id": "HUM-0006-PL-N2",
+        "description": "ROLLER CHAIN ANSI 50 DUPLEX DOUBLE STRAND BOX 10FT",
+        "is_correct": false,
+        "neg_type": "spec_diff_strand"
+      },
+      {
+        "po_line_id": "HUM-0006-PL-N3",
+        "description": "SIMPLEX SPROCKET 50 17 TEETH BORE 25MM",
+        "is_correct": false,
+        "neg_type": "semantic_neighbor"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "indonesian_english_mix",
+      "semantic_neighbor_trap"
+    ],
+    "material_id": "MAT-072",
+    "category": "bearings"
+  },
+  {
+    "query_id": "HUM-0007",
+    "invoice_line": "Gear rantai sprocket no 50 gigi 17T bore keyed",
+    "po_line_id": "HUM-0007-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0007-PL-C",
+        "description": "SIMPLEX SPROCKET CHAIN NO 50 17 TEETH KEYED BORE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0007-PL-N1",
+        "description": "SIMPLEX SPROCKET CHAIN NO 50 21 TEETH KEYED BORE",
+        "is_correct": false,
+        "neg_type": "spec_diff_teeth"
+      },
+      {
+        "po_line_id": "HUM-0007-PL-N2",
+        "description": "SIMPLEX SPROCKET CHAIN NO 40 17 TEETH KEYED BORE",
+        "is_correct": false,
+        "neg_type": "spec_diff_chain_no"
+      },
+      {
+        "po_line_id": "HUM-0007-PL-N3",
+        "description": "ROLLER CHAIN ANSI 50 SIMPLEX 10FT",
+        "is_correct": false,
+        "neg_type": "semantic_neighbor"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "indonesian_english_mix",
+      "semantic_neighbor_trap"
+    ],
+    "material_id": "MAT-073",
+    "category": "bearings"
+  },
+  {
+    "query_id": "HUM-0008",
+    "invoice_line": "Box panel listrik uk 40x50x20cm IP54 powder coating",
+    "po_line_id": "HUM-0008-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0008-PL-C",
+        "description": "STEEL ELECTRICAL ENCLOSURE 40X50X20CM POWDER COATED IP54",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0008-PL-N1",
+        "description": "STEEL ELECTRICAL ENCLOSURE 50X60X20CM POWDER COATED IP54",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0008-PL-N2",
+        "description": "STEEL ELECTRICAL ENCLOSURE 40X50X20CM STAINLESS STEEL IP65",
+        "is_correct": false,
+        "neg_type": "different_material"
+      },
+      {
+        "po_line_id": "HUM-0008-PL-N3",
+        "description": "JUNCTION BOX PVC 20X20X10CM IP65",
+        "is_correct": false,
+        "neg_type": "different_type"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_terms",
+      "spec_dense"
+    ],
+    "material_id": "MAT-074",
+    "category": "electrical"
+  },
+  {
+    "query_id": "HUM-0009",
+    "invoice_line": "Tray kabel perforasi lebar 200mm panjang 2.4m HDG",
+    "po_line_id": "HUM-0009-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0009-PL-C",
+        "description": "PERFORATED CABLE TRAY WIDTH 200MM L=2.4M HOT DIP GALVANIZED",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0009-PL-N1",
+        "description": "PERFORATED CABLE TRAY WIDTH 300MM L=2.4M HOT DIP GALVANIZED",
+        "is_correct": false,
+        "neg_type": "spec_diff_width"
+      },
+      {
+        "po_line_id": "HUM-0009-PL-N2",
+        "description": "LADDER TYPE CABLE TRAY WIDTH 200MM L=2.4M HOT DIP GALVANIZED",
+        "is_correct": false,
+        "neg_type": "different_type"
+      },
+      {
+        "po_line_id": "HUM-0009-PL-N3",
+        "description": "CABLE DUCT WIREWAY PVC 100X50MM 2M GREY",
+        "is_correct": false,
+        "neg_type": "different_material"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix",
+      "abbreviation"
+    ],
+    "material_id": "MAT-075",
+    "category": "electrical"
+  },
+  {
+    "query_id": "HUM-0010",
+    "invoice_line": "Oli gardan transmisi SAE 90 API GL-5 kemasan drum 209L",
+    "po_line_id": "HUM-0010-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0010-PL-C",
+        "description": "MINERAL GEAR OIL SAE 90 API GL-5 DRUM 209L",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0010-PL-N1",
+        "description": "MINERAL GEAR OIL SAE 140 API GL-5 DRUM 209L",
+        "is_correct": false,
+        "neg_type": "spec_diff_viscosity"
+      },
+      {
+        "po_line_id": "HUM-0010-PL-N2",
+        "description": "MINERAL GEAR OIL SAE 90 API GL-5 PAIL 20L",
+        "is_correct": false,
+        "neg_type": "spec_diff_packaging"
+      },
+      {
+        "po_line_id": "HUM-0010-PL-N3",
+        "description": "INDUSTRIAL SYNTHETIC GEAR OIL ISO VG 220 DRUM 209L",
+        "is_correct": false,
+        "neg_type": "different_type"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_terms",
+      "spec_dense"
+    ],
+    "material_id": "MAT-076",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "HUM-0011",
+    "invoice_line": "Air keras HCl teknis kadar 32% jerigen 30 liter",
+    "po_line_id": "HUM-0011-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0011-PL-C",
+        "description": "HYDROCHLORIC ACID HCL SOLUTION 32% JERRYCAN 30L",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0011-PL-N1",
+        "description": "HYDROCHLORIC ACID HCL SOLUTION 37% JERRYCAN 30L",
+        "is_correct": false,
+        "neg_type": "spec_diff_concentration"
+      },
+      {
+        "po_line_id": "HUM-0011-PL-N2",
+        "description": "HYDROCHLORIC ACID HCL SOLUTION 32% DRUM 200L",
+        "is_correct": false,
+        "neg_type": "spec_diff_packaging"
+      },
+      {
+        "po_line_id": "HUM-0011-PL-N3",
+        "description": "SULFURIC ACID H2SO4 SOLUTION 98% JERRYCAN 30L",
+        "is_correct": false,
+        "neg_type": "different_chemical"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "indonesian_slang",
+      "vocabulary_gap"
+    ],
+    "material_id": "MAT-077",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "HUM-0012",
+    "invoice_line": "Plastik gelembung bubble wrap roll uk 125cm x 50m bening",
+    "po_line_id": "HUM-0012-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0012-PL-C",
+        "description": "AIR BUBBLE FILM BUBBLE WRAP 10MM WIDTH 125CM LENGTH 50M ROLL CLEAR",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0012-PL-N1",
+        "description": "AIR BUBBLE FILM BUBBLE WRAP 25MM WIDTH 125CM LENGTH 50M ROLL BLACK",
+        "is_correct": false,
+        "neg_type": "spec_diff_bubble_size"
+      },
+      {
+        "po_line_id": "HUM-0012-PL-N2",
+        "description": "STRETCH FILM WRAPPING PLASTIC 50CM X 250M 17 MICRON",
+        "is_correct": false,
+        "neg_type": "different_packaging"
+      },
+      {
+        "po_line_id": "HUM-0012-PL-N3",
+        "description": "CORRUGATED CARTON BOX 40X30X20CM DOUBLE WALL",
+        "is_correct": false,
+        "neg_type": "different_packaging"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "indonesian_terms",
+      "descriptive"
+    ],
+    "material_id": "MAT-078",
+    "category": "packaging"
+  },
+  {
+    "query_id": "HUM-0013",
+    "invoice_line": "Stiker label barcode art paper roll self adhesive",
+    "po_line_id": "HUM-0013-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0013-PL-C",
+        "description": "SELF ADHESIVE STICKER LABEL ART PAPER MATERIAL ROLL",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0013-PL-N1",
+        "description": "SELF ADHESIVE STICKER LABEL VINYL WATERPROOF MATERIAL ROLL",
+        "is_correct": false,
+        "neg_type": "spec_diff_material"
+      },
+      {
+        "po_line_id": "HUM-0013-PL-N2",
+        "description": "THERMAL TRANSFER RIBBON WAX RESIN 110MM X 300M",
+        "is_correct": false,
+        "neg_type": "different_type"
+      },
+      {
+        "po_line_id": "HUM-0013-PL-N3",
+        "description": "PACKAGING DUCT TAPE BROWN 2 INCH 100 YARDS",
+        "is_correct": false,
+        "neg_type": "different_type"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-079",
+    "category": "packaging"
+  },
+  {
+    "query_id": "HUM-0014",
+    "invoice_line": "Paku keling pop rivet aluminium uk 4.0 x 10 mm",
+    "po_line_id": "HUM-0014-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0014-PL-C",
+        "description": "ALUMINIUM BLIND RIVET 4.0X10MM STEEL MANDREL",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0014-PL-N1",
+        "description": "ALUMINIUM BLIND RIVET 4.8X12MM STEEL MANDREL",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0014-PL-N2",
+        "description": "ALUMINIUM BLIND RIVET 3.2X8MM STEEL MANDREL",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0014-PL-N3",
+        "description": "SELF DRILLING SCREW ROOFING M4.8X19MM ZINC",
+        "is_correct": false,
+        "neg_type": "different_fastener"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "indonesian_terms",
+      "spec_dense"
+    ],
+    "material_id": "MAT-080",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "HUM-0015",
+    "invoice_line": "Klem U bolt pipa 2 inch plat dan mur galvanis",
+    "po_line_id": "HUM-0015-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0015-PL-C",
+        "description": "U-BOLT CARBON STEEL ZINC PLATED WITH PLATE AND NUTS FOR 2 INCH PIPE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0015-PL-N1",
+        "description": "U-BOLT CARBON STEEL ZINC PLATED WITH PLATE AND NUTS FOR 3 INCH PIPE",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0015-PL-N2",
+        "description": "U-BOLT CARBON STEEL ZINC PLATED WITH PLATE AND NUTS FOR 1 INCH PIPE",
+        "is_correct": false,
+        "neg_type": "spec_diff_size"
+      },
+      {
+        "po_line_id": "HUM-0015-PL-N3",
+        "description": "HEX HEAD BOLT FULL THREAD M12X50 ZINC PLATED GRADE 8.8",
+        "is_correct": false,
+        "neg_type": "different_fastener"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_terms",
+      "synonym_clamp"
+    ],
+    "material_id": "MAT-081",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "HUM-0016",
+    "invoice_line": "Filter oli mesin merk Sakura tipe spin-on diesel",
+    "po_line_id": "HUM-0016-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0016-PL-C",
+        "description": "SPIN-ON ENGINE OIL FILTER SAKURA FOR DIESEL ENGINE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0016-PL-N1",
+        "description": "SPIN-ON ENGINE OIL FILTER DONALDSON FOR DIESEL ENGINE",
+        "is_correct": false,
+        "neg_type": "spec_diff_brand"
+      },
+      {
+        "po_line_id": "HUM-0016-PL-N2",
+        "description": "AIR FILTER ELEMENT SAKURA FOR DIESEL ENGINE",
+        "is_correct": false,
+        "neg_type": "semantic_neighbor"
+      },
+      {
+        "po_line_id": "HUM-0016-PL-N3",
+        "description": "FUEL WATER SEPARATOR FILTER SAKURA DIESEL",
+        "is_correct": false,
+        "neg_type": "different_filter"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "semantic_neighbor_trap",
+      "brand_spec"
+    ],
+    "material_id": "MAT-082",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HUM-0017",
+    "invoice_line": "Elemen filter udara genset kompresor Donaldson",
+    "po_line_id": "HUM-0017-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0017-PL-C",
+        "description": "AIR FILTER ELEMENT DONALDSON FOR COMPRESSOR AND ENGINE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0017-PL-N1",
+        "description": "AIR FILTER ELEMENT SAKURA FOR COMPRESSOR AND ENGINE",
+        "is_correct": false,
+        "neg_type": "spec_diff_brand"
+      },
+      {
+        "po_line_id": "HUM-0017-PL-N2",
+        "description": "SPIN-ON ENGINE OIL FILTER DONALDSON FOR DIESEL ENGINE",
+        "is_correct": false,
+        "neg_type": "semantic_neighbor"
+      },
+      {
+        "po_line_id": "HUM-0017-PL-N3",
+        "description": "HYDRAULIC RETURN LINE FILTER DONALDSON",
+        "is_correct": false,
+        "neg_type": "different_filter"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "semantic_neighbor_trap",
+      "brand_spec"
+    ],
+    "material_id": "MAT-083",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HUM-0018",
+    "invoice_line": "Helm proyek MSA v-gard warna putih standar SNI ANSI",
+    "po_line_id": "HUM-0018-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HUM-0018-PL-C",
+        "description": "INDUSTRIAL SAFETY HELMET MSA ANSI Z89.1 SNI WHITE COLOR",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HUM-0018-PL-N1",
+        "description": "INDUSTRIAL SAFETY HELMET MSA ANSI Z89.1 SNI YELLOW COLOR",
+        "is_correct": false,
+        "neg_type": "spec_diff_color"
+      },
+      {
+        "po_line_id": "HUM-0018-PL-N2",
+        "description": "INDUSTRIAL SAFETY HELMET 3M ANSI Z89.1 WHITE COLOR",
+        "is_correct": false,
+        "neg_type": "spec_diff_brand"
+      },
+      {
+        "po_line_id": "HUM-0018-PL-N3",
+        "description": "SAFETY SPECTACLES CLEAR LENS ANSI Z87.1",
+        "is_correct": false,
+        "neg_type": "different_ppe"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "indonesian_english_mix",
+      "spec_dense"
+    ],
+    "material_id": "MAT-084",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HUM-0019",
+    "invoice_line": "Jasa Kalibrasi Flowmeter dan Penerbitan Sertifikat KAN",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "HUM-0019-PL-N1",
+        "description": "GALVANIZED MALLEABLE IRON UNION 1 INCH CLASS 150",
+        "is_correct": false,
+        "neg_type": "unmatched_service"
+      },
+      {
+        "po_line_id": "HUM-0019-PL-N2",
+        "description": "HIGH DENSITY POLYETHYLENE PIPE PE100 3 INCH PN16 L=6M",
+        "is_correct": false,
+        "neg_type": "unmatched_service"
+      },
+      {
+        "po_line_id": "HUM-0019-PL-N3",
+        "description": "INDUSTRIAL SAFETY HELMET MSA ANSI Z89.1 SNI WHITE COLOR",
+        "is_correct": false,
+        "neg_type": "unmatched_service"
+      },
+      {
+        "po_line_id": "HUM-0019-PL-N4",
+        "description": "PERFORATED CABLE TRAY WIDTH 200MM L=2.4M HOT DIP GALVANIZED",
+        "is_correct": false,
+        "neg_type": "unmatched_service"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "service_line_unmatched"
+    ],
+    "material_id": null,
+    "category": "unmatched"
+  },
+  {
+    "query_id": "HUM-0020",
+    "invoice_line": "Sepatu boot safety kuning rubber size 42 Krushers",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "HUM-0020-PL-N1",
+        "description": "INDUSTRIAL SAFETY HELMET MSA ANSI Z89.1 SNI WHITE COLOR",
+        "is_correct": false,
+        "neg_type": "unmatched_item"
+      },
+      {
+        "po_line_id": "HUM-0020-PL-N2",
+        "description": "ALUMINIUM BLIND RIVET 4.0X10MM STEEL MANDREL",
+        "is_correct": false,
+        "neg_type": "unmatched_item"
+      },
+      {
+        "po_line_id": "HUM-0020-PL-N3",
+        "description": "HOT ROLLED CHECKERED PLATE 3MM 4X8 FEET DIAMOND PATTERN",
+        "is_correct": false,
+        "neg_type": "unmatched_item"
+      },
+      {
+        "po_line_id": "HUM-0020-PL-N4",
+        "description": "MINERAL GEAR OIL SAE 90 API GL-5 DRUM 209L",
+        "is_correct": false,
+        "neg_type": "unmatched_item"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "out_of_catalog_unmatched"
+    ],
+    "material_id": null,
+    "category": "unmatched"
+  }
+]

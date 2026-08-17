@@ -1,0 +1,1339 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Material catalog for invoice-to-PO matching benchmark. 84 unique materials across 8 manufacturing categories.",
+    "categories": ["piping", "structural_steel", "bearings", "electrical", "chemicals", "packaging", "fasteners", "tools_consumables"],
+    "total_materials": 84,
+    "split_assignment": {
+      "train": "MAT-001 to MAT-052 (52 materials)",
+      "validation": "MAT-053 to MAT-066 (14 materials)",
+      "test": "MAT-067 to MAT-084 (18 materials)"
+    }
+  },
+  "materials": [
+    {
+      "material_id": "MAT-001",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Pipa Baja Galvanis",
+      "canonical_name_en": "Galvanized Steel Pipe",
+      "specifications": {
+        "material_type": "galvanized",
+        "sizes": ["0.5 inch", "1 inch", "1.5 inch", "2 inch", "3 inch", "4 inch"],
+        "schedules": ["Sch 20", "Sch 40"],
+        "lengths": ["6 meter"],
+        "standards": ["SNI", "ASTM A53"]
+      },
+      "common_abbreviations": ["Pipa Galv.", "GIP", "Pipe Galv."],
+      "common_uom": ["batang", "lonjor", "pcs", "meter"],
+      "related_but_different": ["MAT-002", "MAT-003"]
+    },
+    {
+      "material_id": "MAT-002",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Pipa Baja Karbon",
+      "canonical_name_en": "Carbon Steel Pipe",
+      "specifications": {
+        "material_type": "carbon steel (black)",
+        "sizes": ["0.5 inch", "1 inch", "1.5 inch", "2 inch", "3 inch", "4 inch", "6 inch"],
+        "schedules": ["Sch 40", "Sch 80"],
+        "lengths": ["6 meter"],
+        "standards": ["ASTM A106"]
+      },
+      "common_abbreviations": ["Pipa Hitam", "Black Pipe", "CS Pipe", "BIP"],
+      "common_uom": ["batang", "lonjor", "pcs", "meter"],
+      "related_but_different": ["MAT-001", "MAT-003"]
+    },
+    {
+      "material_id": "MAT-003",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Pipa Stainless Steel",
+      "canonical_name_en": "Stainless Steel Pipe",
+      "specifications": {
+        "material_type": "stainless steel",
+        "grades": ["304", "316"],
+        "sizes": ["0.5 inch", "1 inch", "2 inch"],
+        "schedules": ["Sch 10S", "Sch 40S"],
+        "lengths": ["6 meter"]
+      },
+      "common_abbreviations": ["Pipa SS", "SS Pipe", "Pipa Stainless"],
+      "common_uom": ["batang", "lonjor", "pcs", "meter"],
+      "related_but_different": ["MAT-001", "MAT-002"]
+    },
+    {
+      "material_id": "MAT-004",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Elbow Galvanis",
+      "canonical_name_en": "Galvanized Elbow",
+      "specifications": {
+        "material_type": "galvanized malleable iron",
+        "types": ["90 degree", "45 degree"],
+        "sizes": ["0.5 inch", "1 inch", "1.5 inch", "2 inch", "3 inch"],
+        "class": ["150"]
+      },
+      "common_abbreviations": ["Elbow Galv.", "Knee Galv.", "Belokan Galv."],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-005", "MAT-006"]
+    },
+    {
+      "material_id": "MAT-005",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Tee Galvanis",
+      "canonical_name_en": "Galvanized Tee",
+      "specifications": {
+        "material_type": "galvanized malleable iron",
+        "types": ["equal tee", "reducing tee"],
+        "sizes": ["0.5 inch", "1 inch", "1.5 inch", "2 inch", "3 inch"],
+        "class": ["150"]
+      },
+      "common_abbreviations": ["Tee Galv.", "T Galv."],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-004", "MAT-006"]
+    },
+    {
+      "material_id": "MAT-006",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Reducer Galvanis",
+      "canonical_name_en": "Galvanized Reducer",
+      "specifications": {
+        "material_type": "galvanized malleable iron",
+        "types": ["concentric", "eccentric"],
+        "sizes": ["2x1 inch", "3x2 inch", "4x3 inch"],
+        "class": ["150"]
+      },
+      "common_abbreviations": ["Red. Galv.", "Reducer Galv."],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-004", "MAT-005"]
+    },
+    {
+      "material_id": "MAT-007",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Valve Gate Kuningan",
+      "canonical_name_en": "Brass Gate Valve",
+      "specifications": {
+        "material_type": "brass",
+        "types": ["gate"],
+        "sizes": ["0.5 inch", "1 inch", "1.5 inch", "2 inch"],
+        "connection": ["threaded"],
+        "pressure_rating": ["PN16", "200 WOG"]
+      },
+      "common_abbreviations": ["Gate Valve", "Stop Kran", "GV Brass"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": ["MAT-008"]
+    },
+    {
+      "material_id": "MAT-008",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Valve Ball PVC",
+      "canonical_name_en": "PVC Ball Valve",
+      "specifications": {
+        "material_type": "PVC",
+        "types": ["ball"],
+        "sizes": ["0.5 inch", "1 inch", "1.5 inch", "2 inch", "3 inch"],
+        "connection": ["socket", "threaded"]
+      },
+      "common_abbreviations": ["Ball Valve PVC", "BV PVC", "Kran PVC"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": ["MAT-007"]
+    },
+    {
+      "material_id": "MAT-009",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Flange Slip On",
+      "canonical_name_en": "Slip On Flange",
+      "specifications": {
+        "material_type": "carbon steel",
+        "types": ["slip on"],
+        "sizes": ["2 inch", "3 inch", "4 inch", "6 inch"],
+        "class": ["150", "300"],
+        "standards": ["ANSI B16.5"]
+      },
+      "common_abbreviations": ["Flange SO", "SORF"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-010"]
+    },
+    {
+      "material_id": "MAT-010",
+      "category": "piping",
+      "split": "train",
+      "canonical_name": "Gasket Spiral Wound",
+      "canonical_name_en": "Spiral Wound Gasket",
+      "specifications": {
+        "material_type": "SS304 + graphite filler",
+        "sizes": ["2 inch", "3 inch", "4 inch", "6 inch"],
+        "class": ["150", "300"],
+        "standards": ["ASME B16.20"]
+      },
+      "common_abbreviations": ["SWG", "Gasket SW", "Spiral Gasket"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-009"]
+    },
+    {
+      "material_id": "MAT-011",
+      "category": "structural_steel",
+      "split": "train",
+      "canonical_name": "Besi Beton Polos",
+      "canonical_name_en": "Plain Round Bar",
+      "specifications": {
+        "type": "plain/polos",
+        "diameters": ["6mm", "8mm", "10mm", "12mm", "16mm"],
+        "length": "12 meter",
+        "standards": ["SNI 2052"]
+      },
+      "common_abbreviations": ["Besi Beton", "Round Bar", "Besi Polos", "RB"],
+      "common_uom": ["batang", "lonjor", "kg"],
+      "related_but_different": ["MAT-012"]
+    },
+    {
+      "material_id": "MAT-012",
+      "category": "structural_steel",
+      "split": "train",
+      "canonical_name": "Besi Beton Ulir",
+      "canonical_name_en": "Deformed Bar",
+      "specifications": {
+        "type": "deformed/ulir",
+        "diameters": ["10mm", "12mm", "16mm", "19mm", "22mm", "25mm"],
+        "length": "12 meter",
+        "standards": ["SNI 2052"]
+      },
+      "common_abbreviations": ["Besi Ulir", "Deform Bar", "Besi D-form"],
+      "common_uom": ["batang", "lonjor", "kg"],
+      "related_but_different": ["MAT-011"]
+    },
+    {
+      "material_id": "MAT-013",
+      "category": "structural_steel",
+      "split": "train",
+      "canonical_name": "Baja Profil H-Beam",
+      "canonical_name_en": "H-Beam Steel Profile",
+      "specifications": {
+        "type": "H-beam / wide flange",
+        "sizes": ["100x100", "150x150", "200x200", "250x250", "300x300"],
+        "length": "6 meter / 12 meter",
+        "standards": ["JIS G3101 SS400"]
+      },
+      "common_abbreviations": ["H-Beam", "HB", "WF", "Wide Flange"],
+      "common_uom": ["batang", "kg", "ton"],
+      "related_but_different": ["MAT-014"]
+    },
+    {
+      "material_id": "MAT-014",
+      "category": "structural_steel",
+      "split": "train",
+      "canonical_name": "Baja Profil Siku",
+      "canonical_name_en": "Angle Bar",
+      "specifications": {
+        "type": "equal angle",
+        "sizes": ["30x30x3mm", "40x40x4mm", "50x50x5mm", "65x65x6mm", "75x75x8mm"],
+        "length": "6 meter",
+        "standards": ["JIS G3101 SS400"]
+      },
+      "common_abbreviations": ["Siku Baja", "Angle Iron", "Angle Bar", "L-Bar"],
+      "common_uom": ["batang", "lonjor", "kg"],
+      "related_but_different": ["MAT-013"]
+    },
+    {
+      "material_id": "MAT-015",
+      "category": "structural_steel",
+      "split": "train",
+      "canonical_name": "Plat Baja",
+      "canonical_name_en": "Steel Plate",
+      "specifications": {
+        "type": "hot rolled",
+        "thickness": ["3mm", "4.5mm", "6mm", "8mm", "10mm", "12mm"],
+        "dimensions": ["4x8 feet", "1200x2400mm", "1500x6000mm"],
+        "standards": ["JIS G3101 SS400"]
+      },
+      "common_abbreviations": ["Plat Besi", "Steel Plate", "Plate"],
+      "common_uom": ["lembar", "sheet", "kg"],
+      "related_but_different": ["MAT-016"]
+    },
+    {
+      "material_id": "MAT-016",
+      "category": "structural_steel",
+      "split": "train",
+      "canonical_name": "Plat Stainless Steel",
+      "canonical_name_en": "Stainless Steel Plate",
+      "specifications": {
+        "type": "cold rolled / hot rolled",
+        "grades": ["304", "316"],
+        "thickness": ["1mm", "2mm", "3mm", "4mm", "5mm"],
+        "dimensions": ["4x8 feet", "1220x2440mm"]
+      },
+      "common_abbreviations": ["Plat SS", "SS Plate", "Plat Stainless"],
+      "common_uom": ["lembar", "sheet", "kg"],
+      "related_but_different": ["MAT-015"]
+    },
+    {
+      "material_id": "MAT-017",
+      "category": "structural_steel",
+      "split": "train",
+      "canonical_name": "Pipa Hollow / Besi Kotak",
+      "canonical_name_en": "Rectangular Hollow Section",
+      "specifications": {
+        "type": "rectangular hollow section",
+        "sizes": ["20x20mm", "30x30mm", "40x40mm", "50x50mm", "40x20mm", "60x30mm"],
+        "thickness": ["1.2mm", "1.6mm", "2.0mm", "2.3mm"],
+        "length": "6 meter"
+      },
+      "common_abbreviations": ["Hollow", "RHS", "Besi Kotak", "Box Steel"],
+      "common_uom": ["batang", "lonjor"],
+      "related_but_different": ["MAT-013", "MAT-014"]
+    },
+    {
+      "material_id": "MAT-018",
+      "category": "bearings",
+      "split": "train",
+      "canonical_name": "Bearing Bola Radial 6200 Series",
+      "canonical_name_en": "Deep Groove Ball Bearing 6200 Series",
+      "specifications": {
+        "type": "deep groove ball bearing",
+        "series": "6200",
+        "numbers": ["6200", "6201", "6202", "6203", "6204", "6205"],
+        "seals": ["2RS (contact seal)", "ZZ (metal shield)", "open"],
+        "brands": ["SKF", "NSK", "FAG", "NTN", "KOYO"]
+      },
+      "common_abbreviations": ["Bearing", "Laher", "Ball Bearing"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-019", "MAT-020"]
+    },
+    {
+      "material_id": "MAT-019",
+      "category": "bearings",
+      "split": "train",
+      "canonical_name": "Bearing Bola Radial 6300 Series",
+      "canonical_name_en": "Deep Groove Ball Bearing 6300 Series",
+      "specifications": {
+        "type": "deep groove ball bearing",
+        "series": "6300",
+        "numbers": ["6300", "6301", "6302", "6303", "6304", "6305"],
+        "seals": ["2RS", "ZZ", "open"],
+        "brands": ["SKF", "NSK", "FAG", "NTN"]
+      },
+      "common_abbreviations": ["Bearing", "Laher"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-018", "MAT-020"]
+    },
+    {
+      "material_id": "MAT-020",
+      "category": "bearings",
+      "split": "train",
+      "canonical_name": "Bearing Pillow Block",
+      "canonical_name_en": "Pillow Block Bearing",
+      "specifications": {
+        "type": "pillow block / UCP",
+        "bore_sizes": ["20mm", "25mm", "30mm", "35mm", "40mm", "50mm"],
+        "series": ["UCP204", "UCP205", "UCP206", "UCP207", "UCP208", "UCP210"],
+        "brands": ["SKF", "NSK", "FYH", "ASAHI"]
+      },
+      "common_abbreviations": ["Pillow Block", "UCP", "Bearing Duduk"],
+      "common_uom": ["pcs", "buah", "set"],
+      "related_but_different": ["MAT-018", "MAT-019"]
+    },
+    {
+      "material_id": "MAT-021",
+      "category": "bearings",
+      "split": "train",
+      "canonical_name": "Bearing Taper Roller",
+      "canonical_name_en": "Tapered Roller Bearing",
+      "specifications": {
+        "type": "tapered roller bearing",
+        "numbers": ["30204", "30205", "30206", "30207", "30208"],
+        "brands": ["TIMKEN", "SKF", "NSK"]
+      },
+      "common_abbreviations": ["Taper Bearing", "Taper Roller"],
+      "common_uom": ["pcs", "buah", "set"],
+      "related_but_different": ["MAT-018", "MAT-019"]
+    },
+    {
+      "material_id": "MAT-022",
+      "category": "electrical",
+      "split": "train",
+      "canonical_name": "Kabel NYY",
+      "canonical_name_en": "NYY Power Cable",
+      "specifications": {
+        "type": "NYY (PVC/PVC)",
+        "cores": ["2 core", "3 core", "4 core"],
+        "cross_section": ["1.5mm²", "2.5mm²", "4mm²", "6mm²", "10mm²", "16mm²"],
+        "voltage_rating": "0.6/1kV"
+      },
+      "common_abbreviations": ["Kabel NYY", "Cable NYY"],
+      "common_uom": ["meter", "roll"],
+      "related_but_different": ["MAT-023", "MAT-024"]
+    },
+    {
+      "material_id": "MAT-023",
+      "category": "electrical",
+      "split": "train",
+      "canonical_name": "Kabel NYA",
+      "canonical_name_en": "NYA Single Core Cable",
+      "specifications": {
+        "type": "NYA (single core, PVC insulated)",
+        "cross_section": ["1.5mm²", "2.5mm²", "4mm²", "6mm²"],
+        "voltage_rating": "450/750V",
+        "colors": ["merah", "kuning", "biru", "hitam", "hijau-kuning"]
+      },
+      "common_abbreviations": ["Kabel NYA", "Cable NYA", "Kabel Tunggal"],
+      "common_uom": ["meter", "roll"],
+      "related_but_different": ["MAT-022", "MAT-024"]
+    },
+    {
+      "material_id": "MAT-024",
+      "category": "electrical",
+      "split": "train",
+      "canonical_name": "Kabel NYAF",
+      "canonical_name_en": "NYAF Flexible Cable",
+      "specifications": {
+        "type": "NYAF (flexible single core)",
+        "cross_section": ["0.75mm²", "1.5mm²", "2.5mm²", "4mm²"],
+        "voltage_rating": "450/750V"
+      },
+      "common_abbreviations": ["Kabel NYAF", "Cable Flexible", "Kabel Serabut"],
+      "common_uom": ["meter", "roll"],
+      "related_but_different": ["MAT-022", "MAT-023"]
+    },
+    {
+      "material_id": "MAT-025",
+      "category": "electrical",
+      "split": "train",
+      "canonical_name": "MCB (Miniature Circuit Breaker)",
+      "canonical_name_en": "Miniature Circuit Breaker",
+      "specifications": {
+        "type": "MCB",
+        "poles": ["1P", "2P", "3P"],
+        "current_rating": ["6A", "10A", "16A", "20A", "25A", "32A", "40A", "63A"],
+        "breaking_capacity": ["4.5kA", "6kA", "10kA"],
+        "brands": ["Schneider", "ABB", "Hager", "Legrand"]
+      },
+      "common_abbreviations": ["MCB", "Circuit Breaker", "CB"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": ["MAT-026"]
+    },
+    {
+      "material_id": "MAT-026",
+      "category": "electrical",
+      "split": "train",
+      "canonical_name": "MCCB (Molded Case Circuit Breaker)",
+      "canonical_name_en": "Molded Case Circuit Breaker",
+      "specifications": {
+        "type": "MCCB",
+        "poles": ["3P", "4P"],
+        "current_rating": ["63A", "100A", "125A", "160A", "200A", "250A"],
+        "breaking_capacity": ["18kA", "25kA", "36kA"],
+        "brands": ["Schneider", "ABB", "Mitsubishi", "LS"]
+      },
+      "common_abbreviations": ["MCCB", "Breaker"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": ["MAT-025"]
+    },
+    {
+      "material_id": "MAT-027",
+      "category": "electrical",
+      "split": "train",
+      "canonical_name": "Kontaktor Magnet",
+      "canonical_name_en": "Magnetic Contactor",
+      "specifications": {
+        "type": "AC contactor",
+        "current_rating": ["9A", "12A", "18A", "25A", "32A"],
+        "coil_voltage": ["220V AC", "380V AC", "24V DC"],
+        "brands": ["Schneider LC1D", "ABB", "Mitsubishi", "LS"]
+      },
+      "common_abbreviations": ["Kontaktor", "MC", "Magnetic Contactor"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": ["MAT-025", "MAT-026"]
+    },
+    {
+      "material_id": "MAT-028",
+      "category": "electrical",
+      "split": "train",
+      "canonical_name": "Lampu LED Industrial",
+      "canonical_name_en": "Industrial LED Light",
+      "specifications": {
+        "type": "LED highbay / LED tube",
+        "wattage": ["18W", "36W", "50W", "100W", "150W", "200W"],
+        "color_temp": ["4000K", "6500K"],
+        "ip_rating": ["IP54", "IP65"]
+      },
+      "common_abbreviations": ["Lampu LED", "LED Lamp", "Highbay LED"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-029",
+      "category": "chemicals",
+      "split": "train",
+      "canonical_name": "Pelumas Mesin Diesel",
+      "canonical_name_en": "Diesel Engine Oil",
+      "specifications": {
+        "type": "mineral / synthetic engine oil",
+        "grades": ["SAE 15W-40", "SAE 40"],
+        "classifications": ["API CI-4", "API CH-4"],
+        "packaging": ["drum 209L", "pail 20L", "jerigen 5L"]
+      },
+      "common_abbreviations": ["Oli Mesin", "Engine Oil", "Diesel Oil", "Pelumas"],
+      "common_uom": ["liter", "drum", "pail", "galon"],
+      "related_but_different": ["MAT-030", "MAT-031"]
+    },
+    {
+      "material_id": "MAT-030",
+      "category": "chemicals",
+      "split": "train",
+      "canonical_name": "Pelumas Hidrolik",
+      "canonical_name_en": "Hydraulic Oil",
+      "specifications": {
+        "type": "hydraulic oil",
+        "grades": ["ISO VG 32", "ISO VG 46", "ISO VG 68"],
+        "packaging": ["drum 209L", "pail 20L"]
+      },
+      "common_abbreviations": ["Oli Hidrolik", "Hydraulic Oil", "Oli Hydraulic"],
+      "common_uom": ["liter", "drum", "pail"],
+      "related_but_different": ["MAT-029", "MAT-031"]
+    },
+    {
+      "material_id": "MAT-031",
+      "category": "chemicals",
+      "split": "train",
+      "canonical_name": "Gemuk / Grease",
+      "canonical_name_en": "Grease",
+      "specifications": {
+        "type": "lithium-based grease",
+        "grades": ["NLGI 2", "NLGI 3"],
+        "packaging": ["cartridge 400g", "pail 15kg", "drum 180kg"]
+      },
+      "common_abbreviations": ["Grease", "Gemuk", "Stempet"],
+      "common_uom": ["kg", "cartridge", "pail", "drum"],
+      "related_but_different": ["MAT-029", "MAT-030"]
+    },
+    {
+      "material_id": "MAT-032",
+      "category": "chemicals",
+      "split": "train",
+      "canonical_name": "Cairan Pendingin / Coolant",
+      "canonical_name_en": "Coolant / Cutting Fluid",
+      "specifications": {
+        "type": "water-soluble cutting fluid",
+        "concentration": ["5-10%"],
+        "packaging": ["drum 209L", "jerigen 20L"]
+      },
+      "common_abbreviations": ["Coolant", "Cutting Oil", "Cairan Pendingin"],
+      "common_uom": ["liter", "drum"],
+      "related_but_different": ["MAT-029", "MAT-030"]
+    },
+    {
+      "material_id": "MAT-033",
+      "category": "chemicals",
+      "split": "train",
+      "canonical_name": "Cat Epoksi",
+      "canonical_name_en": "Epoxy Paint",
+      "specifications": {
+        "type": "2-component epoxy",
+        "applications": ["floor coating", "primer", "marine"],
+        "packaging": ["set 5L", "set 20L"],
+        "colors": ["abu-abu", "hijau", "biru"]
+      },
+      "common_abbreviations": ["Cat Epoxy", "Epoxy Coating", "Epoxy Paint"],
+      "common_uom": ["set", "liter", "kg", "kaleng"],
+      "related_but_different": ["MAT-034"]
+    },
+    {
+      "material_id": "MAT-034",
+      "category": "chemicals",
+      "split": "train",
+      "canonical_name": "Cat Anti Karat",
+      "canonical_name_en": "Rust Preventive Paint / Primer",
+      "specifications": {
+        "type": "zinc chromate / red oxide primer",
+        "packaging": ["kaleng 5L", "pail 20L"],
+        "colors": ["merah/red oxide", "kuning/zinc chromate"]
+      },
+      "common_abbreviations": ["Cat Dasar", "Primer", "Red Oxide", "Zinc Chromate"],
+      "common_uom": ["liter", "kaleng", "kg"],
+      "related_but_different": ["MAT-033"]
+    },
+    {
+      "material_id": "MAT-035",
+      "category": "chemicals",
+      "split": "train",
+      "canonical_name": "Semen Portland",
+      "canonical_name_en": "Portland Cement",
+      "specifications": {
+        "type": "PCC / OPC",
+        "packaging": ["sak 40kg", "sak 50kg"],
+        "brands": ["Tiga Roda", "Semen Padang", "Semen Gresik", "Holcim"]
+      },
+      "common_abbreviations": ["Semen", "Cement", "PC"],
+      "common_uom": ["sak", "zak", "kg", "ton"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-036",
+      "category": "packaging",
+      "split": "train",
+      "canonical_name": "Kardus / Karton Box",
+      "canonical_name_en": "Corrugated Carton Box",
+      "specifications": {
+        "type": "single wall / double wall",
+        "sizes": ["varies per product"],
+        "flute": ["B-flute", "BC-flute", "C-flute"]
+      },
+      "common_abbreviations": ["Karton", "Box", "Kardus", "Carton"],
+      "common_uom": ["pcs", "lembar"],
+      "related_but_different": ["MAT-037"]
+    },
+    {
+      "material_id": "MAT-037",
+      "category": "packaging",
+      "split": "train",
+      "canonical_name": "Stretch Film / Plastik Wrapping",
+      "canonical_name_en": "Stretch Wrap Film",
+      "specifications": {
+        "type": "LLDPE stretch film",
+        "width": ["50cm"],
+        "thickness": ["17 micron", "20 micron", "23 micron"],
+        "weight": ["3kg", "4kg", "5kg per roll"]
+      },
+      "common_abbreviations": ["Stretch Film", "Wrapping", "Plastik Wrapping", "Plastik Stretch"],
+      "common_uom": ["roll", "gulung"],
+      "related_but_different": ["MAT-036"]
+    },
+    {
+      "material_id": "MAT-038",
+      "category": "packaging",
+      "split": "train",
+      "canonical_name": "Lakban / Selotip Coklat",
+      "canonical_name_en": "OPP Packing Tape",
+      "specifications": {
+        "type": "OPP tape",
+        "width": ["48mm"],
+        "length": ["90 yard", "100 yard"],
+        "colors": ["coklat/bening"]
+      },
+      "common_abbreviations": ["Lakban", "Tape", "OPP Tape", "Packing Tape"],
+      "common_uom": ["roll", "gulung", "pcs"],
+      "related_but_different": ["MAT-039"]
+    },
+    {
+      "material_id": "MAT-039",
+      "category": "packaging",
+      "split": "train",
+      "canonical_name": "Tali Strapping",
+      "canonical_name_en": "PP Strapping Band",
+      "specifications": {
+        "type": "PP strapping band",
+        "width": ["12mm", "15mm"],
+        "thickness": ["0.6mm", "0.8mm"],
+        "weight": ["10kg/roll", "15kg/roll"]
+      },
+      "common_abbreviations": ["Strapping Band", "Tali Strapping", "PP Band"],
+      "common_uom": ["roll", "gulung", "kg"],
+      "related_but_different": ["MAT-038"]
+    },
+    {
+      "material_id": "MAT-040",
+      "category": "packaging",
+      "split": "train",
+      "canonical_name": "Palet Kayu",
+      "canonical_name_en": "Wooden Pallet",
+      "specifications": {
+        "type": "wooden pallet",
+        "sizes": ["80x120cm", "100x120cm", "110x110cm"],
+        "treatment": ["heat treated / ISPM-15", "fumigated"]
+      },
+      "common_abbreviations": ["Pallet", "Palet", "Wooden Pallet"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-041",
+      "category": "fasteners",
+      "split": "train",
+      "canonical_name": "Baut Hexagonal",
+      "canonical_name_en": "Hex Bolt",
+      "specifications": {
+        "type": "hex head bolt",
+        "sizes": ["M6", "M8", "M10", "M12", "M16", "M20"],
+        "lengths": ["20mm", "30mm", "40mm", "50mm", "60mm", "80mm", "100mm"],
+        "grades": ["8.8", "10.9", "12.9"],
+        "material": ["carbon steel", "stainless steel 304"]
+      },
+      "common_abbreviations": ["Baut Hex", "Hex Bolt", "Bolt"],
+      "common_uom": ["pcs", "buah", "set", "dus"],
+      "related_but_different": ["MAT-042", "MAT-043"]
+    },
+    {
+      "material_id": "MAT-042",
+      "category": "fasteners",
+      "split": "train",
+      "canonical_name": "Mur Hexagonal",
+      "canonical_name_en": "Hex Nut",
+      "specifications": {
+        "type": "hex nut",
+        "sizes": ["M6", "M8", "M10", "M12", "M16", "M20"],
+        "grades": ["8", "10"],
+        "material": ["carbon steel", "stainless steel 304"]
+      },
+      "common_abbreviations": ["Mur Hex", "Hex Nut", "Nut", "Mur"],
+      "common_uom": ["pcs", "buah", "dus", "kg"],
+      "related_but_different": ["MAT-041", "MAT-043"]
+    },
+    {
+      "material_id": "MAT-043",
+      "category": "fasteners",
+      "split": "train",
+      "canonical_name": "Ring / Washer",
+      "canonical_name_en": "Flat Washer",
+      "specifications": {
+        "type": "flat washer",
+        "sizes": ["M6", "M8", "M10", "M12", "M16", "M20"],
+        "material": ["carbon steel zinc plated", "stainless steel 304"]
+      },
+      "common_abbreviations": ["Ring Plat", "Flat Washer", "Washer", "Ring"],
+      "common_uom": ["pcs", "buah", "dus", "kg"],
+      "related_but_different": ["MAT-041", "MAT-042", "MAT-044"]
+    },
+    {
+      "material_id": "MAT-044",
+      "category": "fasteners",
+      "split": "train",
+      "canonical_name": "Ring Per / Spring Washer",
+      "canonical_name_en": "Spring Washer",
+      "specifications": {
+        "type": "spring lock washer",
+        "sizes": ["M6", "M8", "M10", "M12", "M16", "M20"],
+        "material": ["carbon steel zinc plated"]
+      },
+      "common_abbreviations": ["Ring Per", "Spring Washer", "Lock Washer"],
+      "common_uom": ["pcs", "buah", "dus", "kg"],
+      "related_but_different": ["MAT-043"]
+    },
+    {
+      "material_id": "MAT-045",
+      "category": "fasteners",
+      "split": "train",
+      "canonical_name": "Sekrup Self-Drilling",
+      "canonical_name_en": "Self-Drilling Screw",
+      "specifications": {
+        "type": "hex washer head self-drilling",
+        "sizes": ["#10x3/4\"", "#12x1\"", "#12x1.5\"", "#12x2\""],
+        "material": ["zinc plated carbon steel"]
+      },
+      "common_abbreviations": ["Baut Roofing", "Self Drill Screw", "SDS", "Tek Screw"],
+      "common_uom": ["pcs", "buah", "dus", "box"],
+      "related_but_different": ["MAT-041"]
+    },
+    {
+      "material_id": "MAT-046",
+      "category": "fasteners",
+      "split": "train",
+      "canonical_name": "Anchor Bolt / Angkur",
+      "canonical_name_en": "Expansion Anchor Bolt",
+      "specifications": {
+        "type": "wedge anchor / expansion bolt",
+        "sizes": ["M8x80", "M10x100", "M12x120", "M16x150"],
+        "material": ["carbon steel zinc plated"]
+      },
+      "common_abbreviations": ["Anchor Bolt", "Dynabolt", "Fischer", "Angkur"],
+      "common_uom": ["pcs", "buah", "set"],
+      "related_but_different": ["MAT-041"]
+    },
+    {
+      "material_id": "MAT-047",
+      "category": "tools_consumables",
+      "split": "train",
+      "canonical_name": "Elektroda Las / Kawat Las",
+      "canonical_name_en": "Welding Electrode",
+      "specifications": {
+        "type": "SMAW electrode",
+        "classifications": ["E6013", "E7016", "E7018"],
+        "diameters": ["2.6mm", "3.2mm", "4.0mm"],
+        "packaging": ["5kg/box", "20kg/carton"]
+      },
+      "common_abbreviations": ["Kawat Las", "Elektroda", "Welding Rod", "WE"],
+      "common_uom": ["kg", "dos", "box", "karton"],
+      "related_but_different": ["MAT-048"]
+    },
+    {
+      "material_id": "MAT-048",
+      "category": "tools_consumables",
+      "split": "train",
+      "canonical_name": "Kawat Las MIG",
+      "canonical_name_en": "MIG Welding Wire",
+      "specifications": {
+        "type": "GMAW/MIG wire",
+        "classifications": ["ER70S-6"],
+        "diameters": ["0.8mm", "1.0mm", "1.2mm"],
+        "packaging": ["spool 15kg"]
+      },
+      "common_abbreviations": ["MIG Wire", "Kawat MIG", "Welding Wire"],
+      "common_uom": ["kg", "spool", "roll"],
+      "related_but_different": ["MAT-047"]
+    },
+    {
+      "material_id": "MAT-049",
+      "category": "tools_consumables",
+      "split": "train",
+      "canonical_name": "Batu Gerinda Potong",
+      "canonical_name_en": "Cutting Disc",
+      "specifications": {
+        "type": "cut-off wheel",
+        "sizes": ["4 inch (105x1x16mm)", "7 inch (180x3x22mm)", "14 inch (355x3x25.4mm)"],
+        "materials": ["aluminium oxide"],
+        "brands": ["Nippon Resibon", "Norton", "3M"]
+      },
+      "common_abbreviations": ["Batu Potong", "Cutting Wheel", "Cut Off"],
+      "common_uom": ["pcs", "buah", "lembar"],
+      "related_but_different": ["MAT-050"]
+    },
+    {
+      "material_id": "MAT-050",
+      "category": "tools_consumables",
+      "split": "train",
+      "canonical_name": "Batu Gerinda Poles / Grinding Disc",
+      "canonical_name_en": "Grinding Disc",
+      "specifications": {
+        "type": "depressed center grinding wheel",
+        "sizes": ["4 inch (100x6x16mm)", "7 inch (180x6x22mm)"],
+        "materials": ["aluminium oxide"],
+        "brands": ["Nippon Resibon", "Norton"]
+      },
+      "common_abbreviations": ["Batu Poles", "Grinding Wheel", "Batu Gerinda"],
+      "common_uom": ["pcs", "buah", "lembar"],
+      "related_but_different": ["MAT-049"]
+    },
+    {
+      "material_id": "MAT-051",
+      "category": "tools_consumables",
+      "split": "train",
+      "canonical_name": "Sarung Tangan Kerja",
+      "canonical_name_en": "Work Gloves",
+      "specifications": {
+        "type": ["cotton", "nitrile coated", "leather welding"],
+        "sizes": ["M", "L", "XL"]
+      },
+      "common_abbreviations": ["Gloves", "Sarung Tangan", "Work Gloves"],
+      "common_uom": ["pasang", "pair", "dozen", "lusin"],
+      "related_but_different": ["MAT-052"]
+    },
+    {
+      "material_id": "MAT-052",
+      "category": "tools_consumables",
+      "split": "train",
+      "canonical_name": "Masker / Respirator",
+      "canonical_name_en": "Dust Mask / Respirator",
+      "specifications": {
+        "type": ["disposable dust mask", "half-face respirator"],
+        "standards": ["N95", "FFP2"],
+        "brands": ["3M", "Honeywell"]
+      },
+      "common_abbreviations": ["Masker", "Mask", "Respirator", "Dust Mask"],
+      "common_uom": ["pcs", "buah", "box"],
+      "related_but_different": ["MAT-051"]
+    },
+
+    {
+      "material_id": "MAT-053",
+      "category": "piping",
+      "split": "validation",
+      "canonical_name": "Pipa PVC",
+      "canonical_name_en": "PVC Pipe",
+      "specifications": {
+        "type": ["AW", "D"],
+        "sizes": ["0.5 inch", "1 inch", "1.5 inch", "2 inch", "3 inch", "4 inch"],
+        "length": "4 meter"
+      },
+      "common_abbreviations": ["Pipa PVC", "PVC Pipe", "Paralon"],
+      "common_uom": ["batang", "lonjor", "pcs"],
+      "related_but_different": ["MAT-001"]
+    },
+    {
+      "material_id": "MAT-054",
+      "category": "piping",
+      "split": "validation",
+      "canonical_name": "Selang Hidrolik",
+      "canonical_name_en": "Hydraulic Hose",
+      "specifications": {
+        "type": "high pressure braided hose",
+        "sizes": ["1/4 inch", "3/8 inch", "1/2 inch", "3/4 inch"],
+        "pressure_rating": ["3000 PSI", "5000 PSI"],
+        "lengths": ["custom / per meter"]
+      },
+      "common_abbreviations": ["Hose Hydraulic", "Selang Hydraulic", "Hydraulic Hose"],
+      "common_uom": ["meter", "pcs", "set"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-055",
+      "category": "structural_steel",
+      "split": "validation",
+      "canonical_name": "Baja Kanal C / CNP",
+      "canonical_name_en": "C Channel / C Purlin",
+      "specifications": {
+        "type": "light gauge C channel",
+        "sizes": ["75x35x15mm", "100x50x20mm", "125x50x20mm", "150x65x20mm"],
+        "thickness": ["1.6mm", "2.0mm", "2.3mm"],
+        "length": "6 meter"
+      },
+      "common_abbreviations": ["CNP", "C Channel", "Kanal C", "C Purlin"],
+      "common_uom": ["batang", "lonjor"],
+      "related_but_different": ["MAT-013", "MAT-014"]
+    },
+    {
+      "material_id": "MAT-056",
+      "category": "structural_steel",
+      "split": "validation",
+      "canonical_name": "Kawat Duri",
+      "canonical_name_en": "Barbed Wire",
+      "specifications": {
+        "type": "galvanized barbed wire",
+        "wire_gauge": ["BWG 14"],
+        "packaging": ["roll 50 meter", "roll 100 meter"]
+      },
+      "common_abbreviations": ["Kawat Duri", "Barb Wire", "BW"],
+      "common_uom": ["roll", "meter"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-057",
+      "category": "bearings",
+      "split": "validation",
+      "canonical_name": "V-Belt",
+      "canonical_name_en": "V-Belt",
+      "specifications": {
+        "type": "classical V-belt",
+        "sections": ["A", "B", "C"],
+        "sizes": ["A-40", "A-50", "A-60", "B-50", "B-60", "B-70", "C-60", "C-80"],
+        "brands": ["Gates", "Bando", "Mitsuboshi"]
+      },
+      "common_abbreviations": ["V-Belt", "Fan Belt", "Belt"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-058",
+      "category": "bearings",
+      "split": "validation",
+      "canonical_name": "Oil Seal",
+      "canonical_name_en": "Oil Seal / Rotary Shaft Seal",
+      "specifications": {
+        "type": "TC (double lip with spring)",
+        "sizes": ["25x42x7", "30x52x7", "35x62x10", "40x68x10", "50x72x10"],
+        "material": "NBR / FKM"
+      },
+      "common_abbreviations": ["Oil Seal", "Seal", "Shaft Seal"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-059",
+      "category": "electrical",
+      "split": "validation",
+      "canonical_name": "Thermal Overload Relay",
+      "canonical_name_en": "Thermal Overload Relay",
+      "specifications": {
+        "type": "bimetallic thermal relay",
+        "current_range": ["1-1.6A", "2.5-4A", "5.5-8A", "9-13A", "12-18A", "23-32A"],
+        "brands": ["Schneider LRD", "ABB TA", "LS MT"]
+      },
+      "common_abbreviations": ["TOR", "Overload Relay", "Thermal Relay", "OLR"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": ["MAT-027"]
+    },
+    {
+      "material_id": "MAT-060",
+      "category": "chemicals",
+      "split": "validation",
+      "canonical_name": "Thinner / Pengencer Cat",
+      "canonical_name_en": "Paint Thinner",
+      "specifications": {
+        "type": "solvent-based thinner",
+        "grades": ["A special", "B standard"],
+        "packaging": ["kaleng 1L", "jerigen 5L", "drum 200L"]
+      },
+      "common_abbreviations": ["Thinner", "Tiner", "Paint Thinner"],
+      "common_uom": ["liter", "kaleng", "jerigen"],
+      "related_but_different": ["MAT-033"]
+    },
+    {
+      "material_id": "MAT-061",
+      "category": "chemicals",
+      "split": "validation",
+      "canonical_name": "Lem Epoksi / Epoxy Adhesive",
+      "canonical_name_en": "Epoxy Adhesive",
+      "specifications": {
+        "type": "2-component epoxy adhesive",
+        "packaging": ["set 0.5kg", "set 1kg"],
+        "cure_time": ["5 min rapid", "30 min standard"]
+      },
+      "common_abbreviations": ["Lem Epoxy", "Epoxy Glue", "Epoxy Adhesive"],
+      "common_uom": ["set", "pcs", "tube"],
+      "related_but_different": ["MAT-033"]
+    },
+    {
+      "material_id": "MAT-062",
+      "category": "packaging",
+      "split": "validation",
+      "canonical_name": "Plastik PE / Kantong Plastik",
+      "canonical_name_en": "PE Plastic Bag",
+      "specifications": {
+        "type": "LDPE / HDPE bag",
+        "sizes": ["30x40cm", "40x60cm", "50x75cm", "60x100cm"],
+        "thickness": ["0.04mm", "0.06mm", "0.08mm"]
+      },
+      "common_abbreviations": ["Plastik PE", "PE Bag", "Kantong Plastik"],
+      "common_uom": ["lembar", "kg", "pak"],
+      "related_but_different": ["MAT-037"]
+    },
+    {
+      "material_id": "MAT-063",
+      "category": "fasteners",
+      "split": "validation",
+      "canonical_name": "Paku",
+      "canonical_name_en": "Wire Nail",
+      "specifications": {
+        "type": "common wire nail",
+        "sizes": ["1 inch", "2 inch", "3 inch", "4 inch", "5 inch"],
+        "material": "carbon steel"
+      },
+      "common_abbreviations": ["Paku", "Nail", "Wire Nail"],
+      "common_uom": ["kg", "dus", "box"],
+      "related_but_different": ["MAT-045"]
+    },
+    {
+      "material_id": "MAT-064",
+      "category": "tools_consumables",
+      "split": "validation",
+      "canonical_name": "Mata Bor HSS",
+      "canonical_name_en": "HSS Drill Bit",
+      "specifications": {
+        "type": "HSS twist drill bit",
+        "sizes": ["3mm", "4mm", "5mm", "6mm", "8mm", "10mm", "12mm"],
+        "material": "high speed steel"
+      },
+      "common_abbreviations": ["Drill Bit", "Mata Bor", "HSS Bit"],
+      "common_uom": ["pcs", "buah", "set"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-065",
+      "category": "tools_consumables",
+      "split": "validation",
+      "canonical_name": "Kaca Mata Safety",
+      "canonical_name_en": "Safety Glasses",
+      "specifications": {
+        "type": "safety spectacles",
+        "standards": ["ANSI Z87.1"],
+        "lens": ["clear", "dark/smoke"],
+        "brands": ["3M", "Honeywell", "Uvex"]
+      },
+      "common_abbreviations": ["Safety Glasses", "Kacamata Safety", "Kacamata Kerja"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-051"]
+    },
+    {
+      "material_id": "MAT-066",
+      "category": "tools_consumables",
+      "split": "validation",
+      "canonical_name": "Sepatu Safety",
+      "canonical_name_en": "Safety Shoes",
+      "specifications": {
+        "type": "steel toe safety shoes",
+        "standards": ["SNI", "EN ISO 20345"],
+        "sizes": ["38-46"],
+        "brands": ["Kings", "Cheetah", "Krisbow"]
+      },
+      "common_abbreviations": ["Safety Shoes", "Sepatu Safety", "Safety Boot"],
+      "common_uom": ["pasang", "pair"],
+      "related_but_different": ["MAT-051"]
+    },
+
+    {
+      "material_id": "MAT-067",
+      "category": "piping",
+      "split": "test",
+      "canonical_name": "Union Galvanis",
+      "canonical_name_en": "Galvanized Union",
+      "specifications": {
+        "type": "galvanized malleable iron union",
+        "sizes": ["0.5 inch", "1 inch", "1.5 inch", "2 inch"],
+        "class": ["150"]
+      },
+      "common_abbreviations": ["Union Galv.", "Union"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-004", "MAT-005"]
+    },
+    {
+      "material_id": "MAT-068",
+      "category": "piping",
+      "split": "test",
+      "canonical_name": "Pipa HDPE",
+      "canonical_name_en": "HDPE Pipe",
+      "specifications": {
+        "type": "high density polyethylene",
+        "grades": ["PE100"],
+        "sizes": ["2 inch", "3 inch", "4 inch", "6 inch"],
+        "pressure_rating": ["PN10", "PN16"],
+        "length": "6 meter / 12 meter"
+      },
+      "common_abbreviations": ["HDPE Pipe", "Pipa HDPE", "PE Pipe"],
+      "common_uom": ["batang", "meter"],
+      "related_but_different": ["MAT-053"]
+    },
+    {
+      "material_id": "MAT-069",
+      "category": "structural_steel",
+      "split": "test",
+      "canonical_name": "Baja Profil UNP / Kanal U",
+      "canonical_name_en": "U Channel / UNP",
+      "specifications": {
+        "type": "U channel / UNP",
+        "sizes": ["50x25mm", "65x42mm", "80x45mm", "100x50mm", "120x55mm"],
+        "length": "6 meter",
+        "standards": ["JIS G3101 SS400"]
+      },
+      "common_abbreviations": ["UNP", "U Channel", "Kanal U"],
+      "common_uom": ["batang", "lonjor", "kg"],
+      "related_but_different": ["MAT-055"]
+    },
+    {
+      "material_id": "MAT-070",
+      "category": "structural_steel",
+      "split": "test",
+      "canonical_name": "Wire Mesh / Wiremesh",
+      "canonical_name_en": "Welded Wire Mesh",
+      "specifications": {
+        "type": "welded wire mesh",
+        "wire_diameter": ["4mm", "5mm", "6mm", "8mm", "10mm"],
+        "mesh_opening": ["150x150mm"],
+        "sheet_size": ["2.1x5.4 meter"]
+      },
+      "common_abbreviations": ["Wiremesh", "Wire Mesh", "BRC"],
+      "common_uom": ["lembar", "sheet"],
+      "related_but_different": ["MAT-011"]
+    },
+    {
+      "material_id": "MAT-071",
+      "category": "structural_steel",
+      "split": "test",
+      "canonical_name": "Plat Bordes / Checkered Plate",
+      "canonical_name_en": "Checkered Plate",
+      "specifications": {
+        "type": "hot rolled checkered plate",
+        "thickness": ["3mm", "4.5mm", "6mm"],
+        "dimensions": ["4x8 feet", "1200x2400mm"],
+        "pattern": ["diamond"]
+      },
+      "common_abbreviations": ["Plat Bordes", "Checker Plate", "Checkered Plate", "Plat Kembang"],
+      "common_uom": ["lembar", "sheet", "kg"],
+      "related_but_different": ["MAT-015"]
+    },
+    {
+      "material_id": "MAT-072",
+      "category": "bearings",
+      "split": "test",
+      "canonical_name": "Rantai Industri",
+      "canonical_name_en": "Roller Chain",
+      "specifications": {
+        "type": "roller chain",
+        "standards": ["ANSI 40", "ANSI 50", "ANSI 60", "ANSI 80"],
+        "pitch": ["12.7mm", "15.875mm", "19.05mm", "25.4mm"]
+      },
+      "common_abbreviations": ["Chain", "Rantai", "Roller Chain"],
+      "common_uom": ["meter", "feet", "link"],
+      "related_but_different": ["MAT-057"]
+    },
+    {
+      "material_id": "MAT-073",
+      "category": "bearings",
+      "split": "test",
+      "canonical_name": "Sprocket",
+      "canonical_name_en": "Chain Sprocket",
+      "specifications": {
+        "type": "simplex sprocket",
+        "chain_number": ["40", "50", "60", "80"],
+        "teeth": ["15T", "17T", "19T", "21T", "25T"],
+        "bore": ["keyed / pilot"]
+      },
+      "common_abbreviations": ["Sprocket", "Gear Rantai"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-072"]
+    },
+    {
+      "material_id": "MAT-074",
+      "category": "electrical",
+      "split": "test",
+      "canonical_name": "Panel Box / Box Panel Listrik",
+      "canonical_name_en": "Electrical Enclosure",
+      "specifications": {
+        "type": "steel electrical enclosure",
+        "sizes": ["30x40x20cm", "40x50x20cm", "50x60x20cm", "60x80x25cm"],
+        "material": "powder coated steel",
+        "ip_rating": ["IP54", "IP65"]
+      },
+      "common_abbreviations": ["Panel Box", "Box Panel", "Enclosure"],
+      "common_uom": ["pcs", "buah", "unit"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-075",
+      "category": "electrical",
+      "split": "test",
+      "canonical_name": "Kabel Tray / Cable Tray",
+      "canonical_name_en": "Cable Tray",
+      "specifications": {
+        "type": ["ladder type", "perforated"],
+        "width": ["100mm", "150mm", "200mm", "300mm", "450mm", "600mm"],
+        "length": "2.4 meter",
+        "material": "hot dip galvanized"
+      },
+      "common_abbreviations": ["Cable Tray", "Kabel Tray", "Tray Kabel"],
+      "common_uom": ["pcs", "batang", "meter"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-076",
+      "category": "chemicals",
+      "split": "test",
+      "canonical_name": "Oli Transmisi / Gear Oil",
+      "canonical_name_en": "Gear Oil",
+      "specifications": {
+        "type": "mineral gear oil",
+        "grades": ["SAE 90", "SAE 140", "SAE 80W-90"],
+        "classifications": ["API GL-4", "API GL-5"],
+        "packaging": ["pail 20L", "drum 209L"]
+      },
+      "common_abbreviations": ["Gear Oil", "Oli Transmisi", "Oli Gardan"],
+      "common_uom": ["liter", "pail", "drum"],
+      "related_but_different": ["MAT-029", "MAT-030"]
+    },
+    {
+      "material_id": "MAT-077",
+      "category": "chemicals",
+      "split": "test",
+      "canonical_name": "Asam Klorida / HCl",
+      "canonical_name_en": "Hydrochloric Acid",
+      "specifications": {
+        "type": "hydrochloric acid solution",
+        "concentration": ["32%", "37%"],
+        "packaging": ["jerigen 30L", "drum 200L"]
+      },
+      "common_abbreviations": ["HCl", "Asam Klorida", "Hydrochloric Acid", "Air Keras"],
+      "common_uom": ["liter", "kg", "jerigen", "drum"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-078",
+      "category": "packaging",
+      "split": "test",
+      "canonical_name": "Bubble Wrap",
+      "canonical_name_en": "Bubble Wrap",
+      "specifications": {
+        "type": "air bubble film",
+        "bubble_size": ["10mm", "25mm"],
+        "width": ["125cm"],
+        "length": ["50 meter / roll"]
+      },
+      "common_abbreviations": ["Bubble Wrap", "Plastik Bubble", "Plastik Gelembung"],
+      "common_uom": ["roll", "meter"],
+      "related_but_different": ["MAT-037"]
+    },
+    {
+      "material_id": "MAT-079",
+      "category": "packaging",
+      "split": "test",
+      "canonical_name": "Label Stiker / Sticker Label",
+      "canonical_name_en": "Adhesive Label",
+      "specifications": {
+        "type": "self-adhesive label",
+        "material": ["art paper", "vinyl", "thermal"],
+        "sizes": ["varies"]
+      },
+      "common_abbreviations": ["Label", "Stiker", "Sticker"],
+      "common_uom": ["lembar", "roll", "pcs"],
+      "related_but_different": []
+    },
+    {
+      "material_id": "MAT-080",
+      "category": "fasteners",
+      "split": "test",
+      "canonical_name": "Rivet / Paku Keling",
+      "canonical_name_en": "Blind Rivet",
+      "specifications": {
+        "type": "aluminium blind rivet",
+        "sizes": ["3.2x8mm", "4.0x10mm", "4.8x12mm", "4.8x16mm"],
+        "material": "aluminium body / steel mandrel"
+      },
+      "common_abbreviations": ["Rivet", "Paku Keling", "Blind Rivet", "Pop Rivet"],
+      "common_uom": ["pcs", "buah", "box", "dus"],
+      "related_but_different": ["MAT-041"]
+    },
+    {
+      "material_id": "MAT-081",
+      "category": "fasteners",
+      "split": "test",
+      "canonical_name": "Baut U / U-Bolt",
+      "canonical_name_en": "U-Bolt",
+      "specifications": {
+        "type": "U-bolt with plate and nuts",
+        "pipe_sizes": ["1 inch", "2 inch", "3 inch", "4 inch"],
+        "material": "carbon steel zinc plated"
+      },
+      "common_abbreviations": ["U-Bolt", "Baut U", "Clamp U"],
+      "common_uom": ["pcs", "set", "buah"],
+      "related_but_different": ["MAT-041"]
+    },
+    {
+      "material_id": "MAT-082",
+      "category": "tools_consumables",
+      "split": "test",
+      "canonical_name": "Filter Oli Mesin",
+      "canonical_name_en": "Engine Oil Filter",
+      "specifications": {
+        "type": "spin-on oil filter",
+        "applications": ["diesel engine", "hydraulic system"],
+        "brands": ["Sakura", "Donaldson", "Fleetguard", "WIX"]
+      },
+      "common_abbreviations": ["Filter Oli", "Oil Filter", "Filter"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-083"]
+    },
+    {
+      "material_id": "MAT-083",
+      "category": "tools_consumables",
+      "split": "test",
+      "canonical_name": "Filter Udara",
+      "canonical_name_en": "Air Filter Element",
+      "specifications": {
+        "type": "air filter element",
+        "applications": ["engine", "compressor"],
+        "brands": ["Sakura", "Donaldson", "Fleetguard"]
+      },
+      "common_abbreviations": ["Filter Udara", "Air Filter", "Air Element"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-082"]
+    },
+    {
+      "material_id": "MAT-084",
+      "category": "tools_consumables",
+      "split": "test",
+      "canonical_name": "Helm Safety / Helm Proyek",
+      "canonical_name_en": "Safety Helmet",
+      "specifications": {
+        "type": "industrial safety helmet",
+        "standards": ["SNI", "ANSI Z89.1"],
+        "colors": ["putih", "kuning", "merah", "biru"],
+        "brands": ["MSA", "3M", "Krisbow"]
+      },
+      "common_abbreviations": ["Helm Safety", "Safety Helmet", "Helm Proyek", "Hard Hat"],
+      "common_uom": ["pcs", "buah"],
+      "related_but_different": ["MAT-065"]
+    }
+  ]
+}

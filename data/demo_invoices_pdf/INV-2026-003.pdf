@@ -1,0 +1,52 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 820 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-003) '
+(PO REFERENCE: PO-2026-003) '
+(VENDOR: CV Multi Makmur Fastener) '
+(DATE: 2026-08-03) '
+(CATEGORY: standard_clean) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Hex Bolt M12x50 Grade 8.8 Full Thread | 500.0 | pcs | 4,500 | 2,250,000) '
+(2 | Hex Bolt M16x60 Grade 8.8 Half Thread | 300.0 | pcs | 8,200 | 2,460,000) '
+(3 | Hex Nut M12 Grade 8 Zinc Plated | 500.0 | pcs | 1,500 | 750,000) '
+(4 | Hex Nut M16 Grade 8 Zinc Plated | 300.0 | pcs | 2,800 | 840,000) '
+(5 | Flat Washer M12 Galvanized | 1000.0 | pcs | 600 | 600,000) '
+(6 | Spring Washer M16 Galvanized | 600.0 | pcs | 900 | 540,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001111 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1181
+%%EOF

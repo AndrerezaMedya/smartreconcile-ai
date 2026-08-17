@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 677 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-002) '
+(PO REFERENCE: PO-2026-002) '
+(VENDOR: PT Cipta Mandiri Teknik) '
+(DATE: 2026-08-02) '
+(CATEGORY: standard_clean) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Deep Groove Ball Bearing 6205 2RS SKF | 25.0 | pcs | 65,000 | 1,625,000) '
+(2 | Deep Groove Ball Bearing 6305 ZZ NSK | 20.0 | pcs | 78,000 | 1,560,000) '
+(3 | Pillow Block Bearing UCP205 | 10.0 | pcs | 145,000 | 1,450,000) '
+(4 | V-Belt B-52 Mitsuboshi | 30.0 | pcs | 55,000 | 1,650,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000968 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1038
+%%EOF

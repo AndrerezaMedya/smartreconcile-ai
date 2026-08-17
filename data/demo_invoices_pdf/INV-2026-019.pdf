@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 691 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-019) '
+(PO REFERENCE: PO-2026-019) '
+(VENDOR: PT Prima Perkakas Teknik) '
+(DATE: 2026-08-19) '
+(CATEGORY: math_error) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Hacksaw Blade Sandflex 18 TPI 12 inch | 50.0 | pcs | 22,000 | 1,250,000) '
+(2 | Cutting Wheel 4 inch x 1.2mm Norton | 100.0 | pcs | 8,500 | 850,000) '
+(3 | Grinding Wheel 4 inch x 6mm Norton | 50.0 | pcs | 14,000 | 700,000) '
+(4 | Welding Electrode E6013 3.2mm Dus 5kg | 10.0 | dus | 165,000 | 1,650,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000982 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1052
+%%EOF

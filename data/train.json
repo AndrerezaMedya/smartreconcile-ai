@@ -1,0 +1,4340 @@
+[
+  {
+    "query_id": "TRA-TR-0001",
+    "invoice_line": "GALVANIZED STEEL PIPE H S L=E",
+    "po_line_id": "TRA-TR-0001-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0001-PL-N3",
+        "description": "BRASS GATE VALVE I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0001-PL-N1",
+        "description": "SLIP ON FLANGE I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0001-PL-C",
+        "description": "GALVANIZED STEEL PIPE   C L= ",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0001-PL-N2",
+        "description": "GALVANIZED ELBOW N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-001",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0002",
+    "invoice_line": "CARBON STEEL PIPE I 0 L=E",
+    "po_line_id": "TRA-TR-0002-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0002-PL-N3",
+        "description": "PVC BALL VALVE 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0002-PL-N1",
+        "description": "GALVANIZED REDUCER N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0002-PL-N2",
+        "description": "SPIRAL WOUND GASKET  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0002-PL-C",
+        "description": "CARBON STEEL PIPE     L=E",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-002",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0003",
+    "invoice_line": "STAINLESS STEEL PIPE H S L=6",
+    "po_line_id": "TRA-TR-0003-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0003-PL-N3",
+        "description": "SLIP ON FLANGE N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0003-PL-N2",
+        "description": "BRASS GATE VALVE  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0003-PL-C",
+        "description": "STAINLESS STEEL PIPE 0 4 L=M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0003-PL-N1",
+        "description": "GALVANIZED ELBOW N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-003",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0004",
+    "invoice_line": "GALVANIZED ELBOW H",
+    "po_line_id": "TRA-TR-0004-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0004-PL-N1",
+        "description": "SLIP ON FLANGE 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0004-PL-N2",
+        "description": "GALVANIZED REDUCER 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0004-PL-N3",
+        "description": "BRASS GATE VALVE C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0004-PL-C",
+        "description": "GALVANIZED ELBOW C",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-004",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0005",
+    "invoice_line": "galvanized tee c",
+    "po_line_id": "TRA-TR-0005-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0005-PL-N2",
+        "description": "SPIRAL WOUND GASKET C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0005-PL-C",
+        "description": "GALVANIZED TEE 1",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0005-PL-N1",
+        "description": "PVC BALL VALVE  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0005-PL-N3",
+        "description": "SLIP ON FLANGE H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-005",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0006",
+    "invoice_line": "GALVANIZED REDUCER 2",
+    "po_line_id": "TRA-TR-0006-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0006-PL-C",
+        "description": "GALVANIZED REDUCER I",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0006-PL-N1",
+        "description": "CARBON STEEL PIPE     L=M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0006-PL-N3",
+        "description": "STAINLESS STEEL PIPE 1 S L=M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0006-PL-N2",
+        "description": "GALVANIZED ELBOW 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-006",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0007",
+    "invoice_line": "brass gate valve i",
+    "po_line_id": "TRA-TR-0007-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0007-PL-N1",
+        "description": "SPIRAL WOUND GASKET N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0007-PL-N3",
+        "description": "CARBON STEEL PIPE 1 C L=E",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0007-PL-C",
+        "description": "BRASS GATE VALVE 5",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0007-PL-N2",
+        "description": "GALVANIZED TEE H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-007",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0008",
+    "invoice_line": "PVC BALL VALVE H",
+    "po_line_id": "TRA-TR-0008-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0008-PL-N2",
+        "description": "BRASS GATE VALVE N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0008-PL-C",
+        "description": "PVC BALL VALVE  ",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0008-PL-N1",
+        "description": "GALVANIZED STEEL PIPE N H L=T",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0008-PL-N3",
+        "description": "STAINLESS STEEL PIPE N   L=M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-008",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0009",
+    "invoice_line": "slip on flange n",
+    "po_line_id": "TRA-TR-0009-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0009-PL-N3",
+        "description": "PVC BALL VALVE I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0009-PL-C",
+        "description": "SLIP ON FLANGE C",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0009-PL-N2",
+        "description": "GALVANIZED STEEL PIPE H 0 L=6",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0009-PL-N1",
+        "description": "STAINLESS STEEL PIPE 0 C L= ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-009",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0010",
+    "invoice_line": "SPIRAL WOUND GASKET 3",
+    "po_line_id": "TRA-TR-0010-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0010-PL-N3",
+        "description": "GALVANIZED TEE C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0010-PL-N2",
+        "description": "GALVANIZED ELBOW I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0010-PL-C",
+        "description": "SPIRAL WOUND GASKET C",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0010-PL-N1",
+        "description": "STAINLESS STEEL PIPE 5   L= ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-010",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0011",
+    "invoice_line": "PLAIN ROUND BAR M",
+    "po_line_id": "TRA-TR-0011-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0011-PL-C",
+        "description": "PLAIN ROUND BAR 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0011-PL-N2",
+        "description": "H-BEAM STEEL PROFILE 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0011-PL-N1",
+        "description": "ANGLE BAR X",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0011-PL-N3",
+        "description": "STAINLESS STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-011",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0012",
+    "invoice_line": "deformed bar m",
+    "po_line_id": "TRA-TR-0012-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0012-PL-N2",
+        "description": "ANGLE BAR 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0012-PL-C",
+        "description": "DEFORMED BAR M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0012-PL-N3",
+        "description": "RECTANGULAR HOLLOW SECTION 0 T=.",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0012-PL-N1",
+        "description": "H-BEAM STEEL PROFILE 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-012",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0013",
+    "invoice_line": "h-beam steel profile 0",
+    "po_line_id": "TRA-TR-0013-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0013-PL-N3",
+        "description": "DEFORMED BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0013-PL-N1",
+        "description": "STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0013-PL-C",
+        "description": "H-BEAM STEEL PROFILE 0",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0013-PL-N2",
+        "description": "PLAIN ROUND BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-013",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0014",
+    "invoice_line": "angle bar m",
+    "po_line_id": "TRA-TR-0014-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0014-PL-C",
+        "description": "ANGLE BAR M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0014-PL-N1",
+        "description": "PLAIN ROUND BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0014-PL-N2",
+        "description": "RECTANGULAR HOLLOW SECTION M T=0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0014-PL-N3",
+        "description": "STEEL PLATE T=0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-014",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0015",
+    "invoice_line": "STEEL PLATE T=m",
+    "po_line_id": "TRA-TR-0015-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0015-PL-N3",
+        "description": "PLAIN ROUND BAR 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0015-PL-N1",
+        "description": "H-BEAM STEEL PROFILE 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0015-PL-C",
+        "description": "STEEL PLATE T=m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0015-PL-N2",
+        "description": "STAINLESS STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-015",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0016",
+    "invoice_line": "STAINLESS STEEL PLATE T=3",
+    "po_line_id": "TRA-TR-0016-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0016-PL-N1",
+        "description": "ANGLE BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0016-PL-C",
+        "description": "STAINLESS STEEL PLATE T=3",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0016-PL-N3",
+        "description": "PLAIN ROUND BAR 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0016-PL-N2",
+        "description": "H-BEAM STEEL PROFILE 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-016",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0017",
+    "invoice_line": "rectangular hollow section x t=m",
+    "po_line_id": "TRA-TR-0017-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0017-PL-N1",
+        "description": "ANGLE BAR 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0017-PL-N2",
+        "description": "STAINLESS STEEL PLATE T=3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0017-PL-C",
+        "description": "RECTANGULAR HOLLOW SECTION M T=1",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0017-PL-N3",
+        "description": "STEEL PLATE T=5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-017",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0018",
+    "invoice_line": "DEEP GROOVE BALL BEARING 6200 SERIES 0 n",
+    "po_line_id": "TRA-TR-0018-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0018-PL-C",
+        "description": "DEEP GROOVE BALL BEARING 6200 SERIES 1 n",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0018-PL-N3",
+        "description": "TAPERED ROLLER BEARING 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0018-PL-N2",
+        "description": "DEEP GROOVE BALL BEARING 6300 SERIES 6 Z",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0018-PL-N1",
+        "description": "PILLOW BLOCK BEARING",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-018",
+    "category": "bearings"
+  },
+  {
+    "query_id": "TRA-TR-0019",
+    "invoice_line": "deep groove ball bearing 6300 series 0 s",
+    "po_line_id": "TRA-TR-0019-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0019-PL-N3",
+        "description": "DEEP GROOVE BALL BEARING 6200 SERIES 5 c",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0019-PL-C",
+        "description": "DEEP GROOVE BALL BEARING 6300 SERIES 6 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0019-PL-N1",
+        "description": "TAPERED ROLLER BEARING 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0019-PL-N2",
+        "description": "PILLOW BLOCK BEARING",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-019",
+    "category": "bearings"
+  },
+  {
+    "query_id": "TRA-TR-0020",
+    "invoice_line": "pillow block bearing",
+    "po_line_id": "TRA-TR-0020-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0020-PL-C",
+        "description": "PILLOW BLOCK BEARING",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0020-PL-N2",
+        "description": "TAPERED ROLLER BEARING 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0020-PL-N1",
+        "description": "DEEP GROOVE BALL BEARING 6300 SERIES 0 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0020-PL-N3",
+        "description": "DEEP GROOVE BALL BEARING 6200 SERIES 2 n",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-020",
+    "category": "bearings"
+  },
+  {
+    "query_id": "TRA-TR-0021",
+    "invoice_line": "TAPERED ROLLER BEARING 2",
+    "po_line_id": "TRA-TR-0021-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0021-PL-C",
+        "description": "TAPERED ROLLER BEARING 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0021-PL-N1",
+        "description": "DEEP GROOVE BALL BEARING 6300 SERIES 0 o",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0021-PL-N2",
+        "description": "DEEP GROOVE BALL BEARING 6200 SERIES 3 o",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0021-PL-N3",
+        "description": "PILLOW BLOCK BEARING",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-021",
+    "category": "bearings"
+  },
+  {
+    "query_id": "TRA-TR-0022",
+    "invoice_line": "nyy power cable 4 m",
+    "po_line_id": "TRA-TR-0022-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0022-PL-N3",
+        "description": "INDUSTRIAL LED LIGHT W",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0022-PL-N2",
+        "description": "MAGNETIC CONTACTOR A",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0022-PL-N1",
+        "description": "NYA SINGLE CORE CABLE ²",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0022-PL-C",
+        "description": "NYY POWER CABLE O m",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-022",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0023",
+    "invoice_line": "NYA SINGLE CORE CABLE m",
+    "po_line_id": "TRA-TR-0023-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0023-PL-C",
+        "description": "NYA SINGLE CORE CABLE 6",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0023-PL-N1",
+        "description": "MINIATURE CIRCUIT BREAKER A 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0023-PL-N2",
+        "description": "MAGNETIC CONTACTOR 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0023-PL-N3",
+        "description": "NYAF FLEXIBLE CABLE 7",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-023",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0024",
+    "invoice_line": "NYAF FLEXIBLE CABLE ²",
+    "po_line_id": "TRA-TR-0024-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0024-PL-N3",
+        "description": "MINIATURE CIRCUIT BREAKER 3 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0024-PL-N2",
+        "description": "NYA SINGLE CORE CABLE ²",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0024-PL-C",
+        "description": "NYAF FLEXIBLE CABLE ²",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0024-PL-N1",
+        "description": "MOLDED CASE CIRCUIT BREAKER 0 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-024",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0025",
+    "invoice_line": "MCB (Miniature Circuit Breaker) 6 2",
+    "po_line_id": "TRA-TR-0025-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0025-PL-C",
+        "description": "MINIATURE CIRCUIT BREAKER A 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0025-PL-N2",
+        "description": "NYY POWER CABLE R 6",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0025-PL-N3",
+        "description": "MAGNETIC CONTACTOR A",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0025-PL-N1",
+        "description": "INDUSTRIAL LED LIGHT 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-025",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0026",
+    "invoice_line": "MCCB 3P 200A",
+    "po_line_id": "TRA-TR-0026-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0026-PL-C",
+        "description": "MOLDED CASE CIRCUIT BREAKER A 3",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0026-PL-N2",
+        "description": "MINIATURE CIRCUIT BREAKER 2 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0026-PL-N3",
+        "description": "INDUSTRIAL LED LIGHT 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0026-PL-N1",
+        "description": "NYA SINGLE CORE CABLE 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-026",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0027",
+    "invoice_line": "A MAGNETIC CONTACTOR",
+    "po_line_id": "TRA-TR-0027-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0027-PL-N1",
+        "description": "NYY POWER CABLE O 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0027-PL-N3",
+        "description": "NYAF FLEXIBLE CABLE ²",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0027-PL-C",
+        "description": "MAGNETIC CONTACTOR 1",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0027-PL-N2",
+        "description": "INDUSTRIAL LED LIGHT W",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-027",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0028",
+    "invoice_line": "Highbay",
+    "po_line_id": "TRA-TR-0028-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0028-PL-N3",
+        "description": "MAGNETIC CONTACTOR A",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0028-PL-C",
+        "description": "INDUSTRIAL LED LIGHT W",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0028-PL-N2",
+        "description": "MOLDED CASE CIRCUIT BREAKER 6 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0028-PL-N1",
+        "description": "NYY POWER CABLE E m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-028",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0029",
+    "invoice_line": "Diesel Engine Oil 4",
+    "po_line_id": "TRA-TR-0029-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0029-PL-N1",
+        "description": "RUST PREVENTIVE PAINT / PRIMER A",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0029-PL-C",
+        "description": "DIESEL ENGINE OIL S E",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0029-PL-N3",
+        "description": "HYDRAULIC OIL 4 L",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0029-PL-N2",
+        "description": "EPOXY PAINT  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-029",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0030",
+    "invoice_line": "Hydraulic Oil 6",
+    "po_line_id": "TRA-TR-0030-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0030-PL-C",
+        "description": "HYDRAULIC OIL G 0",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0030-PL-N1",
+        "description": "PORTLAND CEMENT S",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0030-PL-N2",
+        "description": "RUST PREVENTIVE PAINT / PRIMER L",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0030-PL-N3",
+        "description": "DIESEL ENGINE OIL   L",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-030",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0031",
+    "invoice_line": "Gemuk NLGI 2 cartridge 400g",
+    "po_line_id": "TRA-TR-0031-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0031-PL-N3",
+        "description": "DIESEL ENGINE OIL A I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0031-PL-N2",
+        "description": "EPOXY PAINT L",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0031-PL-N1",
+        "description": "HYDRAULIC OIL 6 U",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0031-PL-C",
+        "description": "GREASE N D",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-031",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0032",
+    "invoice_line": "/ COOLANT CUTTING M FLUID",
+    "po_line_id": "TRA-TR-0032-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0032-PL-N3",
+        "description": "GREASE N 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0032-PL-C",
+        "description": "COOLANT / CUTTING FLUID 0",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0032-PL-N2",
+        "description": "EPOXY PAINT S",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0032-PL-N1",
+        "description": "DIESEL ENGINE OIL A L",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-032",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0033",
+    "invoice_line": "Cat Epoksi set",
+    "po_line_id": "TRA-TR-0033-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0033-PL-N2",
+        "description": "PORTLAND CEMENT K",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0033-PL-N3",
+        "description": "GREASE   1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0033-PL-N1",
+        "description": "DIESEL ENGINE OIL 0 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0033-PL-C",
+        "description": "EPOXY PAINT T",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-033",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0034",
+    "invoice_line": "Rust Preventive Paint / Primer",
+    "po_line_id": "TRA-TR-0034-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0034-PL-N1",
+        "description": "COOLANT / CUTTING FLUID E",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0034-PL-N2",
+        "description": "PORTLAND CEMENT  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0034-PL-C",
+        "description": "RUST PREVENTIVE PAINT / PRIMER 5",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0034-PL-N3",
+        "description": "EPOXY PAINT T",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-034",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0035",
+    "invoice_line": "Semen Portland k",
+    "po_line_id": "TRA-TR-0035-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0035-PL-N2",
+        "description": "HYDRAULIC OIL 6 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0035-PL-C",
+        "description": "PORTLAND CEMENT G",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0035-PL-N3",
+        "description": "GREASE I I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0035-PL-N1",
+        "description": "RUST PREVENTIVE PAINT / PRIMER N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-035",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0036",
+    "invoice_line": "Carton varies per product B-flute",
+    "po_line_id": "TRA-TR-0036-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0036-PL-N2",
+        "description": "PP STRAPPING BAND .",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0036-PL-C",
+        "description": "CORRUGATED CARTON BOX",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0036-PL-N3",
+        "description": "WOODEN PALLET x",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0036-PL-N1",
+        "description": "OPP PACKING TAPE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-036",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0037",
+    "invoice_line": "FILM STRETCH r WRAP",
+    "po_line_id": "TRA-TR-0037-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0037-PL-N2",
+        "description": "OPP PACKING TAPE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0037-PL-N3",
+        "description": "CORRUGATED CARTON BOX",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0037-PL-C",
+        "description": "STRETCH WRAP FILM r",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0037-PL-N1",
+        "description": "WOODEN PALLET 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-037",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0038",
+    "invoice_line": "Tape",
+    "po_line_id": "TRA-TR-0038-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0038-PL-N2",
+        "description": "PP STRAPPING BAND .",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0038-PL-N3",
+        "description": "WOODEN PALLET x",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0038-PL-C",
+        "description": "OPP PACKING TAPE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0038-PL-N1",
+        "description": "CORRUGATED CARTON BOX",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-038",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0039",
+    "invoice_line": "PP Strapping Band",
+    "po_line_id": "TRA-TR-0039-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0039-PL-N1",
+        "description": "CORRUGATED CARTON BOX",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0039-PL-C",
+        "description": "PP STRAPPING BAND 0",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0039-PL-N2",
+        "description": "WOODEN PALLET x",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0039-PL-N3",
+        "description": "STRETCH WRAP FILM c",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-039",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0040",
+    "invoice_line": "Palet Kayu",
+    "po_line_id": "TRA-TR-0040-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0040-PL-N3",
+        "description": "CORRUGATED CARTON BOX",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0040-PL-N1",
+        "description": "STRETCH WRAP FILM n",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0040-PL-N2",
+        "description": "PP STRAPPING BAND 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0040-PL-C",
+        "description": "WOODEN PALLET m",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-040",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0041",
+    "invoice_line": "Bolt M12 20mm",
+    "po_line_id": "TRA-TR-0041-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0041-PL-N1",
+        "description": "HEX NUT 8 GR.0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0041-PL-N3",
+        "description": "SPRING WASHER 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0041-PL-N2",
+        "description": "SELF-DRILLING SCREW X",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0041-PL-C",
+        "description": "HEX BOLT 1 GR.1 0",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-041",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0042",
+    "invoice_line": "6 HEX NUT GR.8",
+    "po_line_id": "TRA-TR-0042-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0042-PL-N2",
+        "description": "FLAT WASHER 6",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0042-PL-N1",
+        "description": "SPRING WASHER 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0042-PL-C",
+        "description": "HEX NUT 6 GR.8",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0042-PL-N3",
+        "description": "HEX BOLT 6 GR.. m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-042",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0043",
+    "invoice_line": "Ring",
+    "po_line_id": "TRA-TR-0043-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0043-PL-C",
+        "description": "FLAT WASHER M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0043-PL-N3",
+        "description": "EXPANSION ANCHOR BOLT 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0043-PL-N2",
+        "description": "SELF-DRILLING SCREW 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0043-PL-N1",
+        "description": "HEX NUT 0 GR.0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-043",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0044",
+    "invoice_line": "Spring Washer M",
+    "po_line_id": "TRA-TR-0044-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0044-PL-N1",
+        "description": "EXPANSION ANCHOR BOLT 8",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0044-PL-C",
+        "description": "SPRING WASHER 6",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0044-PL-N3",
+        "description": "SELF-DRILLING SCREW 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0044-PL-N2",
+        "description": "HEX NUT 1 GR.0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-044",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0045",
+    "invoice_line": "Self Drill Screw 2",
+    "po_line_id": "TRA-TR-0045-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0045-PL-N1",
+        "description": "EXPANSION ANCHOR BOLT M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0045-PL-C",
+        "description": "SELF-DRILLING SCREW X",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0045-PL-N3",
+        "description": "HEX NUT 1 GR.0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0045-PL-N2",
+        "description": "FLAT WASHER 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-045",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0046",
+    "invoice_line": "Anchor Bolt M8x80 carbon steel zinc plated",
+    "po_line_id": "TRA-TR-0046-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0046-PL-N1",
+        "description": "FLAT WASHER M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0046-PL-C",
+        "description": "EXPANSION ANCHOR BOLT X",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0046-PL-N2",
+        "description": "HEX NUT M GR.1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0046-PL-N3",
+        "description": "HEX BOLT M GR.. 8",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-046",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0047",
+    "invoice_line": "WELDING ELECTRODE",
+    "po_line_id": "TRA-TR-0047-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0047-PL-N3",
+        "description": "GRINDING DISC i",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0047-PL-N2",
+        "description": "DUST MASK / RESPIRATOR 9",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0047-PL-N1",
+        "description": "CUTTING DISC m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0047-PL-C",
+        "description": "WELDING ELECTRODE",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-047",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0048",
+    "invoice_line": "Welding",
+    "po_line_id": "TRA-TR-0048-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0048-PL-C",
+        "description": "MIG WELDING WIRE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0048-PL-N3",
+        "description": "DUST MASK / RESPIRATOR F",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0048-PL-N1",
+        "description": "CUTTING DISC 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0048-PL-N2",
+        "description": "GRINDING DISC x",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-048",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0049",
+    "invoice_line": "Cutting Disc 2",
+    "po_line_id": "TRA-TR-0049-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0049-PL-C",
+        "description": "CUTTING DISC 4",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0049-PL-N2",
+        "description": "MIG WELDING WIRE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0049-PL-N3",
+        "description": "WELDING ELECTRODE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0049-PL-N1",
+        "description": "DUST MASK / RESPIRATOR F",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-049",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0050",
+    "invoice_line": "Grinding Wheel m",
+    "po_line_id": "TRA-TR-0050-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0050-PL-C",
+        "description": "GRINDING DISC c",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0050-PL-N2",
+        "description": "WORK GLOVES M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0050-PL-N1",
+        "description": "DUST MASK / RESPIRATOR N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0050-PL-N3",
+        "description": "MIG WELDING WIRE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-050",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0051",
+    "invoice_line": "Gloves cotton XL",
+    "po_line_id": "TRA-TR-0051-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0051-PL-C",
+        "description": "WORK GLOVES L",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0051-PL-N3",
+        "description": "MIG WELDING WIRE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0051-PL-N2",
+        "description": "DUST MASK / RESPIRATOR N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0051-PL-N1",
+        "description": "WELDING ELECTRODE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-051",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0052",
+    "invoice_line": "2 RESPIRATOR DUST / MASK",
+    "po_line_id": "TRA-TR-0052-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0052-PL-N1",
+        "description": "GRINDING DISC (",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0052-PL-N3",
+        "description": "MIG WELDING WIRE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0052-PL-C",
+        "description": "DUST MASK / RESPIRATOR 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0052-PL-N2",
+        "description": "WELDING ELECTRODE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-052",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0053",
+    "invoice_line": "Pipa Baja",
+    "po_line_id": "TRA-TR-0053-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0053-PL-N1",
+        "description": "PVC BALL VALVE N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0053-PL-C",
+        "description": "GALVANIZED STEEL PIPE H 0 L=M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0053-PL-N3",
+        "description": "BRASS GATE VALVE C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0053-PL-N2",
+        "description": "GALVANIZED ELBOW 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-001",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0054",
+    "invoice_line": "Carbon Steel Pipe   h",
+    "po_line_id": "TRA-TR-0054-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0054-PL-N2",
+        "description": "STAINLESS STEEL PIPE   C L=E",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0054-PL-N1",
+        "description": "GALVANIZED REDUCER C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0054-PL-N3",
+        "description": "PVC BALL VALVE  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0054-PL-C",
+        "description": "CARBON STEEL PIPE I 0 L=6",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-002",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0055",
+    "invoice_line": "Pipa Stainless h c",
+    "po_line_id": "TRA-TR-0055-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0055-PL-C",
+        "description": "STAINLESS STEEL PIPE 0   L=6",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0055-PL-N3",
+        "description": "SPIRAL WOUND GASKET  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0055-PL-N2",
+        "description": "GALVANIZED REDUCER 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0055-PL-N1",
+        "description": "BRASS GATE VALVE 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-003",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0056",
+    "invoice_line": "Belokan Galv. 45 degree 0.5 inch",
+    "po_line_id": "TRA-TR-0056-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0056-PL-C",
+        "description": "GALVANIZED ELBOW C",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0056-PL-N1",
+        "description": "SLIP ON FLANGE I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0056-PL-N3",
+        "description": "GALVANIZED STEEL PIPE C C L=6",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0056-PL-N2",
+        "description": "CARBON STEEL PIPE H C L=R",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-004",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0057",
+    "invoice_line": "GALVANIZED TEE",
+    "po_line_id": "TRA-TR-0057-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0057-PL-N3",
+        "description": "PVC BALL VALVE .",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0057-PL-N1",
+        "description": "STAINLESS STEEL PIPE I   L=E",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0057-PL-N2",
+        "description": "GALVANIZED REDUCER  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0057-PL-C",
+        "description": "GALVANIZED TEE  ",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-005",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0058",
+    "invoice_line": "Reducer",
+    "po_line_id": "TRA-TR-0058-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0058-PL-C",
+        "description": "GALVANIZED REDUCER H",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0058-PL-N1",
+        "description": "STAINLESS STEEL PIPE C H L=E",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0058-PL-N2",
+        "description": "GALVANIZED ELBOW H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0058-PL-N3",
+        "description": "GALVANIZED STEEL PIPE C S L=R",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-006",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0059",
+    "invoice_line": "Brass Gate Valve n",
+    "po_line_id": "TRA-TR-0059-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0059-PL-N1",
+        "description": "GALVANIZED ELBOW N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0059-PL-C",
+        "description": "BRASS GATE VALVE  ",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0059-PL-N2",
+        "description": "GALVANIZED REDUCER 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0059-PL-N3",
+        "description": "GALVANIZED TEE N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-007",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0060",
+    "invoice_line": "BV PVC 2",
+    "po_line_id": "TRA-TR-0060-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0060-PL-N1",
+        "description": "SPIRAL WOUND GASKET H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0060-PL-N2",
+        "description": "SLIP ON FLANGE C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0060-PL-N3",
+        "description": "BRASS GATE VALVE  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0060-PL-C",
+        "description": "PVC BALL VALVE  ",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-008",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0061",
+    "invoice_line": "Flange SO slip on 6 inch",
+    "po_line_id": "TRA-TR-0061-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0061-PL-N1",
+        "description": "GALVANIZED STEEL PIPE C   L=R",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0061-PL-N2",
+        "description": "PVC BALL VALVE H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0061-PL-C",
+        "description": "SLIP ON FLANGE C",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0061-PL-N3",
+        "description": "BRASS GATE VALVE N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-009",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0062",
+    "invoice_line": "SPIRAL H GASKET WOUND",
+    "po_line_id": "TRA-TR-0062-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0062-PL-C",
+        "description": "SPIRAL WOUND GASKET H",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0062-PL-N1",
+        "description": "GALVANIZED STEEL PIPE   0 L=E",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0062-PL-N3",
+        "description": "GALVANIZED TEE H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0062-PL-N2",
+        "description": "STAINLESS STEEL PIPE   S L=E",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-010",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0063",
+    "invoice_line": "Besi",
+    "po_line_id": "TRA-TR-0063-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0063-PL-N1",
+        "description": "H-BEAM STEEL PROFILE 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0063-PL-N2",
+        "description": "DEFORMED BAR 9",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0063-PL-C",
+        "description": "PLAIN ROUND BAR M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0063-PL-N3",
+        "description": "STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-011",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0064",
+    "invoice_line": "Deformed Bar 9",
+    "po_line_id": "TRA-TR-0064-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0064-PL-N3",
+        "description": "STEEL PLATE T=1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0064-PL-N1",
+        "description": "PLAIN ROUND BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0064-PL-C",
+        "description": "DEFORMED BAR M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0064-PL-N2",
+        "description": "STAINLESS STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-012",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0065",
+    "invoice_line": "HB 0",
+    "po_line_id": "TRA-TR-0065-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0065-PL-N2",
+        "description": "PLAIN ROUND BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0065-PL-N1",
+        "description": "STEEL PLATE T=3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0065-PL-N3",
+        "description": "STAINLESS STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0065-PL-C",
+        "description": "H-BEAM STEEL PROFILE 0",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-013",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0066",
+    "invoice_line": "Siku Baja 65x65x6mm JIS G3101 SS400",
+    "po_line_id": "TRA-TR-0066-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0066-PL-N2",
+        "description": "DEFORMED BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0066-PL-C",
+        "description": "ANGLE BAR 6",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0066-PL-N1",
+        "description": "STAINLESS STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0066-PL-N3",
+        "description": "PLAIN ROUND BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-014",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0067",
+    "invoice_line": "PLATE STEEL T=8",
+    "po_line_id": "TRA-TR-0067-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0067-PL-N3",
+        "description": "H-BEAM STEEL PROFILE 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0067-PL-N1",
+        "description": "DEFORMED BAR 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0067-PL-N2",
+        "description": "ANGLE BAR 7",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0067-PL-C",
+        "description": "STEEL PLATE T=m",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-015",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0068",
+    "invoice_line": "Plat",
+    "po_line_id": "TRA-TR-0068-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0068-PL-N1",
+        "description": "RECTANGULAR HOLLOW SECTION 6 T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0068-PL-C",
+        "description": "STAINLESS STEEL PLATE T=m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0068-PL-N2",
+        "description": "ANGLE BAR 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0068-PL-N3",
+        "description": "PLAIN ROUND BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-016",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0069",
+    "invoice_line": "Rectangular Hollow Section m",
+    "po_line_id": "TRA-TR-0069-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0069-PL-N1",
+        "description": "STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0069-PL-C",
+        "description": "RECTANGULAR HOLLOW SECTION 0 T=m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0069-PL-N2",
+        "description": "PLAIN ROUND BAR 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0069-PL-N3",
+        "description": "STAINLESS STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-017",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0070",
+    "invoice_line": "Ball Bearing 0 c",
+    "po_line_id": "TRA-TR-0070-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0070-PL-C",
+        "description": "DEEP GROOVE BALL BEARING 6200 SERIES 2 n",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0070-PL-N2",
+        "description": "PILLOW BLOCK BEARING",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0070-PL-N3",
+        "description": "DEEP GROOVE BALL BEARING 6300 SERIES 1 o",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0070-PL-N1",
+        "description": "TAPERED ROLLER BEARING 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-018",
+    "category": "bearings"
+  },
+  {
+    "query_id": "TRA-TR-0071",
+    "invoice_line": "Laher 6301 2RS",
+    "po_line_id": "TRA-TR-0071-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0071-PL-C",
+        "description": "DEEP GROOVE BALL BEARING 6300 SERIES 3 S",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0071-PL-N1",
+        "description": "PILLOW BLOCK BEARING",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0071-PL-N2",
+        "description": "TAPERED ROLLER BEARING 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0071-PL-N3",
+        "description": "DEEP GROOVE BALL BEARING 6200 SERIES 0 t",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-019",
+    "category": "bearings"
+  },
+  {
+    "query_id": "TRA-TR-0072",
+    "invoice_line": "BEARING BLOCK PILLOW",
+    "po_line_id": "TRA-TR-0072-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0072-PL-N3",
+        "description": "TAPERED ROLLER BEARING 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0072-PL-C",
+        "description": "PILLOW BLOCK BEARING",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0072-PL-N2",
+        "description": "DEEP GROOVE BALL BEARING 6300 SERIES 0 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0072-PL-N1",
+        "description": "DEEP GROOVE BALL BEARING 6200 SERIES 2 n",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-020",
+    "category": "bearings"
+  },
+  {
+    "query_id": "TRA-TR-0073",
+    "invoice_line": "Bearing Taper Roller",
+    "po_line_id": "TRA-TR-0073-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0073-PL-N2",
+        "description": "PILLOW BLOCK BEARING",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0073-PL-C",
+        "description": "TAPERED ROLLER BEARING 0",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0073-PL-N1",
+        "description": "DEEP GROOVE BALL BEARING 6200 SERIES 6 d",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0073-PL-N3",
+        "description": "DEEP GROOVE BALL BEARING 6300 SERIES 3 e",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-021",
+    "category": "bearings"
+  },
+  {
+    "query_id": "TRA-TR-0074",
+    "invoice_line": "NYY Power Cable 4 ²",
+    "po_line_id": "TRA-TR-0074-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0074-PL-N2",
+        "description": "MOLDED CASE CIRCUIT BREAKER 0 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0074-PL-C",
+        "description": "NYY POWER CABLE   m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0074-PL-N1",
+        "description": "NYAF FLEXIBLE CABLE m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0074-PL-N3",
+        "description": "MAGNETIC CONTACTOR A",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-022",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0075",
+    "invoice_line": "Cable NYA 5",
+    "po_line_id": "TRA-TR-0075-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0075-PL-C",
+        "description": "NYA SINGLE CORE CABLE m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0075-PL-N3",
+        "description": "INDUSTRIAL LED LIGHT 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0075-PL-N1",
+        "description": "NYY POWER CABLE R 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0075-PL-N2",
+        "description": "MOLDED CASE CIRCUIT BREAKER 6 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-023",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0076",
+    "invoice_line": "Kabel Serabut 2.5mm²",
+    "po_line_id": "TRA-TR-0076-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0076-PL-N2",
+        "description": "MOLDED CASE CIRCUIT BREAKER 5 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0076-PL-N3",
+        "description": "NYA SINGLE CORE CABLE 6",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0076-PL-N1",
+        "description": "MAGNETIC CONTACTOR A",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0076-PL-C",
+        "description": "NYAF FLEXIBLE CABLE m",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-024",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0077",
+    "invoice_line": "BREAKER 1 CIRCUIT A MINIATURE",
+    "po_line_id": "TRA-TR-0077-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0077-PL-N3",
+        "description": "MAGNETIC CONTACTOR A",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0077-PL-N1",
+        "description": "INDUSTRIAL LED LIGHT W",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0077-PL-C",
+        "description": "MINIATURE CIRCUIT BREAKER 4 P",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0077-PL-N2",
+        "description": "NYY POWER CABLE O 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-025",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0078",
+    "invoice_line": "MCCB",
+    "po_line_id": "TRA-TR-0078-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0078-PL-N2",
+        "description": "NYY POWER CABLE E .",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0078-PL-N1",
+        "description": "MINIATURE CIRCUIT BREAKER 3 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0078-PL-N3",
+        "description": "NYA SINGLE CORE CABLE m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0078-PL-C",
+        "description": "MOLDED CASE CIRCUIT BREAKER A P",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-026",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0079",
+    "invoice_line": "Magnetic Contactor A",
+    "po_line_id": "TRA-TR-0079-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0079-PL-N3",
+        "description": "NYY POWER CABLE   m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0079-PL-N2",
+        "description": "MINIATURE CIRCUIT BREAKER 3 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0079-PL-N1",
+        "description": "NYA SINGLE CORE CABLE m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0079-PL-C",
+        "description": "MAGNETIC CONTACTOR A",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-027",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0080",
+    "invoice_line": "Highbay LED 0",
+    "po_line_id": "TRA-TR-0080-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0080-PL-N3",
+        "description": "MOLDED CASE CIRCUIT BREAKER 2 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0080-PL-C",
+        "description": "INDUSTRIAL LED LIGHT 5",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0080-PL-N2",
+        "description": "NYY POWER CABLE 3 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0080-PL-N1",
+        "description": "NYA SINGLE CORE CABLE 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-028",
+    "category": "electrical"
+  },
+  {
+    "query_id": "TRA-TR-0081",
+    "invoice_line": "Pelumas SAE 15W-40 API CI-4",
+    "po_line_id": "TRA-TR-0081-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0081-PL-C",
+        "description": "DIESEL ENGINE OIL - E",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0081-PL-N3",
+        "description": "EPOXY PAINT 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0081-PL-N1",
+        "description": "RUST PREVENTIVE PAINT / PRIMER 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0081-PL-N2",
+        "description": "GREASE G G",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-029",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0082",
+    "invoice_line": "V HYDRAULIC P OIL",
+    "po_line_id": "TRA-TR-0082-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0082-PL-N2",
+        "description": "DIESEL ENGINE OIL 0 J",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0082-PL-N3",
+        "description": "EPOXY PAINT T",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0082-PL-N1",
+        "description": "PORTLAND CEMENT K",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0082-PL-C",
+        "description": "HYDRAULIC OIL I P",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-030",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0083",
+    "invoice_line": "Stempet NLGI",
+    "po_line_id": "TRA-TR-0083-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0083-PL-N2",
+        "description": "DIESEL ENGINE OIL 4 L",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0083-PL-N3",
+        "description": "PORTLAND CEMENT S",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0083-PL-C",
+        "description": "GREASE 3 M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0083-PL-N1",
+        "description": "RUST PREVENTIVE PAINT / PRIMER P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-031",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0084",
+    "invoice_line": "Coolant / Cutting Fluid",
+    "po_line_id": "TRA-TR-0084-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0084-PL-N3",
+        "description": "GREASE 3 R",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0084-PL-C",
+        "description": "COOLANT / CUTTING FLUID R",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0084-PL-N1",
+        "description": "EPOXY PAINT S",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0084-PL-N2",
+        "description": "RUST PREVENTIVE PAINT / PRIMER L",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-032",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0085",
+    "invoice_line": "Epoxy Paint e",
+    "po_line_id": "TRA-TR-0085-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0085-PL-N1",
+        "description": "COOLANT / CUTTING FLUID U",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0085-PL-C",
+        "description": "EPOXY PAINT  ",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0085-PL-HN1",
+        "description": "EPOXY PAINT T",
+        "is_correct": false,
+        "neg_type": "spec_diff_applications"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-033",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0086",
+    "invoice_line": "Cat Anti Karat k",
+    "po_line_id": "TRA-TR-0086-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0086-PL-HN2",
+        "description": "RUST PREVENTIVE PAINT / PRIMER N",
+        "is_correct": false,
+        "neg_type": "spec_diff_colors"
+      },
+      {
+        "po_line_id": "TRA-TR-0086-PL-HN1",
+        "description": "RUST PREVENTIVE PAINT / PRIMER 0",
+        "is_correct": false,
+        "neg_type": "spec_diff_packaging"
+      },
+      {
+        "po_line_id": "TRA-TR-0086-PL-C",
+        "description": "RUST PREVENTIVE PAINT / PRIMER G",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0086-PL-N1",
+        "description": "PORTLAND CEMENT 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-034",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0087",
+    "invoice_line": "Semen Portland s",
+    "po_line_id": "TRA-TR-0087-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0087-PL-N1",
+        "description": "RUST PREVENTIVE PAINT / PRIMER 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0087-PL-HN1",
+        "description": "PORTLAND CEMENT G",
+        "is_correct": false,
+        "neg_type": "spec_diff_packaging"
+      },
+      {
+        "po_line_id": "TRA-TR-0087-PL-C",
+        "description": "PORTLAND CEMENT K",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0087-PL-HN2",
+        "description": "PORTLAND CEMENT S",
+        "is_correct": false,
+        "neg_type": "spec_diff_brands"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-035",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "TRA-TR-0088",
+    "invoice_line": "Karton",
+    "po_line_id": "TRA-TR-0088-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0088-PL-C",
+        "description": "CORRUGATED CARTON BOX",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0088-PL-N1",
+        "description": "OPP PACKING TAPE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-036",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0089",
+    "invoice_line": "Wrapping",
+    "po_line_id": "TRA-TR-0089-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0089-PL-HN2",
+        "description": "STRETCH WRAP FILM o",
+        "is_correct": false,
+        "neg_type": "spec_diff_weight"
+      },
+      {
+        "po_line_id": "TRA-TR-0089-PL-N1",
+        "description": "OPP PACKING TAPE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0089-PL-HN1",
+        "description": "STRETCH WRAP FILM i",
+        "is_correct": false,
+        "neg_type": "spec_diff_thickness"
+      },
+      {
+        "po_line_id": "TRA-TR-0089-PL-C",
+        "description": "STRETCH WRAP FILM 7",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-037",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0090",
+    "invoice_line": "OPP Tape",
+    "po_line_id": "TRA-TR-0090-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0090-PL-N1",
+        "description": "STRETCH WRAP FILM i",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0090-PL-C",
+        "description": "OPP PACKING TAPE",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-038",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0091",
+    "invoice_line": "Tali Strapping",
+    "po_line_id": "TRA-TR-0091-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0091-PL-C",
+        "description": "PP STRAPPING BAND m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0091-PL-N1",
+        "description": "STRETCH WRAP FILM 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0091-PL-HN2",
+        "description": "PP STRAPPING BAND 6",
+        "is_correct": false,
+        "neg_type": "spec_diff_thickness"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-039",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0092",
+    "invoice_line": "Palet",
+    "po_line_id": "TRA-TR-0092-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0092-PL-HN2",
+        "description": "WOODEN PALLET 1",
+        "is_correct": false,
+        "neg_type": "spec_diff_treatment"
+      },
+      {
+        "po_line_id": "TRA-TR-0092-PL-N1",
+        "description": "CORRUGATED CARTON BOX",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0092-PL-C",
+        "description": "WOODEN PALLET 2",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-040",
+    "category": "packaging"
+  },
+  {
+    "query_id": "TRA-TR-0093",
+    "invoice_line": "Bolt 2",
+    "po_line_id": "TRA-TR-0093-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0093-PL-HN1",
+        "description": "HEX BOLT 1 GR.8 0",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "TRA-TR-0093-PL-C",
+        "description": "HEX BOLT 2 GR.. 6",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0093-PL-N1",
+        "description": "HEX NUT M GR.8",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0093-PL-HN2",
+        "description": "HEX BOLT 2 GR.. m",
+        "is_correct": false,
+        "neg_type": "spec_diff_lengths"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-041",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0094",
+    "invoice_line": "Mur 1",
+    "po_line_id": "TRA-TR-0094-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0094-PL-C",
+        "description": "HEX NUT 1 GR.8",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0094-PL-HN2",
+        "description": "HEX NUT M GR.1",
+        "is_correct": false,
+        "neg_type": "spec_diff_grades"
+      },
+      {
+        "po_line_id": "TRA-TR-0094-PL-HN1",
+        "description": "HEX NUT 6 GR.8",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "TRA-TR-0094-PL-N1",
+        "description": "FLAT WASHER M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-042",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0095",
+    "invoice_line": "Ring Plat M",
+    "po_line_id": "TRA-TR-0095-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0095-PL-HN1",
+        "description": "FLAT WASHER 0",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "TRA-TR-0095-PL-C",
+        "description": "FLAT WASHER M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0095-PL-HN2",
+        "description": "FLAT WASHER 8",
+        "is_correct": false,
+        "neg_type": "spec_diff_material"
+      },
+      {
+        "po_line_id": "TRA-TR-0095-PL-N1",
+        "description": "SPRING WASHER M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-043",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0096",
+    "invoice_line": "Spring Washer 0",
+    "po_line_id": "TRA-TR-0096-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0096-PL-N1",
+        "description": "HEX BOLT M GR.8 m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0096-PL-HN1",
+        "description": "SPRING WASHER 6",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "TRA-TR-0096-PL-C",
+        "description": "SPRING WASHER 0",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-044",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0097",
+    "invoice_line": "Sekrup Self-Drilling \"",
+    "po_line_id": "TRA-TR-0097-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0097-PL-N1",
+        "description": "SPRING WASHER 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0097-PL-C",
+        "description": "SELF-DRILLING SCREW 1",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0097-PL-HN1",
+        "description": "SELF-DRILLING SCREW 2",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-045",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0098",
+    "invoice_line": "Anchor Bolt M",
+    "po_line_id": "TRA-TR-0098-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0098-PL-N1",
+        "description": "SPRING WASHER M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0098-PL-C",
+        "description": "EXPANSION ANCHOR BOLT 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0098-PL-HN1",
+        "description": "EXPANSION ANCHOR BOLT M",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-046",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "TRA-TR-0099",
+    "invoice_line": "WE",
+    "po_line_id": "TRA-TR-0099-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0099-PL-C",
+        "description": "WELDING ELECTRODE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0099-PL-N1",
+        "description": "CUTTING DISC 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-047",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0100",
+    "invoice_line": "Kawat Las MIG",
+    "po_line_id": "TRA-TR-0100-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0100-PL-N1",
+        "description": "DUST MASK / RESPIRATOR 9",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0100-PL-C",
+        "description": "MIG WELDING WIRE",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-048",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0101",
+    "invoice_line": "Batu Gerinda Potong 2",
+    "po_line_id": "TRA-TR-0101-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0101-PL-HN2",
+        "description": "CUTTING DISC x",
+        "is_correct": false,
+        "neg_type": "spec_diff_brands"
+      },
+      {
+        "po_line_id": "TRA-TR-0101-PL-C",
+        "description": "CUTTING DISC i",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0101-PL-N1",
+        "description": "DUST MASK / RESPIRATOR F",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-049",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0102",
+    "invoice_line": "Batu Poles  ",
+    "po_line_id": "TRA-TR-0102-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0102-PL-HN2",
+        "description": "GRINDING DISC x",
+        "is_correct": false,
+        "neg_type": "spec_diff_brands"
+      },
+      {
+        "po_line_id": "TRA-TR-0102-PL-C",
+        "description": "GRINDING DISC 0",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0102-PL-N1",
+        "description": "CUTTING DISC x",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0102-PL-HN1",
+        "description": "GRINDING DISC m",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-050",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0103",
+    "invoice_line": "Sarung Tangan L",
+    "po_line_id": "TRA-TR-0103-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0103-PL-N1",
+        "description": "WELDING ELECTRODE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0103-PL-C",
+        "description": "WORK GLOVES L",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0103-PL-HN2",
+        "description": "WORK GLOVES X",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-051",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0104",
+    "invoice_line": "Dust Mask",
+    "po_line_id": "TRA-TR-0104-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0104-PL-C",
+        "description": "DUST MASK / RESPIRATOR 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0104-PL-N1",
+        "description": "GRINDING DISC  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0104-PL-HN2",
+        "description": "DUST MASK / RESPIRATOR N",
+        "is_correct": false,
+        "neg_type": "spec_diff_standards"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-052",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "TRA-TR-0105",
+    "invoice_line": "GIP h 0 e",
+    "po_line_id": "TRA-TR-0105-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0105-PL-HN2",
+        "description": "GALVANIZED STEEL PIPE I S L=6",
+        "is_correct": false,
+        "neg_type": "spec_diff_schedules"
+      },
+      {
+        "po_line_id": "TRA-TR-0105-PL-C",
+        "description": "GALVANIZED STEEL PIPE I C L=T",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0105-PL-N1",
+        "description": "SLIP ON FLANGE I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0105-PL-HN1",
+        "description": "GALVANIZED STEEL PIPE I H L=T",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-001",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0106",
+    "invoice_line": "Pipa Baja Karbon   c",
+    "po_line_id": "TRA-TR-0106-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0106-PL-C",
+        "description": "CARBON STEEL PIPE I H L=R",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0106-PL-HN2",
+        "description": "CARBON STEEL PIPE   0 L=E",
+        "is_correct": false,
+        "neg_type": "spec_diff_schedules"
+      },
+      {
+        "po_line_id": "TRA-TR-0106-PL-N1",
+        "description": "PVC BALL VALVE C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0106-PL-HN1",
+        "description": "CARBON STEEL PIPE H 8 L=M",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-002",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0107",
+    "invoice_line": "Pipa Stainless Steel i s e",
+    "po_line_id": "TRA-TR-0107-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0107-PL-C",
+        "description": "STAINLESS STEEL PIPE C 1 L= ",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0107-PL-HN1",
+        "description": "STAINLESS STEEL PIPE     L=M",
+        "is_correct": false,
+        "neg_type": "spec_diff_grades"
+      },
+      {
+        "po_line_id": "TRA-TR-0107-PL-N1",
+        "description": "GALVANIZED REDUCER 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0107-PL-HN2",
+        "description": "STAINLESS STEEL PIPE N   L= ",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-003",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0108",
+    "invoice_line": "Elbow Galv.  ",
+    "po_line_id": "TRA-TR-0108-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0108-PL-N1",
+        "description": "SPIRAL WOUND GASKET I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0108-PL-HN1",
+        "description": "GALVANIZED ELBOW 3",
+        "is_correct": false,
+        "neg_type": "spec_diff_types"
+      },
+      {
+        "po_line_id": "TRA-TR-0108-PL-C",
+        "description": "GALVANIZED ELBOW  ",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0108-PL-HN2",
+        "description": "GALVANIZED ELBOW C",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-004",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0109",
+    "invoice_line": "T Galv. h",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0109-PL-N1",
+        "description": "GALVANIZED ELBOW N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0109-PL-N2",
+        "description": "SPIRAL WOUND GASKET 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0109-PL-N4",
+        "description": "BRASS GATE VALVE 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0109-PL-N3",
+        "description": "GALVANIZED STEEL PIPE   2 L= ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-005",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0110",
+    "invoice_line": "RED.-ECCENTRI",
+    "po_line_id": "TRA-TR-0110-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0110-PL-N3",
+        "description": "SLIP ON FLANGE H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0110-PL-N2",
+        "description": "GALVANIZED ELBOW N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0110-PL-N1",
+        "description": "PVC BALL VALVE I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0110-PL-C",
+        "description": "GALVANIZED REDUCER X",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-006",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0111",
+    "invoice_line": "GV Brass .",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0111-PL-N2",
+        "description": "GALVANIZED ELBOW 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0111-PL-N3",
+        "description": "GALVANIZED TEE H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0111-PL-N4",
+        "description": "GALVANIZED REDUCER H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0111-PL-N1",
+        "description": "GALVANIZED STEEL PIPE N 2 L=M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-007",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0112",
+    "invoice_line": "BALL-BALL",
+    "po_line_id": "TRA-TR-0112-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0112-PL-C",
+        "description": "PVC BALL VALVE N",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0112-PL-N1",
+        "description": "SLIP ON FLANGE C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0112-PL-N2",
+        "description": "CARBON STEEL PIPE N C L=6",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0112-PL-N3",
+        "description": "SPIRAL WOUND GASKET H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-008",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0113",
+    "invoice_line": "Flange Slip On n",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0113-PL-N2",
+        "description": "STAINLESS STEEL PIPE   0 L=R",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0113-PL-N3",
+        "description": "SPIRAL WOUND GASKET C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0113-PL-N1",
+        "description": "GALVANIZED TEE 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0113-PL-N4",
+        "description": "PVC BALL VALVE I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-009",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0114",
+    "invoice_line": "SWG-3INCH",
+    "po_line_id": "TRA-TR-0114-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0114-PL-N1",
+        "description": "GALVANIZED TEE 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0114-PL-N2",
+        "description": "GALVANIZED STEEL PIPE 3 C L=T",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0114-PL-C",
+        "description": "SPIRAL WOUND GASKET N",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0114-PL-N3",
+        "description": "BRASS GATE VALVE  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-010",
+    "category": "piping"
+  },
+  {
+    "query_id": "TRA-TR-0115",
+    "invoice_line": "Besi Polos m",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0115-PL-N1",
+        "description": "RECTANGULAR HOLLOW SECTION M T=.",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0115-PL-N2",
+        "description": "STAINLESS STEEL PLATE T=3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0115-PL-N4",
+        "description": "DEFORMED BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0115-PL-N3",
+        "description": "H-BEAM STEEL PROFILE 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-011",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0116",
+    "invoice_line": "BESI-10MM",
+    "po_line_id": "TRA-TR-0116-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0116-PL-N2",
+        "description": "STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0116-PL-N3",
+        "description": "H-BEAM STEEL PROFILE 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0116-PL-C",
+        "description": "DEFORMED BAR M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0116-PL-N1",
+        "description": "RECTANGULAR HOLLOW SECTION 0 T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-012",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0117",
+    "invoice_line": "Baja Profil H-Beam 0",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0117-PL-N4",
+        "description": "DEFORMED BAR 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0117-PL-N3",
+        "description": "STAINLESS STEEL PLATE T=1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0117-PL-N2",
+        "description": "RECTANGULAR HOLLOW SECTION 6 T=2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0117-PL-N1",
+        "description": "STEEL PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-013",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0118",
+    "invoice_line": "SIKU-50X50X5M",
+    "po_line_id": "TRA-TR-0118-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0118-PL-C",
+        "description": "ANGLE BAR X",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "TRA-TR-0118-PL-N1",
+        "description": "RECTANGULAR HOLLOW SECTION X T=.",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0118-PL-N3",
+        "description": "H-BEAM STEEL PROFILE X",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0118-PL-N2",
+        "description": "STEEL PLATE T=1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-014",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0119",
+    "invoice_line": "Plat Baja",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0119-PL-N2",
+        "description": "DEFORMED BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0119-PL-N4",
+        "description": "RECTANGULAR HOLLOW SECTION 4 T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0119-PL-N1",
+        "description": "STAINLESS STEEL PLATE T=5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0119-PL-N3",
+        "description": "ANGLE BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-015",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "TRA-TR-0120",
+    "invoice_line": "PLAT-316",
+    "po_line_id": "TRA-TR-0120-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "TRA-TR-0120-PL-N1",
+        "description": "H-BEAM STEEL PROFILE 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0120-PL-N3",
+        "description": "RECTANGULAR HOLLOW SECTION 0 T=1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0120-PL-N2",
+        "description": "PLAIN ROUND BAR M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "TRA-TR-0120-PL-C",
+        "description": "STAINLESS STEEL PLATE T=1",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-016",
+    "category": "structural_steel"
+  }
+]

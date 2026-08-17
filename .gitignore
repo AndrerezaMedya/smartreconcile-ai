@@ -1,0 +1,85 @@
+# ==============================================================================
+# Byte-compiled / optimized / DLL files
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ==============================================================================
+# Virtual Environments & Package Managers
+# ==============================================================================
+.venv/
+venv/
+ENV/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==============================================================================
+# IDE, Editors & OS Metadata
+# ==============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# ==============================================================================
+# Testing, Caches & Coverage
+# ==============================================================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================================================================
+# Logs & Ephemeral Tooling
+# ==============================================================================
+*.log
+scratchpad*
+browser/
+
+# ==============================================================================
+# ML Training Checkpoints & Heavy Experimental Seeds
+# (Only the validated models/finetuned_v2_seed44 runtime model is tracked)
+# ==============================================================================
+models/finetuned_minilm/
+models/finetuned_v2_seed42/
+models/finetuned_v2_seed43/
+
+# ==============================================================================
+# External Tooling / Submodules
+# ==============================================================================
+ui-ux-pro-max-skill/
+
+# ==============================================================================
+# Internal Competition / Agent Artifacts
+# ==============================================================================
+AI_Innovation_Challenge_Rulebook.md
+prompt*.md
+2-prompt.md
+response-prompt.md
+01-requirements.md
+02-architecture.md
+03-technical-validation-plan.md

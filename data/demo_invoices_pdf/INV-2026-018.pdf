@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 684 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-018) '
+(PO REFERENCE: PO-2026-018) '
+(VENDOR: CV Anugerah Valve Pratama) '
+(DATE: 2026-08-18) '
+(CATEGORY: quantity_variance) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Brass Ball Valve 1/2 inch PN16 | 25.0 | pcs | 95,000 | 2,375,000) '
+(2 | Brass Ball Valve 3/4 inch PN16 | 20.0 | pcs | 135,000 | 2,700,000) '
+(3 | Brass Ball Valve 1 inch PN16 | 15.0 | pcs | 175,000 | 2,625,000) '
+(4 | Cast Iron Gate Valve 2 inch JIS 10K | 5.0 | pcs | 850,000 | 4,250,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000975 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1045
+%%EOF

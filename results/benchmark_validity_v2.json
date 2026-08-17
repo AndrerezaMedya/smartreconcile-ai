@@ -1,0 +1,92 @@
+{
+  "total_failures_audited": 5,
+  "generator_artifacts": 1,
+  "ambiguous_labels": 1,
+  "valid_difficulties": 3,
+  "removed_from_v2": [
+    "SYN-TE-0013"
+  ],
+  "flagged_ambiguous": [
+    "SYN-TE-0015"
+  ],
+  "test_synthetic_v1_size": 30,
+  "test_synthetic_v2_size": 29,
+  "generator_fix": {
+    "file": "scripts/generate_dataset.py",
+    "line": 242,
+    "current": "invoice_desc = f\"{_pick(abbrevs)} {' '.join(list(spec.values())[:2])}\"",
+    "fixed": "# Filter out placeholder values before building invoice desc\nPLACEHOLDER_VALUES = {'varies', 'n/a', 'tbd', '-', 'custom', 'variable'}\nspec_vals = [str(v) for v in list(spec.values())[:2] if str(v).lower() not in PLACEHOLDER_VALUES]\ninvoice_desc = ' '.join([_pick(abbrevs)] + spec_vals)"
+  },
+  "findings": [
+    {
+      "query_id": "SYN-TE-0013",
+      "difficulty": "medium",
+      "category": "packaging",
+      "material_id": "MAT-079",
+      "invoice_line": "Stiker thermal varies",
+      "correct_po": "ADHESIVE LABEL a",
+      "variation_type": "synonym",
+      "classification": "GENERATOR_ARTIFACT",
+      "evidence": "Generator line 242: invoice_desc = f\"{_pick(abbrevs)} {' '.join(list(spec.values())[:2])}\". MAT-079 has sizes=['varies'] in catalog as a legitimate placeholder (sizes vary by order). The generator picks abbreviation 'Stiker' + spec_values[:2] = 'thermal' + 'varies', producing 'Stiker thermal varies'. The word 'varies' is a catalog-level metadata placeholder, NOT a valid invoice description token. No real invoice would contain the word 'varies' as a product specification.",
+      "verdict": "INVALID — Remove from test_synthetic_v2. Document in v2 changelog.",
+      "action": "REMOVE_FROM_V2",
+      "fix_note": "Fix generator: filter out spec values that are pure placeholders ('varies', 'n/a', 'tbd', '-') when building synonym invoice descriptions."
+    },
+    {
+      "query_id": "SYN-TE-0015",
+      "difficulty": "medium",
+      "category": "fasteners",
+      "material_id": "MAT-081",
+      "invoice_line": "Baut",
+      "correct_po": "U-BOLT",
+      "variation_type": "truncation",
+      "classification": "AMBIGUOUS_LABEL",
+      "evidence": "MAT-081 canonical_name='Baut U / U-Bolt'. The generator truncation variation uses style_truncated() which returns just the first abbreviation: 'Baut'. 'Baut' in Indonesian means 'bolt' in general — it refers to any bolt type. The correct PO is 'U-BOLT', which is a SPECIFIC subtype. A buyer writing only 'Baut' on an invoice almost certainly means a generic bolt, not specifically a U-Bolt. The label (U-BOLT as correct match) is technically correct per material ID but semantically ambiguous: 'Baut' alone does not unambiguously identify U-BOLT over 'BLIND RIVET' or other fasteners.",
+      "verdict": "RETAIN with AMBIGUOUS flag. This represents a REAL and VALID difficulty: under-specified invoice lines are a genuine pain point in invoice-to-PO matching. However, it should be noted that lexical baseline also fails here, and the correct answer requires domain knowledge (MAT-081 context). Keep in v2 but flag as 'genuinely_ambiguous=True' in metadata.",
+      "action": "RETAIN_WITH_FLAG",
+      "fix_note": "Add genuinely_ambiguous=True field. Keep in test_synthetic_v2."
+    },
+    {
+      "query_id": "SYN-TE-0022",
+      "difficulty": "hard",
+      "category": "structural_steel",
+      "material_id": "MAT-070",
+      "invoice_line": "BRC",
+      "correct_po": "WELDED WIRE MESH",
+      "variation_type": "spec_diff_hard_negative",
+      "classification": "VALID_REAL_WORLD_DIFFICULTY",
+      "evidence": "MAT-070 canonical='Wire Mesh / Wiremesh', abbreviations=['Wiremesh', 'Wire Mesh', 'BRC']. 'BRC' is a real-world industry abbreviation for BRC mesh (Bridon Ropes Company mesh), widely used in Indonesian construction industry to mean welded wire mesh. The abbreviation is listed in the material catalog as a valid abbreviation for MAT-070. The query is within the intended MVP scope: matching abbreviation-only invoice entries to their full PO descriptions is a primary use case. All three models fail (lexical, pretrained, fine-tuned) indicating this is a genuine challenge, not an evaluation flaw.",
+      "verdict": "VALID — Retain in test_synthetic_v2. This is a legitimate hard abbreviation case within scope of the MVP. Generalized abbreviation training (not copying this exact case) is the correct response.",
+      "action": "RETAIN",
+      "fix_note": "No fix needed. Generalized training abbreviation pairs for Experiment B1."
+    },
+    {
+      "query_id": "SYN-TE-0024",
+      "difficulty": "hard",
+      "category": "bearings",
+      "material_id": "MAT-072",
+      "invoice_line": "Rantai",
+      "correct_po": "ROLLER CHAIN",
+      "variation_type": "spec_diff_hard_negative",
+      "classification": "VALID_SEMANTIC_NEIGHBOR_AMBIGUITY",
+      "evidence": "MAT-072='Rantai Industri' (industrial chain), abbreviations include 'Chain','Rantai','Roller Chain'. MAT-073='Sprocket', abbreviations include 'Sprocket','Gear Rantai'. Invoice 'Rantai' (general Indonesian for 'chain') could map to either a chain or a sprocket without additional context. However, the canonical correct match is ROLLER CHAIN (the chain itself), not the CHAIN SPROCKET (the gear that drives the chain). A supplier writing just 'Rantai' most likely means the chain, not the sprocket. The label is correct but the query is semantically underspecified. Models confuse this because 'Rantai' appears in both ROLLER CHAIN and CHAIN SPROCKET contexts in training.",
+      "verdict": "VALID — Retain in test_synthetic_v2. Real-world difficulty: underspecified Indonesian terms with semantic neighbor confusion is a genuine challenge. The correct label assignment is defensible (chain=primary, sprocket=secondary component). No change needed; contrastive training examples are the response.",
+      "action": "RETAIN",
+      "fix_note": "Create contrastive chain vs. sprocket training pairs (generalized, not this exact query)."
+    },
+    {
+      "query_id": "SYN-TE-0025",
+      "difficulty": "hard",
+      "category": "bearings",
+      "material_id": "MAT-073",
+      "invoice_line": "Gear Rantai",
+      "correct_po": "CHAIN SPROCKET",
+      "variation_type": "spec_diff_hard_negative",
+      "classification": "VALID_SEMANTIC_NEIGHBOR_AMBIGUITY",
+      "evidence": "MAT-073='Sprocket', abbreviations=['Sprocket','Gear Rantai']. 'Gear Rantai' literally means 'chain gear' in Indonesian — a legitimate term for a sprocket. The correct match is CHAIN SPROCKET, not ROLLER CHAIN. Models confuse SYN-TE-0024 and SYN-TE-0025 symmetrically (assign each other's correct PO), indicating the embeddings place 'Rantai' and 'Gear Rantai' similarly relative to 'ROLLER CHAIN' and 'CHAIN SPROCKET'. This is a real semantic neighbor ambiguity. The labels are correct. The confusion is a genuine model limitation.",
+      "verdict": "VALID — Retain in test_synthetic_v2. Symmetric confusion with SYN-TE-0024 is expected and valid evidence of semantic neighbor limitation. Keep both.",
+      "action": "RETAIN",
+      "fix_note": "Same as SYN-TE-0024: contrastive chain vs. sprocket training."
+    }
+  ]
+}

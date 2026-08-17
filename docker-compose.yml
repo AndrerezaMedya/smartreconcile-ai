@@ -1,0 +1,9 @@
+services:
+  smartreconcile:
+    build: .
+    container_name: smartreconcile-ai
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

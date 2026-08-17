@@ -1,0 +1,7 @@
+{
+  "t_high": 0.96,
+  "t_low": 0.81,
+  "fdr_target": 0.05,
+  "calibrated_on": "val.json",
+  "note": "Thresholds FROZEN before test set evaluation. Do not tune on test set."
+}

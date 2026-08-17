@@ -1,0 +1,1034 @@
+[
+  {
+    "query_id": "SYN-TE-0001",
+    "invoice_line": "galvanized union 1",
+    "po_line_id": "SYN-TE-0001-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0001-PL-N1",
+        "description": "HDPE PIPE C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0001-PL-N3",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0001-PL-C",
+        "description": "GALVANIZED UNION I",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0001-PL-N2",
+        "description": "BLIND RIVET 0",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-067",
+    "category": "piping"
+  },
+  {
+    "query_id": "SYN-TE-0002",
+    "invoice_line": "hdpe pipe  ",
+    "po_line_id": "SYN-TE-0002-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0002-PL-N2",
+        "description": "BLIND RIVET 4",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0002-PL-C",
+        "description": "HDPE PIPE I",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0002-PL-N3",
+        "description": "ROLLER CHAIN",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0002-PL-N1",
+        "description": "GALVANIZED UNION C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-068",
+    "category": "piping"
+  },
+  {
+    "query_id": "SYN-TE-0003",
+    "invoice_line": "U CHANNEL / UNP 0",
+    "po_line_id": "SYN-TE-0003-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0003-PL-N3",
+        "description": "GALVANIZED UNION 1",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0003-PL-N2",
+        "description": "CHECKERED PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0003-PL-C",
+        "description": "U CHANNEL / UNP M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0003-PL-N1",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-069",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "SYN-TE-0004",
+    "invoice_line": "welded wire mesh",
+    "po_line_id": "SYN-TE-0004-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0004-PL-C",
+        "description": "WELDED WIRE MESH",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0004-PL-N2",
+        "description": "CHECKERED PLATE T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0004-PL-N1",
+        "description": "U CHANNEL / UNP 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0004-PL-N3",
+        "description": "BLIND RIVET M",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-070",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "SYN-TE-0005",
+    "invoice_line": "checkered plate t=.",
+    "po_line_id": "SYN-TE-0005-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0005-PL-N3",
+        "description": "SAFETY HELMET  ",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0005-PL-C",
+        "description": "CHECKERED PLATE T=4",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0005-PL-N2",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0005-PL-N1",
+        "description": "U CHANNEL / UNP 5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-071",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "SYN-TE-0006",
+    "invoice_line": "ROLLER CHAIN",
+    "po_line_id": "SYN-TE-0006-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0006-PL-N3",
+        "description": "U CHANNEL / UNP 0",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0006-PL-N1",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0006-PL-C",
+        "description": "ROLLER CHAIN",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0006-PL-N2",
+        "description": "ADHESIVE LABEL s",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-072",
+    "category": "bearings"
+  },
+  {
+    "query_id": "SYN-TE-0007",
+    "invoice_line": "Sprocket",
+    "po_line_id": "SYN-TE-0007-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0007-PL-N2",
+        "description": "ADHESIVE LABEL a",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0007-PL-C",
+        "description": "CHAIN SPROCKET",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0007-PL-N1",
+        "description": "ROLLER CHAIN",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0007-PL-N3",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-073",
+    "category": "bearings"
+  },
+  {
+    "query_id": "SYN-TE-0008",
+    "invoice_line": "Enclosure 60x80x25cm IP54",
+    "po_line_id": "SYN-TE-0008-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0008-PL-N2",
+        "description": "U CHANNEL / UNP 4",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0008-PL-C",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0008-PL-N3",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0008-PL-N1",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-074",
+    "category": "electrical"
+  },
+  {
+    "query_id": "SYN-TE-0009",
+    "invoice_line": "CABLE TRAY",
+    "po_line_id": "SYN-TE-0009-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0009-PL-C",
+        "description": "CABLE TRAY",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0009-PL-N3",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0009-PL-N2",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0009-PL-N1",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-075",
+    "category": "electrical"
+  },
+  {
+    "query_id": "SYN-TE-0010",
+    "invoice_line": "Gear Oil SAE 140 drum",
+    "po_line_id": "SYN-TE-0010-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0010-PL-N2",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0010-PL-N3",
+        "description": "SAFETY HELMET S",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0010-PL-N1",
+        "description": "HYDROCHLORIC ACID N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0010-PL-C",
+        "description": "GEAR OIL 8 M",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-076",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "SYN-TE-0011",
+    "invoice_line": "Hydrochloric Acid",
+    "po_line_id": "SYN-TE-0011-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0011-PL-N2",
+        "description": "CHECKERED PLATE T=m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0011-PL-N1",
+        "description": "GEAR OIL 9 P",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0011-PL-C",
+        "description": "HYDROCHLORIC ACID G",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0011-PL-N3",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-077",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "SYN-TE-0012",
+    "invoice_line": "Bubble Wrap",
+    "po_line_id": "SYN-TE-0012-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0012-PL-N1",
+        "description": "ADHESIVE LABEL e",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0012-PL-N3",
+        "description": "GALVANIZED UNION 5",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0012-PL-N2",
+        "description": "U CHANNEL / UNP X",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0012-PL-C",
+        "description": "BUBBLE WRAP",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-078",
+    "category": "packaging"
+  },
+  {
+    "query_id": "SYN-TE-0013",
+    "invoice_line": "Stiker thermal varies",
+    "po_line_id": "SYN-TE-0013-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0013-PL-N2",
+        "description": "GEAR OIL A 2",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0013-PL-N1",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0013-PL-N3",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0013-PL-C",
+        "description": "ADHESIVE LABEL a",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-079",
+    "category": "packaging"
+  },
+  {
+    "query_id": "SYN-TE-0014",
+    "invoice_line": "RIVET 2 BLIND",
+    "po_line_id": "SYN-TE-0014-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0014-PL-N2",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0014-PL-N3",
+        "description": "ROLLER CHAIN",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0014-PL-C",
+        "description": "BLIND RIVET 3",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0014-PL-N1",
+        "description": "U-BOLT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-080",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "SYN-TE-0015",
+    "invoice_line": "Baut",
+    "po_line_id": "SYN-TE-0015-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0015-PL-C",
+        "description": "U-BOLT",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0015-PL-N1",
+        "description": "BLIND RIVET M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0015-PL-N3",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0015-PL-N2",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-081",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "SYN-TE-0016",
+    "invoice_line": "Engine Oil Filter",
+    "po_line_id": "SYN-TE-0016-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0016-PL-N3",
+        "description": "U CHANNEL / UNP M",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0016-PL-C",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0016-PL-N2",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0016-PL-N1",
+        "description": "SAFETY HELMET I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-082",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "SYN-TE-0017",
+    "invoice_line": "Air Filter",
+    "po_line_id": "SYN-TE-0017-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0017-PL-C",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0017-PL-N1",
+        "description": "SAFETY HELMET Z",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0017-PL-N2",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0017-PL-N3",
+        "description": "GEAR OIL 0 L",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-083",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "SYN-TE-0018",
+    "invoice_line": "Helm Safety SNI biru",
+    "po_line_id": "SYN-TE-0018-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0018-PL-C",
+        "description": "SAFETY HELMET S",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0018-PL-N2",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0018-PL-N3",
+        "description": "GEAR OIL W I",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0018-PL-N1",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-084",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "SYN-TE-0019",
+    "invoice_line": "N UNION GALVANIZED",
+    "po_line_id": "SYN-TE-0019-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0019-PL-C",
+        "description": "GALVANIZED UNION I",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0019-PL-N1",
+        "description": "HDPE PIPE I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0019-PL-N2",
+        "description": "BLIND RIVET M",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0019-PL-N3",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-067",
+    "category": "piping"
+  },
+  {
+    "query_id": "SYN-TE-0020",
+    "invoice_line": "HDPE",
+    "po_line_id": "SYN-TE-0020-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0020-PL-N3",
+        "description": "CHECKERED PLATE T=m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0020-PL-N1",
+        "description": "GALVANIZED UNION  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0020-PL-N2",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0020-PL-C",
+        "description": "HDPE PIPE H",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-068",
+    "category": "piping"
+  },
+  {
+    "query_id": "SYN-TE-0021",
+    "invoice_line": "U Channel 1",
+    "po_line_id": "SYN-TE-0021-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0021-PL-N1",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0021-PL-C",
+        "description": "U CHANNEL / UNP X",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-069",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "SYN-TE-0022",
+    "invoice_line": "BRC",
+    "po_line_id": "SYN-TE-0022-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0022-PL-C",
+        "description": "WELDED WIRE MESH",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0022-PL-N1",
+        "description": "U CHANNEL / UNP M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-070",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "SYN-TE-0023",
+    "invoice_line": "Plat Kembang",
+    "po_line_id": "SYN-TE-0023-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0023-PL-N1",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0023-PL-C",
+        "description": "CHECKERED PLATE T=m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0023-PL-HN1",
+        "description": "CHECKERED PLATE T=6",
+        "is_correct": false,
+        "neg_type": "spec_diff_thickness"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-071",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "SYN-TE-0024",
+    "invoice_line": "Rantai",
+    "po_line_id": "SYN-TE-0024-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0024-PL-C",
+        "description": "ROLLER CHAIN",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0024-PL-N1",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-072",
+    "category": "bearings"
+  },
+  {
+    "query_id": "SYN-TE-0025",
+    "invoice_line": "Gear Rantai",
+    "po_line_id": "SYN-TE-0025-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0025-PL-C",
+        "description": "CHAIN SPROCKET",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0025-PL-N1",
+        "description": "ROLLER CHAIN",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-073",
+    "category": "bearings"
+  },
+  {
+    "query_id": "SYN-TE-0026",
+    "invoice_line": "Enclosure",
+    "po_line_id": "SYN-TE-0026-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0026-PL-N1",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0026-PL-C",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-074",
+    "category": "electrical"
+  },
+  {
+    "query_id": "SYN-TE-0027",
+    "invoice_line": "Kabel Tray / Cable Tray",
+    "po_line_id": "SYN-TE-0027-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0027-PL-N1",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0027-PL-C",
+        "description": "CABLE TRAY",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-075",
+    "category": "electrical"
+  },
+  {
+    "query_id": "SYN-TE-0028",
+    "invoice_line": "Oli Transmisi / Gear Oil E",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0028-PL-N2",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0028-PL-N3",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0028-PL-N4",
+        "description": "U-BOLT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0028-PL-N1",
+        "description": "HYDROCHLORIC ACID 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-076",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "SYN-TE-0029",
+    "invoice_line": "HCL-37%",
+    "po_line_id": "SYN-TE-0029-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0029-PL-N3",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0029-PL-N1",
+        "description": "GEAR OIL S 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "SYN-TE-0029-PL-C",
+        "description": "HYDROCHLORIC ACID E",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "SYN-TE-0029-PL-N2",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-077",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "SYN-TE-0030",
+    "invoice_line": "Plastik Gelembung",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "SYN-TE-0030-PL-N4",
+        "description": "HYDROCHLORIC ACID U",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0030-PL-N2",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0030-PL-N3",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "SYN-TE-0030-PL-N1",
+        "description": "ADHESIVE LABEL s",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-078",
+    "category": "packaging"
+  }
+]

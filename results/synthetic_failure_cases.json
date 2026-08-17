@@ -1,0 +1,157 @@
+{
+  "total_queries": 28,
+  "total_failures": 5,
+  "top1_accuracy": 0.8214,
+  "per_difficulty": {
+    "easy": {
+      "n": 6,
+      "lex_acc": 1.0,
+      "pre_acc": 0.8333,
+      "ft_acc": 1.0,
+      "ft_vs_pre": 0.1667
+    },
+    "medium": {
+      "n": 14,
+      "lex_acc": 0.9286,
+      "pre_acc": 0.7857,
+      "ft_acc": 0.8571,
+      "ft_vs_pre": 0.0714
+    },
+    "hard": {
+      "n": 7,
+      "lex_acc": 0.8571,
+      "pre_acc": 0.4286,
+      "ft_acc": 0.5714,
+      "ft_vs_pre": 0.1429
+    },
+    "adversarial": {
+      "n": 1,
+      "lex_acc": 0.0,
+      "pre_acc": 1.0,
+      "ft_acc": 1.0,
+      "ft_vs_pre": 0.0
+    }
+  },
+  "classification_counts": {
+    "SEMANTIC_FAILURE; LOW_MARGIN_AMBIGUOUS": 1,
+    "FINE_TUNE_REGRESSION; LOW_MARGIN_AMBIGUOUS": 1,
+    "FINE_TUNE_REGRESSION": 3
+  },
+  "failure_cases": [
+    {
+      "query_id": "SYN-TE-0013",
+      "difficulty": "medium",
+      "invoice_line": "Stiker thermal varies",
+      "correct_po": "SYN-TE-0013-PL-C",
+      "correct_desc": "ADHESIVE LABEL a",
+      "predicted_po": "SYN-TE-0013-PL-N3",
+      "predicted_desc": "AIR FILTER ELEMENT",
+      "top1_neg_type": "different_item",
+      "top1_score": 0.2096,
+      "correct_score": 0.1418,
+      "margin": 0.0424,
+      "rank_of_correct": 3,
+      "lexical_correct": false,
+      "pretrained_correct": false,
+      "classification": "SEMANTIC_FAILURE; LOW_MARGIN_AMBIGUOUS",
+      "detail": {
+        "top1_neg_type": "different_item",
+        "margin": 0.0424,
+        "correct_score": 0.1418,
+        "top1_score": 0.2096
+      }
+    },
+    {
+      "query_id": "SYN-TE-0015",
+      "difficulty": "medium",
+      "invoice_line": "Baut",
+      "correct_po": "SYN-TE-0015-PL-C",
+      "correct_desc": "U-BOLT",
+      "predicted_po": "SYN-TE-0015-PL-N1",
+      "predicted_desc": "BLIND RIVET M",
+      "top1_neg_type": "same_category",
+      "top1_score": 0.2848,
+      "correct_score": 0.2529,
+      "margin": 0.0319,
+      "rank_of_correct": 2,
+      "lexical_correct": true,
+      "pretrained_correct": false,
+      "classification": "FINE_TUNE_REGRESSION; LOW_MARGIN_AMBIGUOUS",
+      "detail": {
+        "top1_neg_type": "same_category",
+        "margin": 0.0319,
+        "correct_score": 0.2529,
+        "top1_score": 0.2848
+      }
+    },
+    {
+      "query_id": "SYN-TE-0022",
+      "difficulty": "hard",
+      "invoice_line": "BRC",
+      "correct_po": "SYN-TE-0022-PL-C",
+      "correct_desc": "WELDED WIRE MESH",
+      "predicted_po": "SYN-TE-0022-PL-N1",
+      "predicted_desc": "U CHANNEL / UNP M",
+      "top1_neg_type": "same_category",
+      "top1_score": 0.2152,
+      "correct_score": 0.1551,
+      "margin": 0.0601,
+      "rank_of_correct": 2,
+      "lexical_correct": true,
+      "pretrained_correct": true,
+      "classification": "FINE_TUNE_REGRESSION",
+      "detail": {
+        "top1_neg_type": "same_category",
+        "margin": 0.0601,
+        "correct_score": 0.1551,
+        "top1_score": 0.2152
+      }
+    },
+    {
+      "query_id": "SYN-TE-0024",
+      "difficulty": "hard",
+      "invoice_line": "Rantai",
+      "correct_po": "SYN-TE-0024-PL-C",
+      "correct_desc": "ROLLER CHAIN",
+      "predicted_po": "SYN-TE-0024-PL-N1",
+      "predicted_desc": "CHAIN SPROCKET",
+      "top1_neg_type": "same_category",
+      "top1_score": 0.3589,
+      "correct_score": 0.2953,
+      "margin": 0.0636,
+      "rank_of_correct": 2,
+      "lexical_correct": true,
+      "pretrained_correct": false,
+      "classification": "FINE_TUNE_REGRESSION",
+      "detail": {
+        "top1_neg_type": "same_category",
+        "margin": 0.0636,
+        "correct_score": 0.2953,
+        "top1_score": 0.3589
+      }
+    },
+    {
+      "query_id": "SYN-TE-0025",
+      "difficulty": "hard",
+      "invoice_line": "Gear Rantai",
+      "correct_po": "SYN-TE-0025-PL-C",
+      "correct_desc": "CHAIN SPROCKET",
+      "predicted_po": "SYN-TE-0025-PL-N1",
+      "predicted_desc": "ROLLER CHAIN",
+      "top1_neg_type": "same_category",
+      "top1_score": 0.383,
+      "correct_score": 0.2882,
+      "margin": 0.0949,
+      "rank_of_correct": 2,
+      "lexical_correct": true,
+      "pretrained_correct": false,
+      "classification": "FINE_TUNE_REGRESSION",
+      "detail": {
+        "top1_neg_type": "same_category",
+        "margin": 0.0949,
+        "correct_score": 0.2882,
+        "top1_score": 0.383
+      }
+    }
+  ]
+}

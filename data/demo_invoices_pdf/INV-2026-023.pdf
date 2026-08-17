@@ -1,0 +1,51 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 765 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-023) '
+(PO REFERENCE: PO-2026-023) '
+(VENDOR: PT Sinar Baja Mandiri) '
+(DATE: 2026-08-23) '
+(CATEGORY: abbreviation_variation) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Union Galv 1-1/2 inch 150# drat | 20.0 | pcs | 85,000 | 1,700,000) '
+(2 | Pipa HDPE PE100 4 inch PN10 6m | 15.0 | batang | 720,000 | 10,800,000) '
+(3 | Gate Valve Cast Iron 3 inch 10K | 4.0 | pcs | 1,250,000 | 5,000,000) '
+(4 | Flange Weldneck ANSI 150 4 inch | 10.0 | pcs | 210,000 | 2,100,000) '
+(5 | Gasket Spiral Wound 4 inch 150# | 20.0 | pcs | 65,000 | 1,300,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001056 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1126
+%%EOF

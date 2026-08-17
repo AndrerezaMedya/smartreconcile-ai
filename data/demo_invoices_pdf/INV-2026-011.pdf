@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 720 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-011) '
+(PO REFERENCE: PO-2026-011) '
+(VENDOR: PT Pipa Megah Steel) '
+(DATE: 2026-08-11) '
+(CATEGORY: spec_distractor) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Stainless Steel Pipe SS316 1 inch Sch 10 | 10.0 | batang | 920,000 | 9,200,000) '
+(2 | Stainless Steel Pipe SS304 1 inch Sch 10 | 15.0 | batang | 680,000 | 10,200,000) '
+(3 | Carbon Steel Pipe 1 inch Sch 40 L=6m | 25.0 | batang | 240,000 | 6,000,000) '
+(4 | Carbon Steel Pipe 1 inch Sch 80 L=6m | 10.0 | batang | 350,000 | 3,500,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001011 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1081
+%%EOF

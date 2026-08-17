@@ -1,0 +1,269 @@
+{
+  "model": "lexical_jaccard",
+  "val": {
+    "easy": {
+      "n": 6,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.8194,
+      "score_correct_min": 0.5,
+      "score_incorrect_mean": 0.0,
+      "score_incorrect_max": 0.0,
+      "separation_mean": 0.8194
+    },
+    "medium": {
+      "n": 14,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.3797,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0048,
+      "score_incorrect_max": 0.2,
+      "separation_mean": 0.3749
+    },
+    "hard": {
+      "n": 7,
+      "n_unmatched": 0,
+      "top1_acc": 0.8571,
+      "top3_acc": 1.0,
+      "mrr": 0.9286,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.4857,
+      "score_correct_min": 0.25,
+      "score_incorrect_mean": 0.1948,
+      "score_incorrect_max": 0.5,
+      "separation_mean": 0.2909
+    },
+    "adversarial": {
+      "n": 1,
+      "n_unmatched": 2,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.0,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0,
+      "score_incorrect_max": 0.0,
+      "separation_mean": 0.0
+    },
+    "AGGREGATE": {
+      "n": 28,
+      "top1_acc": 0.9643,
+      "top3_acc": 1.0,
+      "mrr": 0.9821,
+      "recall_at_3": 1.0
+    }
+  },
+  "test_synthetic_v1": {
+    "easy": {
+      "n": 6,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.7528,
+      "score_correct_min": 0.5,
+      "score_incorrect_mean": 0.0185,
+      "score_incorrect_max": 0.3333,
+      "separation_mean": 0.7343
+    },
+    "medium": {
+      "n": 14,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.4906,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0107,
+      "score_incorrect_max": 0.25,
+      "separation_mean": 0.4799
+    },
+    "hard": {
+      "n": 7,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.2238,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0,
+      "score_incorrect_max": 0.0,
+      "separation_mean": 0.2238
+    },
+    "adversarial": {
+      "n": 1,
+      "n_unmatched": 2,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.0,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0,
+      "score_incorrect_max": 0.0,
+      "separation_mean": 0.0
+    },
+    "AGGREGATE": {
+      "n": 28,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0
+    }
+  },
+  "test_synthetic_v2": {
+    "easy": {
+      "n": 6,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.7528,
+      "score_correct_min": 0.5,
+      "score_incorrect_mean": 0.0185,
+      "score_incorrect_max": 0.3333,
+      "separation_mean": 0.7343
+    },
+    "medium": {
+      "n": 13,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.5284,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0115,
+      "score_incorrect_max": 0.25,
+      "separation_mean": 0.5168
+    },
+    "hard": {
+      "n": 7,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.2238,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0,
+      "score_incorrect_max": 0.0,
+      "separation_mean": 0.2238
+    },
+    "adversarial": {
+      "n": 1,
+      "n_unmatched": 2,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.0,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0,
+      "score_incorrect_max": 0.0,
+      "separation_mean": 0.0
+    },
+    "AGGREGATE": {
+      "n": 27,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0
+    }
+  },
+  "test_hard_neg": {
+    "easy": {
+      "n": 5,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.82,
+      "score_correct_min": 0.5,
+      "score_incorrect_mean": 0.0133,
+      "score_incorrect_max": 0.2,
+      "separation_mean": 0.8067
+    },
+    "medium": {
+      "n": 10,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.405,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0,
+      "score_incorrect_max": 0.0,
+      "separation_mean": 0.405
+    },
+    "hard": {
+      "n": 20,
+      "n_unmatched": 0,
+      "top1_acc": 0.9,
+      "top3_acc": 1.0,
+      "mrr": 0.95,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.3892,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0914,
+      "score_incorrect_max": 0.6,
+      "separation_mean": 0.2978
+    },
+    "adversarial": {
+      "n": 2,
+      "n_unmatched": 3,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.1,
+      "score_correct_min": 0.0,
+      "score_incorrect_mean": 0.0,
+      "score_incorrect_max": 0.0,
+      "separation_mean": 0.1
+    },
+    "AGGREGATE": {
+      "n": 37,
+      "top1_acc": 0.9459,
+      "top3_acc": 1.0,
+      "mrr": 0.973,
+      "recall_at_3": 1.0
+    }
+  },
+  "test_adversarial_v2": {
+    "adversarial": {
+      "n": 14,
+      "n_unmatched": 3,
+      "top1_acc": 0.9286,
+      "top3_acc": 1.0,
+      "mrr": 0.9643,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.6626,
+      "score_correct_min": 0.0909,
+      "score_incorrect_mean": 0.4177,
+      "score_incorrect_max": 0.8,
+      "separation_mean": 0.2449
+    },
+    "AGGREGATE": {
+      "n": 14,
+      "top1_acc": 0.9286,
+      "top3_acc": 1.0,
+      "mrr": 0.9643,
+      "recall_at_3": 1.0
+    }
+  }
+}

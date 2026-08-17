@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 726 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-005) '
+(PO REFERENCE: PO-2026-005) '
+(VENDOR: PT Surya Kimia Lestari) '
+(DATE: 2026-08-05) '
+(CATEGORY: standard_clean) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Diesel Engine Oil SAE 15W-40 API CI-4 Drum 209L | 3.0 | drum | 7,800,000 | 23,400,000) '
+(2 | Hydraulic Oil ISO VG 68 Drum 209L | 4.0 | drum | 6,900,000 | 27,600,000) '
+(3 | Mineral Gear Oil SAE 90 API GL-5 Pail 20L | 10.0 | pail | 850,000 | 8,500,000) '
+(4 | Hydrochloric Acid HCl 32% Jerigen 30L | 15.0 | jerigen | 190,000 | 2,850,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001017 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1087
+%%EOF

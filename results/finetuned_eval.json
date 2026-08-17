@@ -1,0 +1,207 @@
+{
+  "model": "models\\finetuned_minilm",
+  "val": {
+    "easy": {
+      "n": 6,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.9538,
+      "score_correct_min": 0.8821,
+      "score_incorrect_mean": 0.28,
+      "score_incorrect_max": 0.5387,
+      "separation_mean": 0.6738
+    },
+    "medium": {
+      "n": 14,
+      "n_unmatched": 0,
+      "top1_acc": 0.7857,
+      "top3_acc": 0.9286,
+      "mrr": 0.8631,
+      "recall_at_3": 0.9286,
+      "score_correct_mean": 0.6394,
+      "score_correct_min": 0.2227,
+      "score_incorrect_mean": 0.2623,
+      "score_incorrect_max": 0.557,
+      "separation_mean": 0.3771
+    },
+    "hard": {
+      "n": 7,
+      "n_unmatched": 0,
+      "top1_acc": 0.5714,
+      "top3_acc": 1.0,
+      "mrr": 0.7619,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.7112,
+      "score_correct_min": 0.5228,
+      "score_incorrect_mean": 0.4719,
+      "score_incorrect_max": 0.8106,
+      "separation_mean": 0.2393
+    },
+    "adversarial": {
+      "n": 1,
+      "n_unmatched": 2,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.5194,
+      "score_correct_min": 0.5194,
+      "score_incorrect_mean": 0.3249,
+      "score_incorrect_max": 0.3948,
+      "separation_mean": 0.1946
+    },
+    "AGGREGATE": {
+      "n": 28,
+      "top1_acc": 0.7857,
+      "top3_acc": 0.9643,
+      "mrr": 0.872,
+      "recall_at_3": 0.9643
+    },
+    "collapse_detection": {
+      "score_variance": 0.07103,
+      "score_std": 0.266514,
+      "rank_collapse_fraction": 0.0357,
+      "rank_collapse_detected": false,
+      "low_variance_warning": false
+    }
+  },
+  "test_synthetic": {
+    "easy": {
+      "n": 6,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.7781,
+      "score_correct_min": 0.3204,
+      "score_incorrect_mean": 0.2152,
+      "score_incorrect_max": 0.7035,
+      "separation_mean": 0.5629
+    },
+    "medium": {
+      "n": 14,
+      "n_unmatched": 0,
+      "top1_acc": 0.8571,
+      "top3_acc": 0.9286,
+      "mrr": 0.9107,
+      "recall_at_3": 0.9286,
+      "score_correct_mean": 0.6444,
+      "score_correct_min": 0.2201,
+      "score_incorrect_mean": 0.2378,
+      "score_incorrect_max": 0.4807,
+      "separation_mean": 0.4066
+    },
+    "hard": {
+      "n": 7,
+      "n_unmatched": 0,
+      "top1_acc": 0.5714,
+      "top3_acc": 1.0,
+      "mrr": 0.7857,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.461,
+      "score_correct_min": 0.2819,
+      "score_incorrect_mean": 0.4371,
+      "score_incorrect_max": 0.6538,
+      "separation_mean": 0.0239
+    },
+    "adversarial": {
+      "n": 1,
+      "n_unmatched": 2,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.2464,
+      "score_correct_min": 0.2464,
+      "score_incorrect_mean": 0.1064,
+      "score_incorrect_max": 0.2058,
+      "separation_mean": 0.14
+    },
+    "AGGREGATE": {
+      "n": 28,
+      "top1_acc": 0.8214,
+      "top3_acc": 0.9643,
+      "mrr": 0.9018,
+      "recall_at_3": 0.9643
+    },
+    "collapse_detection": {
+      "score_variance": 0.056627,
+      "score_std": 0.237964,
+      "rank_collapse_fraction": 0.0357,
+      "rank_collapse_detected": false,
+      "low_variance_warning": false
+    }
+  },
+  "test_hard_neg": {
+    "easy": {
+      "n": 5,
+      "n_unmatched": 0,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.9495,
+      "score_correct_min": 0.8381,
+      "score_incorrect_mean": 0.2504,
+      "score_incorrect_max": 0.4752,
+      "separation_mean": 0.6991
+    },
+    "medium": {
+      "n": 10,
+      "n_unmatched": 0,
+      "top1_acc": 0.8,
+      "top3_acc": 1.0,
+      "mrr": 0.8833,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.6285,
+      "score_correct_min": 0.2729,
+      "score_incorrect_mean": 0.2707,
+      "score_incorrect_max": 0.6215,
+      "separation_mean": 0.3579
+    },
+    "hard": {
+      "n": 20,
+      "n_unmatched": 0,
+      "top1_acc": 0.75,
+      "top3_acc": 1.0,
+      "mrr": 0.875,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.6321,
+      "score_correct_min": 0.1527,
+      "score_incorrect_mean": 0.3943,
+      "score_incorrect_max": 0.9117,
+      "separation_mean": 0.2378
+    },
+    "adversarial": {
+      "n": 2,
+      "n_unmatched": 3,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0,
+      "mrr": 1.0,
+      "recall_at_3": 1.0,
+      "score_correct_mean": 0.491,
+      "score_correct_min": 0.4509,
+      "score_incorrect_mean": 0.2646,
+      "score_incorrect_max": 0.3259,
+      "separation_mean": 0.2264
+    },
+    "AGGREGATE": {
+      "n": 37,
+      "top1_acc": 0.8108,
+      "top3_acc": 1.0,
+      "mrr": 0.9009,
+      "recall_at_3": 1.0
+    },
+    "collapse_detection": {
+      "score_variance": 0.06535,
+      "score_std": 0.255636,
+      "rank_collapse_fraction": 0.027,
+      "rank_collapse_detected": false,
+      "low_variance_warning": false
+    }
+  }
+}

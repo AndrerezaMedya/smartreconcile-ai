@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 694 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-012) '
+(PO REFERENCE: PO-2026-012) '
+(VENDOR: PT Roda Bearindo) '
+(DATE: 2026-08-12) '
+(CATEGORY: spec_distractor) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Deep Groove Ball Bearing 6205 2RS SKF | 40.0 | pcs | 65,000 | 2,600,000) '
+(2 | Deep Groove Ball Bearing 6205 ZZ SKF | 30.0 | pcs | 62,000 | 1,860,000) '
+(3 | Deep Groove Ball Bearing 6305 2RS SKF | 20.0 | pcs | 82,000 | 1,640,000) '
+(4 | Deep Groove Ball Bearing 6305 ZZ SKF | 20.0 | pcs | 78,000 | 1,560,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000985 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1055
+%%EOF

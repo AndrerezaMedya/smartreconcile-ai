@@ -1,0 +1,1308 @@
+[
+  {
+    "query_id": "HRD-TE-0001",
+    "invoice_line": "GALVANIZED UNION N",
+    "po_line_id": "HRD-TE-0001-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0001-PL-N3",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0001-PL-C",
+        "description": "GALVANIZED UNION H",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0001-PL-N2",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0001-PL-N1",
+        "description": "HDPE PIPE N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-067",
+    "category": "piping"
+  },
+  {
+    "query_id": "HRD-TE-0002",
+    "invoice_line": "HDPE PIPE N",
+    "po_line_id": "HRD-TE-0002-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0002-PL-C",
+        "description": "HDPE PIPE N",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0002-PL-N3",
+        "description": "ADHESIVE LABEL s",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0002-PL-N2",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0002-PL-N1",
+        "description": "GALVANIZED UNION 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-068",
+    "category": "piping"
+  },
+  {
+    "query_id": "HRD-TE-0003",
+    "invoice_line": "U CHANNEL / UNP M",
+    "po_line_id": "HRD-TE-0003-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0003-PL-N1",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0003-PL-N3",
+        "description": "ROLLER CHAIN",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0003-PL-C",
+        "description": "U CHANNEL / UNP M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0003-PL-N2",
+        "description": "CHECKERED PLATE T=5",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-069",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HRD-TE-0004",
+    "invoice_line": "WELDED WIRE MESH",
+    "po_line_id": "HRD-TE-0004-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0004-PL-N1",
+        "description": "U CHANNEL / UNP 8",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0004-PL-N2",
+        "description": "CHECKERED PLATE T=3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0004-PL-N3",
+        "description": "U-BOLT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0004-PL-C",
+        "description": "WELDED WIRE MESH",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-070",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HRD-TE-0005",
+    "invoice_line": "checkered plate t=6",
+    "po_line_id": "HRD-TE-0005-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0005-PL-C",
+        "description": "CHECKERED PLATE T=m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0005-PL-N3",
+        "description": "HDPE PIPE C",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0005-PL-N2",
+        "description": "U CHANNEL / UNP 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0005-PL-N1",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-071",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HRD-TE-0006",
+    "invoice_line": "Rantai Industri",
+    "po_line_id": "HRD-TE-0006-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0006-PL-N1",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0006-PL-N2",
+        "description": "BLIND RIVET 8",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0006-PL-C",
+        "description": "ROLLER CHAIN",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0006-PL-N3",
+        "description": "SAFETY HELMET 8",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-072",
+    "category": "bearings"
+  },
+  {
+    "query_id": "HRD-TE-0007",
+    "invoice_line": "Sprocket 40 19T",
+    "po_line_id": "HRD-TE-0007-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0007-PL-C",
+        "description": "CHAIN SPROCKET",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0007-PL-N1",
+        "description": "ROLLER CHAIN",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0007-PL-N3",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0007-PL-N2",
+        "description": "HYDROCHLORIC ACID R",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-073",
+    "category": "bearings"
+  },
+  {
+    "query_id": "HRD-TE-0008",
+    "invoice_line": "ELECTRICAL ENCLOSURE",
+    "po_line_id": "HRD-TE-0008-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0008-PL-N2",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0008-PL-N1",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0008-PL-C",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0008-PL-N3",
+        "description": "GEAR OIL 0 0",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-074",
+    "category": "electrical"
+  },
+  {
+    "query_id": "HRD-TE-0009",
+    "invoice_line": "Kabel",
+    "po_line_id": "HRD-TE-0009-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0009-PL-N1",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0009-PL-C",
+        "description": "CABLE TRAY",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0009-PL-N2",
+        "description": "BLIND RIVET 4",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0009-PL-N3",
+        "description": "U CHANNEL / UNP M",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-075",
+    "category": "electrical"
+  },
+  {
+    "query_id": "HRD-TE-0010",
+    "invoice_line": "Gear Oil 4",
+    "po_line_id": "HRD-TE-0010-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0010-PL-N3",
+        "description": "U CHANNEL / UNP 0",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0010-PL-N1",
+        "description": "HYDROCHLORIC ACID 3",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0010-PL-C",
+        "description": "GEAR OIL 0 P",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0010-PL-N2",
+        "description": "ADHESIVE LABEL i",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-076",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "HRD-TE-0011",
+    "invoice_line": "Hydrochloric Acid j",
+    "po_line_id": "HRD-TE-0011-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0011-PL-N1",
+        "description": "GEAR OIL E I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0011-PL-N2",
+        "description": "ROLLER CHAIN",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0011-PL-C",
+        "description": "HYDROCHLORIC ACID G",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0011-PL-N3",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-077",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "HRD-TE-0012",
+    "invoice_line": "Plastik Bubble 10mm 125cm",
+    "po_line_id": "HRD-TE-0012-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0012-PL-N1",
+        "description": "ADHESIVE LABEL s",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0012-PL-C",
+        "description": "BUBBLE WRAP",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0012-PL-N3",
+        "description": "BLIND RIVET 4",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0012-PL-N2",
+        "description": "SAFETY HELMET Z",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-078",
+    "category": "packaging"
+  },
+  {
+    "query_id": "HRD-TE-0013",
+    "invoice_line": "v LABEL ADHESIVE",
+    "po_line_id": "HRD-TE-0013-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0013-PL-N1",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0013-PL-N3",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0013-PL-N2",
+        "description": "HDPE PIPE 2",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0013-PL-C",
+        "description": "ADHESIVE LABEL r",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-079",
+    "category": "packaging"
+  },
+  {
+    "query_id": "HRD-TE-0014",
+    "invoice_line": "Rivet / Paku Keling",
+    "po_line_id": "HRD-TE-0014-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0014-PL-N3",
+        "description": "GALVANIZED UNION H",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0014-PL-N2",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0014-PL-C",
+        "description": "BLIND RIVET M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0014-PL-N1",
+        "description": "U-BOLT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-080",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "HRD-TE-0015",
+    "invoice_line": "U-Bolt",
+    "po_line_id": "HRD-TE-0015-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0015-PL-N3",
+        "description": "GEAR OIL 4 D",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0015-PL-N1",
+        "description": "BLIND RIVET X",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0015-PL-C",
+        "description": "U-BOLT",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0015-PL-N2",
+        "description": "HYDROCHLORIC ACID 0",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-081",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "HRD-TE-0016",
+    "invoice_line": "Filter Oli Mesin",
+    "po_line_id": "HRD-TE-0016-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0016-PL-C",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0016-PL-N1",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-082",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HRD-TE-0017",
+    "invoice_line": "Air Element",
+    "po_line_id": "HRD-TE-0017-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0017-PL-N1",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0017-PL-C",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-083",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HRD-TE-0018",
+    "invoice_line": "Helm Safety / Helm Proyek",
+    "po_line_id": "HRD-TE-0018-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0018-PL-HN1",
+        "description": "SAFETY HELMET .",
+        "is_correct": false,
+        "neg_type": "spec_diff_standards"
+      },
+      {
+        "po_line_id": "HRD-TE-0018-PL-C",
+        "description": "SAFETY HELMET N",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0018-PL-N1",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-084",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HRD-TE-0019",
+    "invoice_line": "Union Galv.  ",
+    "po_line_id": "HRD-TE-0019-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0019-PL-HN1",
+        "description": "GALVANIZED UNION 5",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "HRD-TE-0019-PL-N1",
+        "description": "HDPE PIPE  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0019-PL-C",
+        "description": "GALVANIZED UNION N",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-067",
+    "category": "piping"
+  },
+  {
+    "query_id": "HRD-TE-0020",
+    "invoice_line": "Pipa HDPE c",
+    "po_line_id": "HRD-TE-0020-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0020-PL-C",
+        "description": "HDPE PIPE C",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0020-PL-HN1",
+        "description": "HDPE PIPE I",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "HRD-TE-0020-PL-N1",
+        "description": "GALVANIZED UNION 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-068",
+    "category": "piping"
+  },
+  {
+    "query_id": "HRD-TE-0021",
+    "invoice_line": "Kanal U 5",
+    "po_line_id": "HRD-TE-0021-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0021-PL-N1",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0021-PL-HN1",
+        "description": "U CHANNEL / UNP 4",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "HRD-TE-0021-PL-C",
+        "description": "U CHANNEL / UNP 5",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-069",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HRD-TE-0022",
+    "invoice_line": "Wiremesh",
+    "po_line_id": "HRD-TE-0022-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0022-PL-N1",
+        "description": "U CHANNEL / UNP 0",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0022-PL-C",
+        "description": "WELDED WIRE MESH",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-070",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HRD-TE-0023",
+    "invoice_line": "Checker Plate t=m",
+    "po_line_id": "HRD-TE-0023-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0023-PL-HN1",
+        "description": "CHECKERED PLATE T=m",
+        "is_correct": false,
+        "neg_type": "spec_diff_thickness"
+      },
+      {
+        "po_line_id": "HRD-TE-0023-PL-C",
+        "description": "CHECKERED PLATE T=.",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0023-PL-N1",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-071",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HRD-TE-0024",
+    "invoice_line": "Roller Chain",
+    "po_line_id": "HRD-TE-0024-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0024-PL-N1",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0024-PL-C",
+        "description": "ROLLER CHAIN",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-072",
+    "category": "bearings"
+  },
+  {
+    "query_id": "HRD-TE-0025",
+    "invoice_line": "Gear Rantai",
+    "po_line_id": "HRD-TE-0025-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0025-PL-C",
+        "description": "CHAIN SPROCKET",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0025-PL-N1",
+        "description": "ROLLER CHAIN",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-073",
+    "category": "bearings"
+  },
+  {
+    "query_id": "HRD-TE-0026",
+    "invoice_line": "Panel Box / Box Panel Listrik",
+    "po_line_id": "HRD-TE-0026-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0026-PL-C",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0026-PL-N1",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-074",
+    "category": "electrical"
+  },
+  {
+    "query_id": "HRD-TE-0027",
+    "invoice_line": "Tray Kabel",
+    "po_line_id": "HRD-TE-0027-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0027-PL-C",
+        "description": "CABLE TRAY",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0027-PL-N1",
+        "description": "ELECTRICAL ENCLOSURE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-075",
+    "category": "electrical"
+  },
+  {
+    "query_id": "HRD-TE-0028",
+    "invoice_line": "Oli Transmisi 9",
+    "po_line_id": "HRD-TE-0028-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0028-PL-N1",
+        "description": "HYDROCHLORIC ACID I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0028-PL-HN2",
+        "description": "GEAR OIL 0 P",
+        "is_correct": false,
+        "neg_type": "spec_diff_classifications"
+      },
+      {
+        "po_line_id": "HRD-TE-0028-PL-C",
+        "description": "GEAR OIL W A",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0028-PL-HN1",
+        "description": "GEAR OIL 0 A",
+        "is_correct": false,
+        "neg_type": "spec_diff_grades"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-076",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "HRD-TE-0029",
+    "invoice_line": "Asam Klorida / HCl",
+    "po_line_id": "HRD-TE-0029-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0029-PL-C",
+        "description": "HYDROCHLORIC ACID N",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0029-PL-N1",
+        "description": "GEAR OIL 0 U",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0029-PL-HN1",
+        "description": "HYDROCHLORIC ACID E",
+        "is_correct": false,
+        "neg_type": "spec_diff_concentration"
+      },
+      {
+        "po_line_id": "HRD-TE-0029-PL-HN2",
+        "description": "HYDROCHLORIC ACID R",
+        "is_correct": false,
+        "neg_type": "spec_diff_packaging"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-077",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "HRD-TE-0030",
+    "invoice_line": "Bubble Wrap",
+    "po_line_id": "HRD-TE-0030-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0030-PL-N1",
+        "description": "ADHESIVE LABEL i",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0030-PL-C",
+        "description": "BUBBLE WRAP",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-078",
+    "category": "packaging"
+  },
+  {
+    "query_id": "HRD-TE-0031",
+    "invoice_line": "Label",
+    "po_line_id": "HRD-TE-0031-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0031-PL-N1",
+        "description": "BUBBLE WRAP",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0031-PL-C",
+        "description": "ADHESIVE LABEL e",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0031-PL-HN1",
+        "description": "ADHESIVE LABEL i",
+        "is_correct": false,
+        "neg_type": "spec_diff_material"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-079",
+    "category": "packaging"
+  },
+  {
+    "query_id": "HRD-TE-0032",
+    "invoice_line": "Blind Rivet 3",
+    "po_line_id": "HRD-TE-0032-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0032-PL-C",
+        "description": "BLIND RIVET 3",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0032-PL-HN1",
+        "description": "BLIND RIVET 1",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "HRD-TE-0032-PL-N1",
+        "description": "U-BOLT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-080",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "HRD-TE-0033",
+    "invoice_line": "U-Bolt",
+    "po_line_id": "HRD-TE-0033-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0033-PL-N1",
+        "description": "BLIND RIVET 8",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0033-PL-C",
+        "description": "U-BOLT",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-081",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "HRD-TE-0034",
+    "invoice_line": "Filter Oli",
+    "po_line_id": "HRD-TE-0034-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0034-PL-C",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0034-PL-N1",
+        "description": "SAFETY HELMET 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-082",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HRD-TE-0035",
+    "invoice_line": "Filter Udara",
+    "po_line_id": "HRD-TE-0035-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0035-PL-N1",
+        "description": "SAFETY HELMET  ",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0035-PL-C",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-083",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HRD-TE-0036",
+    "invoice_line": "Helm Safety",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0036-PL-N4",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0036-PL-N2",
+        "description": "ENGINE OIL FILTER",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0036-PL-N1",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0036-PL-N3",
+        "description": "U-BOLT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-084",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "HRD-TE-0037",
+    "invoice_line": "UNIO-2INCH",
+    "po_line_id": "HRD-TE-0037-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0037-PL-N3",
+        "description": "SAFETY HELMET N",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0037-PL-C",
+        "description": "GALVANIZED UNION H",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0037-PL-N2",
+        "description": "CHAIN SPROCKET",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0037-PL-N1",
+        "description": "HDPE PIPE N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-067",
+    "category": "piping"
+  },
+  {
+    "query_id": "HRD-TE-0038",
+    "invoice_line": "HDPE Pipe i",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0038-PL-N1",
+        "description": "GALVANIZED UNION C",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0038-PL-N3",
+        "description": "HYDROCHLORIC ACID M",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0038-PL-N2",
+        "description": "CABLE TRAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0038-PL-N4",
+        "description": "CHECKERED PLATE T=m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-068",
+    "category": "piping"
+  },
+  {
+    "query_id": "HRD-TE-0039",
+    "invoice_line": "UNP-65X42MM",
+    "po_line_id": "HRD-TE-0039-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0039-PL-C",
+        "description": "U CHANNEL / UNP 5",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "HRD-TE-0039-PL-N2",
+        "description": "WELDED WIRE MESH",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0039-PL-N1",
+        "description": "CHECKERED PLATE T=.",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0039-PL-N3",
+        "description": "ADHESIVE LABEL s",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-069",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "HRD-TE-0040",
+    "invoice_line": "Wire Mesh / Wiremesh",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "HRD-TE-0040-PL-N3",
+        "description": "AIR FILTER ELEMENT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0040-PL-N1",
+        "description": "CHECKERED PLATE T=.",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "HRD-TE-0040-PL-N4",
+        "description": "GEAR OIL 9 0",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "HRD-TE-0040-PL-N2",
+        "description": "U CHANNEL / UNP 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-070",
+    "category": "structural_steel"
+  }
+]

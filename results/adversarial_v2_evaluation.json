@@ -1,0 +1,220 @@
+{
+  "models": {
+    "lexical": {
+      "candidate_competition": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 2,
+        "matched": 2,
+        "total": 2
+      },
+      "near_identical": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 3,
+        "matched": 3,
+        "total": 3
+      },
+      "spec_trap": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 4,
+        "matched": 4,
+        "total": 4
+      },
+      "substitution": {
+        "top1": 0.5,
+        "mrr": 0.75,
+        "correct": 1,
+        "matched": 2,
+        "total": 2
+      },
+      "unmatched": {
+        "top1": null,
+        "mrr": null,
+        "correct": 0,
+        "matched": 0,
+        "total": 3
+      },
+      "vendor_sku_only": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 3,
+        "matched": 3,
+        "total": 3
+      },
+      "AGGREGATE_MATCHED": {
+        "top1": 0.9286,
+        "mrr": 0.9643,
+        "correct": 13,
+        "matched": 14,
+        "total": 17
+      }
+    },
+    "pretrained": {
+      "candidate_competition": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 2,
+        "matched": 2,
+        "total": 2
+      },
+      "near_identical": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 3,
+        "matched": 3,
+        "total": 3
+      },
+      "spec_trap": {
+        "top1": 0.5,
+        "mrr": 0.75,
+        "correct": 2,
+        "matched": 4,
+        "total": 4
+      },
+      "substitution": {
+        "top1": 0.5,
+        "mrr": 0.6667,
+        "correct": 1,
+        "matched": 2,
+        "total": 2
+      },
+      "unmatched": {
+        "top1": null,
+        "mrr": null,
+        "correct": 0,
+        "matched": 0,
+        "total": 3
+      },
+      "vendor_sku_only": {
+        "top1": 0.0,
+        "mrr": 0.5,
+        "correct": 0,
+        "matched": 3,
+        "total": 3
+      },
+      "AGGREGATE_MATCHED": {
+        "top1": 0.5714,
+        "mrr": 0.7738,
+        "correct": 8,
+        "matched": 14,
+        "total": 17
+      }
+    },
+    "ft_v1": {
+      "candidate_competition": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 2,
+        "matched": 2,
+        "total": 2
+      },
+      "near_identical": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 3,
+        "matched": 3,
+        "total": 3
+      },
+      "spec_trap": {
+        "top1": 0.5,
+        "mrr": 0.75,
+        "correct": 2,
+        "matched": 4,
+        "total": 4
+      },
+      "substitution": {
+        "top1": 0.5,
+        "mrr": 0.6667,
+        "correct": 1,
+        "matched": 2,
+        "total": 2
+      },
+      "unmatched": {
+        "top1": null,
+        "mrr": null,
+        "correct": 0,
+        "matched": 0,
+        "total": 3
+      },
+      "vendor_sku_only": {
+        "top1": 0.3333,
+        "mrr": 0.6667,
+        "correct": 1,
+        "matched": 3,
+        "total": 3
+      },
+      "AGGREGATE_MATCHED": {
+        "top1": 0.6429,
+        "mrr": 0.8095,
+        "correct": 9,
+        "matched": 14,
+        "total": 17
+      }
+    },
+    "ft_v2_seed42": {
+      "candidate_competition": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 2,
+        "matched": 2,
+        "total": 2
+      },
+      "near_identical": {
+        "top1": 1.0,
+        "mrr": 1.0,
+        "correct": 3,
+        "matched": 3,
+        "total": 3
+      },
+      "spec_trap": {
+        "top1": 0.75,
+        "mrr": 0.875,
+        "correct": 3,
+        "matched": 4,
+        "total": 4
+      },
+      "substitution": {
+        "top1": 0.5,
+        "mrr": 0.6667,
+        "correct": 1,
+        "matched": 2,
+        "total": 2
+      },
+      "unmatched": {
+        "top1": null,
+        "mrr": null,
+        "correct": 0,
+        "matched": 0,
+        "total": 3
+      },
+      "vendor_sku_only": {
+        "top1": 0.3333,
+        "mrr": 0.6667,
+        "correct": 1,
+        "matched": 3,
+        "total": 3
+      },
+      "AGGREGATE_MATCHED": {
+        "top1": 0.7143,
+        "mrr": 0.8452,
+        "correct": 10,
+        "matched": 14,
+        "total": 17
+      }
+    }
+  },
+  "category_names": {
+    "ADV-A": "spec_trap",
+    "ADV-B": "vendor_sku_only",
+    "ADV-C": "near_identical",
+    "ADV-D": "candidate_competition",
+    "ADV-E": "substitution",
+    "ADV-F": "unmatched"
+  },
+  "best_ft_v2": "ft_v2_seed42",
+  "n_queries": 17,
+  "n_matched": 14,
+  "n_unmatched": 3
+}

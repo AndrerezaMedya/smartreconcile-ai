@@ -1,0 +1,253 @@
+{
+  "pass_count": 37,
+  "warn_count": 0,
+  "fail_count": 4,
+  "passes": [
+    {
+      "check": "CHECK-01",
+      "status": "PASS",
+      "msg": "val: all candidate sets valid (n>=2, all fields present)"
+    },
+    {
+      "check": "CHECK-01",
+      "status": "PASS",
+      "msg": "test_synthetic: all candidate sets valid (n>=2, all fields present)"
+    },
+    {
+      "check": "CHECK-01",
+      "status": "PASS",
+      "msg": "test_hard_neg: all candidate sets valid (n>=2, all fields present)"
+    },
+    {
+      "check": "CHECK-02",
+      "status": "PASS",
+      "msg": "val: all ground-truth labels consistent"
+    },
+    {
+      "check": "CHECK-02",
+      "status": "PASS",
+      "msg": "test_synthetic: all ground-truth labels consistent"
+    },
+    {
+      "check": "CHECK-02",
+      "status": "PASS",
+      "msg": "test_hard_neg: all ground-truth labels consistent"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "val/easy: n consistent across models (n=6)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "val/medium: n consistent across models (n=14)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "val/hard: n consistent across models (n=7)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "val/AGGREGATE: n consistent across models (n=28)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "test_synthetic/easy: n consistent across models (n=6)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "test_synthetic/medium: n consistent across models (n=14)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "test_synthetic/hard: n consistent across models (n=7)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "test_synthetic/AGGREGATE: n consistent across models (n=28)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "test_hard_neg/easy: n consistent across models (n=5)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "test_hard_neg/medium: n consistent across models (n=10)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "test_hard_neg/hard: n consistent across models (n=20)"
+    },
+    {
+      "check": "CHECK-04",
+      "status": "PASS",
+      "msg": "test_hard_neg/AGGREGATE: n consistent across models (n=37)"
+    },
+    {
+      "check": "CHECK-06",
+      "status": "PASS",
+      "msg": "MRR formula correct (computed=0.8512, saved=0.8512)"
+    },
+    {
+      "check": "CHECK-07",
+      "status": "PASS",
+      "msg": "FDR_high formula correct at t=0.96 (manual=0.0000, saved=0.0)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-001: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-002: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-003: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-004: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-005: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-006: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-007: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-008: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-009: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "SC-010: accuracy computed against gold_po (ground truth)"
+    },
+    {
+      "check": "CHECK-08",
+      "status": "PASS",
+      "msg": "Assignment evaluation uses ground truth, not just agreement"
+    },
+    {
+      "check": "CHECK-09",
+      "status": "PASS",
+      "msg": "val: difficulty labels OK {'easy': 6, 'medium': 14, 'hard': 7, 'adversarial': 3}"
+    },
+    {
+      "check": "CHECK-09",
+      "status": "PASS",
+      "msg": "test_synthetic: difficulty labels OK {'easy': 6, 'medium': 14, 'hard': 7, 'adversarial': 3}"
+    },
+    {
+      "check": "CHECK-09",
+      "status": "PASS",
+      "msg": "test_hard_neg: difficulty labels OK {'easy': 5, 'medium': 10, 'hard': 20, 'adversarial': 5}"
+    },
+    {
+      "check": "CHECK-10",
+      "status": "PASS",
+      "msg": "val: all 7 hard queries have spec_diff negatives"
+    },
+    {
+      "check": "CHECK-10",
+      "status": "PASS",
+      "msg": "test_synthetic: all 7 hard queries have spec_diff negatives"
+    },
+    {
+      "check": "CHECK-10",
+      "status": "PASS",
+      "msg": "test_hard_neg: all 20 hard queries have spec_diff negatives"
+    }
+  ],
+  "warnings": [],
+  "failures": [
+    {
+      "check": "CHECK-03",
+      "status": "FAIL",
+      "msg": "val: 5 ordering-dependent Top-1 results",
+      "detail": [
+        "VAL-VA-0018: top1 changed after shuffle",
+        "VAL-VA-0021: top1 changed after shuffle",
+        "VAL-VA-0024: top1 changed after shuffle",
+        "VAL-VA-0026: top1 changed after shuffle",
+        "VAL-VA-0029: top1 changed after shuffle"
+      ]
+    },
+    {
+      "check": "CHECK-03",
+      "status": "FAIL",
+      "msg": "test_synthetic: 9 ordering-dependent Top-1 results",
+      "detail": [
+        "SYN-TE-0008: top1 changed after shuffle",
+        "SYN-TE-0010: top1 changed after shuffle",
+        "SYN-TE-0018: top1 changed after shuffle",
+        "SYN-TE-0021: top1 changed after shuffle",
+        "SYN-TE-0022: top1 changed after shuffle",
+        "SYN-TE-0024: top1 changed after shuffle",
+        "SYN-TE-0025: top1 changed after shuffle",
+        "SYN-TE-0026: top1 changed after shuffle",
+        "SYN-TE-0027: top1 changed after shuffle"
+      ]
+    },
+    {
+      "check": "CHECK-03",
+      "status": "FAIL",
+      "msg": "test_hard_neg: 13 ordering-dependent Top-1 results",
+      "detail": [
+        "HRD-TE-0007: top1 changed after shuffle",
+        "HRD-TE-0011: top1 changed after shuffle",
+        "HRD-TE-0012: top1 changed after shuffle",
+        "HRD-TE-0016: top1 changed after shuffle",
+        "HRD-TE-0017: top1 changed after shuffle",
+        "HRD-TE-0018: top1 changed after shuffle",
+        "HRD-TE-0021: top1 changed after shuffle",
+        "HRD-TE-0022: top1 changed after shuffle",
+        "HRD-TE-0023: top1 changed after shuffle",
+        "HRD-TE-0024: top1 changed after shuffle",
+        "HRD-TE-0033: top1 changed after shuffle",
+        "HRD-TE-0034: top1 changed after shuffle",
+        "HRD-TE-0037: top1 changed after shuffle"
+      ]
+    },
+    {
+      "check": "CHECK-05",
+      "status": "FAIL",
+      "msg": "Suspicious perfect scores (possible leakage): 2",
+      "detail": [
+        "VAL-VA-0004: correct score suspiciously perfect (=1.0)",
+        "VAL-VA-0019: correct score suspiciously perfect (=1.0)"
+      ]
+    }
+  ],
+  "verdict": "FAIL"
+}

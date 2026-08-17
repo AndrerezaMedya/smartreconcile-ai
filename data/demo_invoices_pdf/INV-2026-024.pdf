@@ -1,0 +1,52 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 849 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-024) '
+(PO REFERENCE: PO-2026-024) '
+(VENDOR: CV Sukses Mandiri Teknik) '
+(DATE: 2026-08-24) '
+(CATEGORY: price_variance) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | Kawat Las E7018 3.2mm Kobe Steel 5kg | 15.0 | dus | 215,000 | 3,225,000) '
+(2 | Batu Gerinda Potong 4 inch WD | 200.0 | pcs | 4,500 | 900,000) '
+(3 | Batu Gerinda Asah 4 inch Nippon Resibon | 100.0 | pcs | 12,500 | 1,250,000) '
+(4 | Sikat Kawat Mangkok 3 inch Kuningan | 20.0 | pcs | 28,000 | 560,000) '
+(5 | Sarung Tangan Las Kulit 14 inch | 10.0 | pasang | 65,000 | 650,000) '
+(6 | Kedok Las Otomatis Solar Auto Darkening | 4.0 | pcs | 320,000 | 1,280,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001140 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1210
+%%EOF

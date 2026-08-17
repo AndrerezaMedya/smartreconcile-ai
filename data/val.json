@@ -1,0 +1,1082 @@
+[
+  {
+    "query_id": "VAL-VA-0001",
+    "invoice_line": "PVC PIPE N",
+    "po_line_id": "VAL-VA-0001-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0001-PL-C",
+        "description": "PVC PIPE 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0001-PL-N1",
+        "description": "HYDRAULIC HOSE 3 L=S",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0001-PL-N2",
+        "description": "OIL SEAL / ROTARY SHAFT SEAL",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0001-PL-N3",
+        "description": "PE PLASTIC BAG 5 m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-053",
+    "category": "piping"
+  },
+  {
+    "query_id": "VAL-VA-0002",
+    "invoice_line": "HYDRAULIC HOSE / L= ",
+    "po_line_id": "VAL-VA-0002-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0002-PL-C",
+        "description": "HYDRAULIC HOSE   L=M",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0002-PL-N1",
+        "description": "PVC PIPE N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0002-PL-N3",
+        "description": "SAFETY GLASSES 1",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0002-PL-N2",
+        "description": "THERMAL OVERLOAD RELAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-054",
+    "category": "piping"
+  },
+  {
+    "query_id": "VAL-VA-0003",
+    "invoice_line": "c channel / c purlin 1 t=.",
+    "po_line_id": "VAL-VA-0003-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0003-PL-N1",
+        "description": "BARBED WIRE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0003-PL-N2",
+        "description": "THERMAL OVERLOAD RELAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0003-PL-N3",
+        "description": "HSS DRILL BIT m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0003-PL-C",
+        "description": "C CHANNEL / C PURLIN 5 T=.",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-055",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "VAL-VA-0004",
+    "invoice_line": "BARBED WIRE",
+    "po_line_id": "VAL-VA-0004-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0004-PL-N1",
+        "description": "C CHANNEL / C PURLIN 1 T=m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0004-PL-N2",
+        "description": "EPOXY ADHESIVE S",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0004-PL-C",
+        "description": "BARBED WIRE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0004-PL-N3",
+        "description": "PAINT THINNER a 5",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-056",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "VAL-VA-0005",
+    "invoice_line": "V-BELT",
+    "po_line_id": "VAL-VA-0005-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0005-PL-C",
+        "description": "V-BELT",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0005-PL-N3",
+        "description": "PAINT THINNER t 5",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0005-PL-N2",
+        "description": "SAFETY SHOES 8 N",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0005-PL-N1",
+        "description": "OIL SEAL / ROTARY SHAFT SEAL",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-057",
+    "category": "bearings"
+  },
+  {
+    "query_id": "VAL-VA-0006",
+    "invoice_line": "OIL SEAL / ROTARY SHAFT SEAL",
+    "po_line_id": "VAL-VA-0006-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0006-PL-N2",
+        "description": "PVC PIPE .",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0006-PL-N1",
+        "description": "V-BELT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0006-PL-C",
+        "description": "OIL SEAL / ROTARY SHAFT SEAL",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0006-PL-N3",
+        "description": "HYDRAULIC HOSE   L=M",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "easy",
+    "variation_types": [
+      "near_exact"
+    ],
+    "material_id": "MAT-058",
+    "category": "bearings"
+  },
+  {
+    "query_id": "VAL-VA-0007",
+    "invoice_line": "TOR",
+    "po_line_id": "VAL-VA-0007-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0007-PL-N1",
+        "description": "BARBED WIRE",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0007-PL-N3",
+        "description": "HYDRAULIC HOSE 1 L=R",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0007-PL-C",
+        "description": "THERMAL OVERLOAD RELAY",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0007-PL-N2",
+        "description": "EPOXY ADHESIVE K",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-059",
+    "category": "electrical"
+  },
+  {
+    "query_id": "VAL-VA-0008",
+    "invoice_line": "Thinner A special jerigen 5L",
+    "po_line_id": "VAL-VA-0008-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0008-PL-N1",
+        "description": "EPOXY ADHESIVE K",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0008-PL-N3",
+        "description": "THERMAL OVERLOAD RELAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0008-PL-C",
+        "description": "PAINT THINNER a E",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0008-PL-N2",
+        "description": "C CHANNEL / C PURLIN 5 T=.",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-060",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "VAL-VA-0009",
+    "invoice_line": "S ADHESIVE EPOXY",
+    "po_line_id": "VAL-VA-0009-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0009-PL-N3",
+        "description": "PVC PIPE H",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0009-PL-N1",
+        "description": "PAINT THINNER i M",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0009-PL-C",
+        "description": "EPOXY ADHESIVE 5",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0009-PL-N2",
+        "description": "PE PLASTIC BAG 6 6",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-061",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "VAL-VA-0010",
+    "invoice_line": "Plastik PE / Kantong",
+    "po_line_id": "VAL-VA-0010-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0010-PL-N2",
+        "description": "V-BELT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0010-PL-N3",
+        "description": "WIRE NAIL I",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0010-PL-N1",
+        "description": "EPOXY ADHESIVE K",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0010-PL-C",
+        "description": "PE PLASTIC BAG c m",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-062",
+    "category": "packaging"
+  },
+  {
+    "query_id": "VAL-VA-0011",
+    "invoice_line": "Wire Nail h",
+    "po_line_id": "VAL-VA-0011-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0011-PL-C",
+        "description": "WIRE NAIL N",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0011-PL-N1",
+        "description": "C CHANNEL / C PURLIN X T=m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0011-PL-N3",
+        "description": "V-BELT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0011-PL-N2",
+        "description": "PVC PIPE C",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-063",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "VAL-VA-0012",
+    "invoice_line": "HSS Bit 2",
+    "po_line_id": "VAL-VA-0012-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0012-PL-C",
+        "description": "HSS DRILL BIT 2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0012-PL-N3",
+        "description": "PE PLASTIC BAG x 0",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0012-PL-N2",
+        "description": "SAFETY SHOES 8 I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0012-PL-N1",
+        "description": "SAFETY GLASSES 1",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-064",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "VAL-VA-0013",
+    "invoice_line": "Kacamata Kerja ANSI Z87.1 clear",
+    "po_line_id": "VAL-VA-0013-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0013-PL-C",
+        "description": "SAFETY GLASSES .",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0013-PL-N1",
+        "description": "SAFETY SHOES 8 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0013-PL-N3",
+        "description": "EPOXY ADHESIVE G",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0013-PL-N2",
+        "description": "HSS DRILL BIT m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-065",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "VAL-VA-0014",
+    "invoice_line": "SHOES 4 SAFETY",
+    "po_line_id": "VAL-VA-0014-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0014-PL-N1",
+        "description": "HSS DRILL BIT m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0014-PL-N3",
+        "description": "THERMAL OVERLOAD RELAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0014-PL-C",
+        "description": "SAFETY SHOES 4 5",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0014-PL-N2",
+        "description": "SAFETY GLASSES N",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-066",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "VAL-VA-0015",
+    "invoice_line": "Pipa PVC",
+    "po_line_id": "VAL-VA-0015-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0015-PL-C",
+        "description": "PVC PIPE I",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0015-PL-N3",
+        "description": "OIL SEAL / ROTARY SHAFT SEAL",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0015-PL-N1",
+        "description": "HYDRAULIC HOSE / L=U",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0015-PL-N2",
+        "description": "PE PLASTIC BAG 0 m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-053",
+    "category": "piping"
+  },
+  {
+    "query_id": "VAL-VA-0016",
+    "invoice_line": "Hydraulic Hose 8",
+    "po_line_id": "VAL-VA-0016-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0016-PL-N3",
+        "description": "PE PLASTIC BAG 0 0",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0016-PL-C",
+        "description": "HYDRAULIC HOSE H L=E",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0016-PL-N2",
+        "description": "SAFETY GLASSES  ",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0016-PL-N1",
+        "description": "PVC PIPE 4",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "indonesian_english_mix"
+    ],
+    "material_id": "MAT-054",
+    "category": "piping"
+  },
+  {
+    "query_id": "VAL-VA-0017",
+    "invoice_line": "C Channel 1 t=.",
+    "po_line_id": "VAL-VA-0017-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0017-PL-N1",
+        "description": "BARBED WIRE",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0017-PL-N3",
+        "description": "WIRE NAIL N",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0017-PL-C",
+        "description": "C CHANNEL / C PURLIN 0 T=2",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0017-PL-N2",
+        "description": "V-BELT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "abbreviation"
+    ],
+    "material_id": "MAT-055",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "VAL-VA-0018",
+    "invoice_line": "Barb Wire BWG 14 roll 50 meter",
+    "po_line_id": "VAL-VA-0018-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0018-PL-N3",
+        "description": "HSS DRILL BIT m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0018-PL-C",
+        "description": "BARBED WIRE",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0018-PL-N1",
+        "description": "C CHANNEL / C PURLIN 1 T=6",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0018-PL-N2",
+        "description": "PAINT THINNER n L",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "synonym"
+    ],
+    "material_id": "MAT-056",
+    "category": "structural_steel"
+  },
+  {
+    "query_id": "VAL-VA-0019",
+    "invoice_line": "V-BELT",
+    "po_line_id": "VAL-VA-0019-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0019-PL-N1",
+        "description": "OIL SEAL / ROTARY SHAFT SEAL",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0019-PL-N2",
+        "description": "THERMAL OVERLOAD RELAY",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0019-PL-N3",
+        "description": "SAFETY GLASSES  ",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0019-PL-C",
+        "description": "V-BELT",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "word_reorder"
+    ],
+    "material_id": "MAT-057",
+    "category": "bearings"
+  },
+  {
+    "query_id": "VAL-VA-0020",
+    "invoice_line": "Seal",
+    "po_line_id": "VAL-VA-0020-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0020-PL-C",
+        "description": "OIL SEAL / ROTARY SHAFT SEAL",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0020-PL-N1",
+        "description": "V-BELT",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0020-PL-N3",
+        "description": "EPOXY ADHESIVE K",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0020-PL-N2",
+        "description": "PVC PIPE  ",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "medium",
+    "variation_types": [
+      "truncation"
+    ],
+    "material_id": "MAT-058",
+    "category": "bearings"
+  },
+  {
+    "query_id": "VAL-VA-0021",
+    "invoice_line": "Thermal Overload Relay",
+    "po_line_id": "VAL-VA-0021-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0021-PL-C",
+        "description": "THERMAL OVERLOAD RELAY",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0021-PL-N1",
+        "description": "EPOXY ADHESIVE 1",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-059",
+    "category": "electrical"
+  },
+  {
+    "query_id": "VAL-VA-0022",
+    "invoice_line": "Paint Thinner n 0",
+    "po_line_id": "VAL-VA-0022-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0022-PL-C",
+        "description": "PAINT THINNER a 0",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0022-PL-N1",
+        "description": "EPOXY ADHESIVE E",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0022-PL-HN1",
+        "description": "PAINT THINNER A U",
+        "is_correct": false,
+        "neg_type": "spec_diff_grades"
+      },
+      {
+        "po_line_id": "VAL-VA-0022-PL-HN2",
+        "description": "PAINT THINNER d 1",
+        "is_correct": false,
+        "neg_type": "spec_diff_packaging"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-060",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "VAL-VA-0023",
+    "invoice_line": "Lem Epoksi / Epoxy Adhesive",
+    "po_line_id": "VAL-VA-0023-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0023-PL-N1",
+        "description": "PAINT THINNER a G",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0023-PL-HN2",
+        "description": "EPOXY ADHESIVE T",
+        "is_correct": false,
+        "neg_type": "spec_diff_cure_time"
+      },
+      {
+        "po_line_id": "VAL-VA-0023-PL-HN1",
+        "description": "EPOXY ADHESIVE E",
+        "is_correct": false,
+        "neg_type": "spec_diff_packaging"
+      },
+      {
+        "po_line_id": "VAL-VA-0023-PL-C",
+        "description": "EPOXY ADHESIVE G",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-061",
+    "category": "chemicals"
+  },
+  {
+    "query_id": "VAL-VA-0024",
+    "invoice_line": "PE Bag",
+    "po_line_id": "VAL-VA-0024-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0024-PL-N1",
+        "description": "EPOXY ADHESIVE G",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0024-PL-HN1",
+        "description": "PE PLASTIC BAG m .",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      },
+      {
+        "po_line_id": "VAL-VA-0024-PL-HN2",
+        "description": "PE PLASTIC BAG c m",
+        "is_correct": false,
+        "neg_type": "spec_diff_thickness"
+      },
+      {
+        "po_line_id": "VAL-VA-0024-PL-C",
+        "description": "PE PLASTIC BAG 0 m",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-062",
+    "category": "packaging"
+  },
+  {
+    "query_id": "VAL-VA-0025",
+    "invoice_line": "Nail h",
+    "po_line_id": "VAL-VA-0025-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0025-PL-C",
+        "description": "WIRE NAIL N",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0025-PL-N1",
+        "description": "PE PLASTIC BAG 4 m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0025-PL-HN1",
+        "description": "WIRE NAIL I",
+        "is_correct": false,
+        "neg_type": "spec_diff_sizes"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-063",
+    "category": "fasteners"
+  },
+  {
+    "query_id": "VAL-VA-0026",
+    "invoice_line": "Drill Bit",
+    "po_line_id": "VAL-VA-0026-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0026-PL-C",
+        "description": "HSS DRILL BIT m",
+        "is_correct": true,
+        "neg_type": null
+      },
+      {
+        "po_line_id": "VAL-VA-0026-PL-N1",
+        "description": "SAFETY SHOES 3 I",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-064",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "VAL-VA-0027",
+    "invoice_line": "Kacamata Safety",
+    "po_line_id": "VAL-VA-0027-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0027-PL-HN2",
+        "description": "SAFETY GLASSES N",
+        "is_correct": false,
+        "neg_type": "spec_diff_brands"
+      },
+      {
+        "po_line_id": "VAL-VA-0027-PL-N1",
+        "description": "HSS DRILL BIT 2",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0027-PL-HN1",
+        "description": "SAFETY GLASSES Z",
+        "is_correct": false,
+        "neg_type": "spec_diff_lens"
+      },
+      {
+        "po_line_id": "VAL-VA-0027-PL-C",
+        "description": "SAFETY GLASSES 7",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "hard",
+    "variation_types": [
+      "spec_diff_hard_negative"
+    ],
+    "material_id": "MAT-065",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "VAL-VA-0028",
+    "invoice_line": "Safety Shoes -",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0028-PL-N2",
+        "description": "SAFETY GLASSES A",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0028-PL-N4",
+        "description": "C CHANNEL / C PURLIN 7 T=m",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0028-PL-N3",
+        "description": "PAINT THINNER n M",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0028-PL-N1",
+        "description": "HSS DRILL BIT m",
+        "is_correct": false,
+        "neg_type": "same_category"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-066",
+    "category": "tools_consumables"
+  },
+  {
+    "query_id": "VAL-VA-0029",
+    "invoice_line": "PIPA-AW",
+    "po_line_id": "VAL-VA-0029-PL-C",
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0029-PL-N1",
+        "description": "HYDRAULIC HOSE I L=R",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0029-PL-N3",
+        "description": "V-BELT",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0029-PL-N2",
+        "description": "SAFETY SHOES - I",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0029-PL-C",
+        "description": "PVC PIPE C",
+        "is_correct": true,
+        "neg_type": null
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "vendor_sku_only"
+    ],
+    "material_id": "MAT-053",
+    "category": "piping"
+  },
+  {
+    "query_id": "VAL-VA-0030",
+    "invoice_line": "Hose Hydraulic   s",
+    "po_line_id": null,
+    "candidates": [
+      {
+        "po_line_id": "VAL-VA-0030-PL-N3",
+        "description": "EPOXY ADHESIVE K",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0030-PL-N2",
+        "description": "BARBED WIRE",
+        "is_correct": false,
+        "neg_type": "different_item"
+      },
+      {
+        "po_line_id": "VAL-VA-0030-PL-N1",
+        "description": "PVC PIPE H",
+        "is_correct": false,
+        "neg_type": "same_category"
+      },
+      {
+        "po_line_id": "VAL-VA-0030-PL-N4",
+        "description": "C CHANNEL / C PURLIN 2 T=6",
+        "is_correct": false,
+        "neg_type": "different_item"
+      }
+    ],
+    "difficulty": "adversarial",
+    "variation_types": [
+      "unmatched_line"
+    ],
+    "material_id": "MAT-054",
+    "category": "piping"
+  }
+]

@@ -1,0 +1,795 @@
+{
+  "experiment": "Experiment C — Semantic-Assisted Hybrid Matcher",
+  "frozen_parameters": {
+    "hard_routing": {
+      "tau_margin": 0.1,
+      "tau_top1": 0.15
+    },
+    "blended_routing": {
+      "tau_margin": 0.1,
+      "tau_top1": 0.15,
+      "alpha": 0.4
+    }
+  },
+  "evaluations": {
+    "val": {
+      "models": {
+        "lexical": {
+          "top1": 0.9643,
+          "top3": 1.0,
+          "mrr": 0.9821,
+          "n": 28,
+          "by_difficulty": {
+            "easy": {
+              "n": 6,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 14,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.8571,
+              "top3": 1.0,
+              "mrr": 0.9286
+            },
+            "adversarial": {
+              "n": 1,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.437,
+            "avg_margin_incorrect": 0.1,
+            "separation": 0.337,
+            "coverage_at_015": 0.6786,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "semantic": {
+          "top1": 0.7857,
+          "top3": 0.9643,
+          "mrr": 0.878,
+          "n": 28,
+          "by_difficulty": {
+            "easy": {
+              "n": 6,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 14,
+              "top1": 0.7857,
+              "top3": 0.9286,
+              "mrr": 0.875
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.5714,
+              "top3": 1.0,
+              "mrr": 0.7619
+            },
+            "adversarial": {
+              "n": 1,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.38,
+            "avg_margin_incorrect": 0.0445,
+            "separation": 0.3356,
+            "coverage_at_015": 0.6071,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "conditional_hard": {
+          "top1": 0.8571,
+          "top3": 1.0,
+          "mrr": 0.9226,
+          "n": 28,
+          "by_difficulty": {
+            "easy": {
+              "n": 6,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 14,
+              "top1": 0.9286,
+              "top3": 1.0,
+              "mrr": 0.9643
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.5714,
+              "top3": 1.0,
+              "mrr": 0.7619
+            },
+            "adversarial": {
+              "n": 1,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.5104,
+            "avg_margin_incorrect": 0.0547,
+            "separation": 0.4558,
+            "coverage_at_015": 0.75,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "conditional_blended": {
+          "top1": 0.8571,
+          "top3": 1.0,
+          "mrr": 0.9226,
+          "n": 28,
+          "by_difficulty": {
+            "easy": {
+              "n": 6,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 14,
+              "top1": 0.9286,
+              "top3": 1.0,
+              "mrr": 0.9643
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.5714,
+              "top3": 1.0,
+              "mrr": 0.7619
+            },
+            "adversarial": {
+              "n": 1,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.4991,
+            "avg_margin_incorrect": 0.0369,
+            "separation": 0.4623,
+            "coverage_at_015": 0.7143,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        }
+      },
+      "routing_summary": {
+        "total_queries": 30,
+        "matched_queries": 28,
+        "unmatched_queries": 2,
+        "lexical_direct_pct": 67.86,
+        "semantic_routed_pct": 32.14,
+        "semantic_changed_pct": 10.71,
+        "beneficial_interventions": 0,
+        "harmful_interventions": 3,
+        "neutral_changes": 0
+      }
+    },
+    "test_synthetic_v2": {
+      "models": {
+        "lexical": {
+          "top1": 1.0,
+          "top3": 1.0,
+          "mrr": 1.0,
+          "n": 27,
+          "by_difficulty": {
+            "easy": {
+              "n": 6,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 13,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "hard": {
+              "n": 7,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "adversarial": {
+              "n": 1,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.4507,
+            "avg_margin_incorrect": 0.0,
+            "separation": 0.4507,
+            "coverage_at_015": 0.7778,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "semantic": {
+          "top1": 0.8519,
+          "top3": 1.0,
+          "mrr": 0.9259,
+          "n": 27,
+          "by_difficulty": {
+            "easy": {
+              "n": 6,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 13,
+              "top1": 0.9231,
+              "top3": 1.0,
+              "mrr": 0.9615
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.5714,
+              "top3": 1.0,
+              "mrr": 0.7857
+            },
+            "adversarial": {
+              "n": 1,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.3413,
+            "avg_margin_incorrect": 0.1002,
+            "separation": 0.2411,
+            "coverage_at_015": 0.6667,
+            "fdr_at_015": 0.0556,
+            "precision_at_015": 0.9444
+          }
+        },
+        "conditional_hard": {
+          "top1": 0.8519,
+          "top3": 1.0,
+          "mrr": 0.9259,
+          "n": 27,
+          "by_difficulty": {
+            "easy": {
+              "n": 6,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 13,
+              "top1": 0.9231,
+              "top3": 1.0,
+              "mrr": 0.9615
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.5714,
+              "top3": 1.0,
+              "mrr": 0.7857
+            },
+            "adversarial": {
+              "n": 1,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.5309,
+            "avg_margin_incorrect": 0.1002,
+            "separation": 0.4306,
+            "coverage_at_015": 0.8148,
+            "fdr_at_015": 0.0455,
+            "precision_at_015": 0.9545
+          }
+        },
+        "conditional_blended": {
+          "top1": 0.8519,
+          "top3": 1.0,
+          "mrr": 0.9259,
+          "n": 27,
+          "by_difficulty": {
+            "easy": {
+              "n": 6,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 13,
+              "top1": 0.9231,
+              "top3": 1.0,
+              "mrr": 0.9615
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.5714,
+              "top3": 1.0,
+              "mrr": 0.7857
+            },
+            "adversarial": {
+              "n": 1,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.5298,
+            "avg_margin_incorrect": 0.0401,
+            "separation": 0.4897,
+            "coverage_at_015": 0.7778,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        }
+      },
+      "routing_summary": {
+        "total_queries": 29,
+        "matched_queries": 27,
+        "unmatched_queries": 2,
+        "lexical_direct_pct": 77.78,
+        "semantic_routed_pct": 22.22,
+        "semantic_changed_pct": 14.81,
+        "beneficial_interventions": 0,
+        "harmful_interventions": 4,
+        "neutral_changes": 0
+      }
+    },
+    "test_hard_neg": {
+      "models": {
+        "lexical": {
+          "top1": 0.9459,
+          "top3": 1.0,
+          "mrr": 0.973,
+          "n": 37,
+          "by_difficulty": {
+            "easy": {
+              "n": 5,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 10,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "hard": {
+              "n": 20,
+              "top1": 0.9,
+              "top3": 1.0,
+              "mrr": 0.95
+            },
+            "adversarial": {
+              "n": 2,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.3814,
+            "avg_margin_incorrect": 0.125,
+            "separation": 0.2564,
+            "coverage_at_015": 0.6757,
+            "fdr_at_015": 0.04,
+            "precision_at_015": 0.96
+          }
+        },
+        "semantic": {
+          "top1": 0.8378,
+          "top3": 1.0,
+          "mrr": 0.9144,
+          "n": 37,
+          "by_difficulty": {
+            "easy": {
+              "n": 5,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 10,
+              "top1": 0.8,
+              "top3": 1.0,
+              "mrr": 0.8833
+            },
+            "hard": {
+              "n": 20,
+              "top1": 0.8,
+              "top3": 1.0,
+              "mrr": 0.9
+            },
+            "adversarial": {
+              "n": 2,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.3042,
+            "avg_margin_incorrect": 0.0653,
+            "separation": 0.239,
+            "coverage_at_015": 0.5405,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "conditional_hard": {
+          "top1": 0.8649,
+          "top3": 1.0,
+          "mrr": 0.9324,
+          "n": 37,
+          "by_difficulty": {
+            "easy": {
+              "n": 5,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 10,
+              "top1": 0.9,
+              "top3": 1.0,
+              "mrr": 0.95
+            },
+            "hard": {
+              "n": 20,
+              "top1": 0.8,
+              "top3": 1.0,
+              "mrr": 0.9
+            },
+            "adversarial": {
+              "n": 2,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.4426,
+            "avg_margin_incorrect": 0.11,
+            "separation": 0.3325,
+            "coverage_at_015": 0.7297,
+            "fdr_at_015": 0.037,
+            "precision_at_015": 0.963
+          }
+        },
+        "conditional_blended": {
+          "top1": 0.8378,
+          "top3": 1.0,
+          "mrr": 0.9189,
+          "n": 37,
+          "by_difficulty": {
+            "easy": {
+              "n": 5,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            },
+            "medium": {
+              "n": 10,
+              "top1": 0.9,
+              "top3": 1.0,
+              "mrr": 0.95
+            },
+            "hard": {
+              "n": 20,
+              "top1": 0.75,
+              "top3": 1.0,
+              "mrr": 0.875
+            },
+            "adversarial": {
+              "n": 2,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.4409,
+            "avg_margin_incorrect": 0.0605,
+            "separation": 0.3804,
+            "coverage_at_015": 0.6757,
+            "fdr_at_015": 0.04,
+            "precision_at_015": 0.96
+          }
+        }
+      },
+      "routing_summary": {
+        "total_queries": 40,
+        "matched_queries": 37,
+        "unmatched_queries": 3,
+        "lexical_direct_pct": 67.57,
+        "semantic_routed_pct": 32.43,
+        "semantic_changed_pct": 13.51,
+        "beneficial_interventions": 1,
+        "harmful_interventions": 4,
+        "neutral_changes": 0
+      }
+    },
+    "test_adversarial_v2": {
+      "models": {
+        "lexical": {
+          "top1": 0.9286,
+          "top3": 1.0,
+          "mrr": 0.9643,
+          "n": 14,
+          "by_difficulty": {
+            "adversarial": {
+              "n": 14,
+              "top1": 0.9286,
+              "top3": 1.0,
+              "mrr": 0.9643
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.1717,
+            "avg_margin_incorrect": 0.0333,
+            "separation": 0.1384,
+            "coverage_at_015": 0.6429,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "semantic": {
+          "top1": 0.7857,
+          "top3": 1.0,
+          "mrr": 0.881,
+          "n": 14,
+          "by_difficulty": {
+            "adversarial": {
+              "n": 14,
+              "top1": 0.7857,
+              "top3": 1.0,
+              "mrr": 0.881
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.0267,
+            "avg_margin_incorrect": 0.0362,
+            "separation": -0.0095,
+            "coverage_at_015": 0.0714,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "conditional_hard": {
+          "top1": 0.7857,
+          "top3": 1.0,
+          "mrr": 0.881,
+          "n": 14,
+          "by_difficulty": {
+            "adversarial": {
+              "n": 14,
+              "top1": 0.7857,
+              "top3": 1.0,
+              "mrr": 0.881
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.203,
+            "avg_margin_incorrect": 0.0362,
+            "separation": 0.1667,
+            "coverage_at_015": 0.6429,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "conditional_blended": {
+          "top1": 0.8571,
+          "top3": 1.0,
+          "mrr": 0.9167,
+          "n": 14,
+          "by_difficulty": {
+            "adversarial": {
+              "n": 14,
+              "top1": 0.8571,
+              "top3": 1.0,
+              "mrr": 0.9167
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.1908,
+            "avg_margin_incorrect": 0.0278,
+            "separation": 0.163,
+            "coverage_at_015": 0.6429,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        }
+      },
+      "routing_summary": {
+        "total_queries": 17,
+        "matched_queries": 14,
+        "unmatched_queries": 3,
+        "lexical_direct_pct": 71.43,
+        "semantic_routed_pct": 28.57,
+        "semantic_changed_pct": 14.29,
+        "beneficial_interventions": 0,
+        "harmful_interventions": 2,
+        "neutral_changes": 0
+      }
+    },
+    "test_human_v1": {
+      "models": {
+        "lexical": {
+          "top1": 0.8333,
+          "top3": 1.0,
+          "mrr": 0.9167,
+          "n": 18,
+          "by_difficulty": {
+            "medium": {
+              "n": 8,
+              "top1": 0.875,
+              "top3": 1.0,
+              "mrr": 0.9375
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.7143,
+              "top3": 1.0,
+              "mrr": 0.8571
+            },
+            "easy": {
+              "n": 3,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.0533,
+            "avg_margin_incorrect": 0.037,
+            "separation": 0.0163,
+            "coverage_at_015": 0.0556,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "semantic": {
+          "top1": 0.7778,
+          "top3": 0.9444,
+          "mrr": 0.8657,
+          "n": 18,
+          "by_difficulty": {
+            "medium": {
+              "n": 8,
+              "top1": 0.75,
+              "top3": 0.875,
+              "mrr": 0.8438
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.7143,
+              "top3": 1.0,
+              "mrr": 0.8333
+            },
+            "easy": {
+              "n": 3,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.0536,
+            "avg_margin_incorrect": 0.0707,
+            "separation": -0.0172,
+            "coverage_at_015": 0.0556,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "conditional_hard": {
+          "top1": 0.7778,
+          "top3": 0.9444,
+          "mrr": 0.8657,
+          "n": 18,
+          "by_difficulty": {
+            "medium": {
+              "n": 8,
+              "top1": 0.75,
+              "top3": 0.875,
+              "mrr": 0.8438
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.7143,
+              "top3": 1.0,
+              "mrr": 0.8333
+            },
+            "easy": {
+              "n": 3,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.0515,
+            "avg_margin_incorrect": 0.0707,
+            "separation": -0.0192,
+            "coverage_at_015": 0.0556,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        },
+        "conditional_blended": {
+          "top1": 0.8889,
+          "top3": 1.0,
+          "mrr": 0.9444,
+          "n": 18,
+          "by_difficulty": {
+            "medium": {
+              "n": 8,
+              "top1": 0.875,
+              "top3": 1.0,
+              "mrr": 0.9375
+            },
+            "hard": {
+              "n": 7,
+              "top1": 0.8571,
+              "top3": 1.0,
+              "mrr": 0.9286
+            },
+            "easy": {
+              "n": 3,
+              "top1": 1.0,
+              "top3": 1.0,
+              "mrr": 1.0
+            }
+          },
+          "margin_stats": {
+            "avg_margin_correct": 0.0526,
+            "avg_margin_incorrect": 0.0568,
+            "separation": -0.0042,
+            "coverage_at_015": 0.0556,
+            "fdr_at_015": 0.0,
+            "precision_at_015": 1.0
+          }
+        }
+      },
+      "routing_summary": {
+        "total_queries": 20,
+        "matched_queries": 18,
+        "unmatched_queries": 2,
+        "lexical_direct_pct": 11.11,
+        "semantic_routed_pct": 88.89,
+        "semantic_changed_pct": 16.67,
+        "beneficial_interventions": 1,
+        "harmful_interventions": 2,
+        "neutral_changes": 0
+      }
+    }
+  }
+}

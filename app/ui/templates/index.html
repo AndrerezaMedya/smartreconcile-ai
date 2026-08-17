@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartReconcile AI — Enterprise Invoice-to-PO Reconciliation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="app-layout">
+    
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
+    <!-- ENTERPRISE SIDEBAR (240px)                                             -->
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
+    <aside class="app-sidebar">
+      <div>
+        <div class="sidebar-header">
+          <div class="brand-row">
+            <div class="brand-icon">
+              <svg class="brand-svg" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="brand-info">
+              <span class="brand-name">SmartReconcile <span class="ai-badge">AI</span></span>
+              <span class="brand-org">AP Operations • Enterprise</span>
+            </div>
+          </div>
+          <div class="brand-tagline">AI recommends. Rules verify. Humans decide.</div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <div class="nav-section-title">Reconciliation</div>
+          
+          <button class="sidebar-item active" data-view="viewReconcile" id="navItemReconcile">
+            <div class="item-left">
+              <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <span>Reconciliation</span>
+            </div>
+          </button>
+
+          <button class="sidebar-item" data-view="viewReviewQueue" id="navItemReviewQueue">
+            <div class="item-left">
+              <svg class="nav-svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Review Queue</span>
+            </div>
+            <span class="item-counter counter-alert" id="sidebarExceptionBadge">0</span>
+          </button>
+
+          <div class="nav-section-title">Operations</div>
+
+          <button class="sidebar-item" data-view="viewUpload" id="navItemUpload">
+            <div class="item-left">
+              <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <span>Upload Invoice</span>
+            </div>
+          </button>
+
+          <button class="sidebar-item" data-view="viewLedger" id="navItemLedger">
+            <div class="item-left">
+              <svg class="nav-svg-icon" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              <span>Committed Ledger</span>
+            </div>
+            <span class="item-counter" id="sidebarLedgerBadge">0</span>
+          </button>
+
+          <button class="sidebar-item" data-view="viewAudit" id="navItemAudit">
+            <div class="item-left">
+              <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Compliance Audit</span>
+            </div>
+            <span class="item-counter" id="sidebarAuditBadge">0</span>
+          </button>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="model-spec-box">
+          <span class="model-spec-title">AI Backbone Engine</span>
+          <span class="model-spec-val">
+            <span class="status-dot"></span> Fine-Tuned MiniLM-L12-v2
+          </span>
+          <span class="model-spec-meta font-mono">CPU In-Memory • ~137ms Latency</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
+    <!-- MAIN APPLICATION SURFACE                                               -->
+    <!-- ══════════════════════════════════════════════════════════════════════ -->
+    <div class="app-main">
+      
+      <!-- Top Enterprise Control Bar -->
+      <header class="app-header">
+        <div class="header-breadcrumbs">
+          <span class="crumb-root">Accounts Payable</span>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-active" id="currentBreadcrumb">Reconciliation Workspace</span>
+        </div>
+
+        <div class="header-actions">
+          <div class="system-pill">
+            <span class="status-dot"></span>
+            <span>Hybrid Matcher Active</span>
+            <span class="pill-divider">•</span>
+            <span class="font-mono">Offline / 100% Deterministic</span>
+          </div>
+
+          <button class="btn btn-outline" id="btnBenchmarkAll" title="Run batch simulation benchmark across all 24 invoices">
+            <svg class="nav-svg-icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <span>Batch Benchmark (24)</span>
+          </button>
+
+          <button class="btn btn-primary" id="btnHeaderAuditLog">
+            <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
+            <span>Audit Trail</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Scrollable Main Content Surface -->
+      <main class="workspace-scroll">
+        
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <!-- VIEW 1: RECONCILIATION WORKSPACE (DOMINANT SURFACE)                -->
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <div class="view-container" id="viewReconcile">
+          
+          <!-- Compact Scenario Presets Filter Bar -->
+          <section class="scenario-bar">
+            <div class="scenario-bar-top">
+              <div class="category-pills">
+                <button class="filter-pill active" data-filter="all">All Scenarios (24)</button>
+                <button class="filter-pill" data-filter="standard_clean">Standard Clean (6)</button>
+                <button class="filter-pill" data-filter="abbreviation_variation">Indo Trade Terms (6)</button>
+                <button class="filter-pill" data-filter="spec_distractor">Spec Traps (4)</button>
+                <button class="filter-pill" data-filter="discrepancy">Discrepancies (4)</button>
+                <button class="filter-pill" data-filter="exception">Exceptions (4)</button>
+              </div>
+              <div class="scenario-meta-text" id="scenarioMetaDesc">Loading test scenarios...</div>
+            </div>
+
+            <div class="scenario-chips-container" id="scenarioChipsContainer">
+              <!-- Populated by JS -->
+            </div>
+          </section>
+
+          <!-- Operational Invoice Summary & Reconciliation Header -->
+          <section class="invoice-banner">
+            <div class="inv-header-left">
+              <div>
+                <div class="inv-title-row">
+                  <h2 class="inv-vendor-title" id="docVendorName">Loading Supplier...</h2>
+                  <span class="badge badge-staging font-mono" id="stagingIdBadge">STG-DRAFT</span>
+                  <span class="badge badge-matched" id="docOverallStatus">AI: HIGH CONFIDENCE MATCH</span>
+                </div>
+                <div class="inv-meta-list">
+                  <span class="inv-meta-item">Invoice ID: <strong class="font-mono" id="docInvoiceId">--</strong></span>
+                  <span class="meta-sep">•</span>
+                  <span class="inv-meta-item">Target PO: <strong class="font-mono" id="docPoId">--</strong></span>
+                  <span class="meta-sep">•</span>
+                  <span class="inv-meta-item">State: <strong id="workflowStateText" class="state-pending">Pending Review</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Integrated Operational Metrics & Actions -->
+            <div class="inv-header-right">
+              <div class="metric-inline-group">
+                <div class="metric-inline-item">
+                  <span class="metric-label">Match Rate</span>
+                  <strong class="metric-val font-mono" id="kpiFirstPassRate">--%</strong>
+                </div>
+                <div class="metric-inline-item">
+                  <span class="metric-label">Pre-Matched</span>
+                  <strong class="metric-val font-mono text-emerald" id="kpiPrematched">-- / --</strong>
+                </div>
+                <div class="metric-inline-item">
+                  <span class="metric-label">Exceptions</span>
+                  <strong class="metric-val font-mono text-amber" id="kpiExceptions">0 lines</strong>
+                </div>
+              </div>
+
+              <div class="action-btn-group">
+                <button class="btn btn-outline btn-sm" id="btnReconcileCurrent" title="Re-execute hybrid matching algorithm on current invoice">
+                  <svg class="nav-svg-icon" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                  <span>Re-Match</span>
+                </button>
+                <button class="btn btn-success" id="btnOpenCommitModal">
+                  <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                  <span>Commit Reconciliation</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Primary Reconciliation Operations Table -->
+          <section class="reconciliation-panel">
+            <div class="table-header-grid">
+              <div class="th-cell">1. Billed Supplier Invoice Item</div>
+              <div class="th-cell">2. AI Match & Routing</div>
+              <div class="th-cell">3. Matched PO Line & 4-Way Verification</div>
+            </div>
+
+            <div class="reconciliation-rows" id="reconciliationTableBody">
+              <!-- Populated dynamically by JS -->
+            </div>
+          </section>
+        </div>
+
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <!-- VIEW 2: REVIEW QUEUE (Filtered Exceptions Only)                    -->
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <div class="view-container" id="viewReviewQueue" style="display: none;">
+          <section class="reconciliation-panel">
+            <div class="table-header-grid">
+              <div class="th-cell">Exception Invoice Line</div>
+              <div class="th-cell">AI Confidence & Margin</div>
+              <div class="th-cell">Commercial Discrepancy & Resolution</div>
+            </div>
+            <div class="reconciliation-rows" id="reviewQueueTableBody">
+              <!-- Populated dynamically by JS -->
+            </div>
+          </section>
+        </div>
+
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <!-- VIEW 3: UPLOAD INVOICE DOCUMENT (ENTERPRISE INGESTION PIPELINE)    -->
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <div class="view-container" id="viewUpload" style="display: none;">
+          <section class="upload-panel">
+            
+            <!-- 1. Header -->
+            <div class="upload-header-row">
+              <div>
+                <h2 class="section-title">UPLOAD INVOICE</h2>
+                <p class="section-subtitle">Import supplier invoice documents for automated extraction, PO resolution, and 4-way commercial verification.</p>
+              </div>
+              <div class="upload-specs-tag font-mono">
+                <span>PDF · CSV · JSON</span>
+                <span class="meta-sep">•</span>
+                <span>Max 10 MB</span>
+              </div>
+            </div>
+
+            <!-- 2. Processing Pipeline Visualization -->
+            <div class="ingestion-pipeline-bar">
+              <div class="pipe-step active" id="pipeStepUpload">
+                <span class="pipe-num">1</span>
+                <div class="pipe-text">
+                  <strong class="pipe-label">Upload Document</strong>
+                  <span class="pipe-status font-mono">Ready</span>
+                </div>
+              </div>
+              <div class="pipe-connector"></div>
+              <div class="pipe-step" id="pipeStepValidate">
+                <span class="pipe-num">2</span>
+                <div class="pipe-text">
+                  <strong class="pipe-label">Format & Size Validation</strong>
+                  <span class="pipe-status font-mono">Pending</span>
+                </div>
+              </div>
+              <div class="pipe-connector"></div>
+              <div class="pipe-step" id="pipeStepExtract">
+                <span class="pipe-num">3</span>
+                <div class="pipe-text">
+                  <strong class="pipe-label">Data Extraction (pdfplumber)</strong>
+                  <span class="pipe-status font-mono">Pending</span>
+                </div>
+              </div>
+              <div class="pipe-connector"></div>
+              <div class="pipe-step" id="pipeStepMatch">
+                <span class="pipe-num">4</span>
+                <div class="pipe-text">
+                  <strong class="pipe-label">AI Hybrid Matching & Rules</strong>
+                  <span class="pipe-status font-mono">Pending</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Drag & Drop Upload Zone -->
+            <div class="dropzone-box" id="dropzoneArea">
+              <svg class="dropzone-icon-svg" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <div class="dropzone-text-group">
+                <h3 class="dropzone-title">DROP INVOICE FILE HERE</h3>
+                <p class="dropzone-sub">or click to browse local files from your system</p>
+                <div class="dropzone-formats font-mono">Supports Digital PDF, CSV Spreadsheet, or JSON Table (≤ 10 MB)</div>
+              </div>
+              <label class="btn btn-primary" for="fileInputUpload">
+                <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                <span>Select Local File</span>
+              </label>
+              <input type="file" id="fileInputUpload" accept=".pdf,.csv,.json" style="display: none;" />
+            </div>
+
+            <!-- 4. Real-time Ingestion Feedback & Extraction Result Panel -->
+            <div class="ingestion-result-box" id="uploadResultPanel" style="display: none;">
+              <div class="result-top-bar">
+                <div class="result-title-group">
+                  <span class="badge badge-matched font-mono" id="uploadResultStatusBadge">✓ INGESTION & AI MATCHING COMPLETE</span>
+                  <span class="result-filename font-mono" id="uploadResultFilename">invoice_sample.pdf</span>
+                </div>
+                <button class="btn btn-primary btn-sm" id="btnGoToReconcile">
+                  <span>Review Reconciliation</span>
+                  <svg class="nav-svg-icon" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+              </div>
+
+              <div class="result-metrics-grid">
+                <div class="result-metric-card">
+                  <span class="res-metric-label">Extracted Invoice ID</span>
+                  <strong class="res-metric-val font-mono" id="resExtractedInvId">--</strong>
+                </div>
+                <div class="result-metric-card">
+                  <span class="res-metric-label">Target PO Reference</span>
+                  <strong class="res-metric-val font-mono" id="resExtractedPoId">--</strong>
+                </div>
+                <div class="result-metric-card">
+                  <span class="res-metric-label">Supplier / Vendor</span>
+                  <strong class="res-metric-val" id="resExtractedVendor">--</strong>
+                </div>
+                <div class="result-metric-card">
+                  <span class="res-metric-label">Line Items Extracted</span>
+                  <strong class="res-metric-val font-mono text-white" id="resExtractedLines">-- lines</strong>
+                </div>
+                <div class="result-metric-card">
+                  <span class="res-metric-label">AI First-Pass Match Rate</span>
+                  <strong class="res-metric-val font-mono text-emerald" id="resExtractedMatchRate">--%</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Quick Demo Scenarios Grid -->
+            <div>
+              <div class="demo-grid-header">
+                <h4 class="demo-grid-title">Quick Demo Scenarios (Pre-Generated Digital PDF Invoices)</h4>
+                <span class="demo-grid-sub">Click any scenario to simulate real PDF extraction & AI reconciliation</span>
+              </div>
+
+              <div class="demo-pdf-grid">
+                <div class="demo-pdf-item" data-pdf="INV-2026-001.pdf">
+                  <div class="demo-card-top">
+                    <span class="demo-tag standard">STANDARD CLEAN</span>
+                    <strong class="demo-pdf-name font-mono">INV-2026-001</strong>
+                  </div>
+                  <div class="demo-pdf-title">PT Sumber Baja Perkasa</div>
+                  <div class="demo-pdf-desc">Clean piping delivery with exact specifications and matching amounts (100% Match).</div>
+                </div>
+
+                <div class="demo-pdf-item" data-pdf="INV-2026-007.pdf">
+                  <div class="demo-card-top">
+                    <span class="demo-tag semantic">INDO TRADE SLANG</span>
+                    <strong class="demo-pdf-name font-mono">INV-2026-007</strong>
+                  </div>
+                  <div class="demo-pdf-title">CV Logam Abadi Mandiri</div>
+                  <div class="demo-pdf-desc">Indonesian trade terms & abbreviations (e.g. pipa besi, siku tebal) routed to MiniLM semantic model.</div>
+                </div>
+
+                <div class="demo-pdf-item" data-pdf="INV-2026-011.pdf">
+                  <div class="demo-card-top">
+                    <span class="demo-tag trap">SPEC TRAP</span>
+                    <strong class="demo-pdf-name font-mono">INV-2026-011</strong>
+                  </div>
+                  <div class="demo-pdf-title">PT Mitra Metal Utama</div>
+                  <div class="demo-pdf-desc">Adversarial SS304 vs SS316 grade distractor testing specification sensitivity.</div>
+                </div>
+
+                <div class="demo-pdf-item" data-pdf="INV-2026-015.pdf">
+                  <div class="demo-card-top">
+                    <span class="demo-tag variance">UOM DISCREPANCY</span>
+                    <strong class="demo-pdf-name font-mono">INV-2026-015</strong>
+                  </div>
+                  <div class="demo-pdf-title">PT Tri Daya Elektrik</div>
+                  <div class="demo-pdf-desc">Billed in Cable Roll vs ordered in Meters, triggering 4-way UOM commercial flag.</div>
+                </div>
+
+                <div class="demo-pdf-item" data-pdf="INV-2026-017.pdf">
+                  <div class="demo-card-top">
+                    <span class="demo-tag variance">PRICE VARIANCE</span>
+                    <strong class="demo-pdf-name font-mono">INV-2026-017</strong>
+                  </div>
+                  <div class="demo-pdf-title">PT Baja Kencana Raya</div>
+                  <div class="demo-pdf-desc">Plate SS400 billed at Rp 2,150,000 (+16.2% price variance over PO contract price).</div>
+                </div>
+
+                <div class="demo-pdf-item" data-pdf="INV-2026-020.pdf">
+                  <div class="demo-card-top">
+                    <span class="demo-tag exception">UNMATCHED EXCEPTION</span>
+                    <strong class="demo-pdf-name font-mono">INV-2026-020</strong>
+                  </div>
+                  <div class="demo-pdf-title">PT Anugerah Sarana Logam</div>
+                  <div class="demo-pdf-desc">Contains unauthorized freight surcharge line with no matching PO reference.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <!-- VIEW 4: COMMITTED DATABASE LEDGER (ENTERPRISE TRANSACTION LEDGER) -->
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <div class="view-container" id="viewLedger" style="display: none;">
+          <section class="ledger-panel">
+            <div class="panel-header-bar">
+              <div>
+                <h3 class="panel-title">COMMITTED RECONCILIATION LEDGER</h3>
+                <p class="panel-subtitle">Permanent SQLite transaction record of reviewer-authorized invoice reconciliations.</p>
+              </div>
+              <div class="panel-controls-group">
+                <input type="text" id="ledgerSearchInput" class="input-search-box" placeholder="Filter by Invoice, PO, Supplier, Commit ID..." />
+                <span class="badge badge-staging font-mono" id="ledgerRecordCount">0 records</span>
+                <button class="btn btn-outline btn-sm" id="btnRefreshLedger">
+                  <svg class="nav-svg-icon" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+                  <span>Refresh</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-scroll-container">
+              <table class="enterprise-table">
+                <thead>
+                  <tr>
+                    <th>Commit ID</th>
+                    <th>Staging Ref</th>
+                    <th>Invoice ID</th>
+                    <th>PO Reference</th>
+                    <th>Supplier / Vendor</th>
+                    <th style="text-align: right;">Invoiced (Rp)</th>
+                    <th style="text-align: right;">Authorized (Rp)</th>
+                    <th>Reviewer</th>
+                    <th>Timestamp</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="committedLedgerTableBody">
+                  <!-- Populated dynamically by JS -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <!-- VIEW 5: COMPLIANCE AUDIT TRAIL (CHRONOLOGICAL EVENT TIMELINE)     -->
+        <!-- ────────────────────────────────────────────────────────────────── -->
+        <div class="view-container" id="viewAudit" style="display: none;">
+          <section class="ledger-panel">
+            <div class="panel-header-bar">
+              <div>
+                <div class="audit-title-row">
+                  <h3 class="panel-title">COMPLIANCE & HUMAN ACTION AUDIT TRAIL</h3>
+                  <span class="audit-principle-badge font-mono">AI recommends • Rules verify • Humans decide</span>
+                </div>
+                <p class="panel-subtitle">Complete chronological event trail of AI model scoring, deterministic verifications, and human decisions.</p>
+              </div>
+              <div class="panel-controls-group">
+                <input type="text" id="auditSearchInput" class="input-search-box" placeholder="Filter events, actions, operators..." />
+                <span class="badge badge-staging font-mono" id="auditRecordCount">0 events</span>
+                <button class="btn btn-outline btn-sm" id="btnExportAudit">
+                  <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>Export JSON Log</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="table-scroll-container">
+              <table class="enterprise-table">
+                <thead>
+                  <tr>
+                    <th style="width: 170px;">Timestamp</th>
+                    <th style="width: 160px;">Event / Action</th>
+                    <th style="width: 80px;">Line #</th>
+                    <th>Details & Commercial Rationale</th>
+                    <th style="width: 180px;">Actor / Authority</th>
+                  </tr>
+                </thead>
+                <tbody id="auditTableBody">
+                  <!-- Populated dynamically by JS -->
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- MODAL DIALOGS                                                            -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+
+  <!-- Human Decision Review Modal (Enterprise Reconciliation Decision Interface) -->
+  <div class="modal-overlay" id="reviewModal" style="display: none;">
+    <div class="modal-card modal-lg">
+      <div class="modal-top">
+        <div>
+          <div class="modal-title-row">
+            <span class="modal-title-text" id="modalLineTitle">RECONCILIATION REVIEW</span>
+            <span class="badge badge-amber font-mono" id="modalHeaderStatus">AI: EXCEPTIONS DETECTED</span>
+          </div>
+          <div class="modal-subtitle-text" id="modalHeaderSub">Reviewer decision required before commit • Human authority checkpoint</div>
+        </div>
+        <button class="btn btn-outline btn-sm" id="btnCloseModal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- SECTION 1: INVOICE VS PO SIDE-BY-SIDE COMPARISON -->
+        <div class="review-section">
+          <div class="review-section-title">1. Billed Invoice vs. Matched Purchase Order Comparison</div>
+          <div class="comparison-grid" id="modalComparisonGrid">
+            <!-- Populated dynamically by JS with side-by-side attributes & numerical deltas -->
+          </div>
+        </div>
+
+        <!-- SECTION 2 & 3: AI RECOMMENDATION & 4-WAY VERIFICATION STRIP -->
+        <div class="review-two-col">
+          <!-- Section 2: AI Recommendation -->
+          <div class="review-card-sub">
+            <div class="review-section-title">2. AI Match Recommendation</div>
+            <div id="modalAiRecPanel">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Section 3: Deterministic 4-Way Verification -->
+          <div class="review-card-sub">
+            <div class="review-section-title">3. Deterministic 4-Way Verification Strip</div>
+            <div id="modal4WayStrip">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 4: ALTERNATIVE PO CANDIDATES -->
+        <div class="review-section">
+          <div class="review-section-title">4. Ranked Candidate PO Lines (Select alternative to override match)</div>
+          <div class="candidate-grid" id="modalCandidateList">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- SECTION 5: REVIEWER DECISION & AUTHORIZATION NOTES -->
+        <div class="form-field">
+          <label class="form-label" for="modalReviewNotes">Reviewer Authorization Rationale / Decision Notes:</label>
+          <input type="text" id="modalReviewNotes" class="input-text" placeholder="e.g., Commercial variance approved per contract amendment #4, or UOM converted..." />
+        </div>
+      </div>
+
+      <div class="modal-bottom">
+        <button class="btn btn-danger btn-sm" id="btnModalReject">
+          <svg class="nav-svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          <span>Dispute / Reject Line</span>
+        </button>
+        <div class="modal-bottom-right">
+          <button class="btn btn-outline btn-sm" id="btnModalCancel">Cancel</button>
+          <button class="btn btn-primary btn-sm" id="btnModalConfirm">
+            <svg class="nav-svg-icon" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            <span id="btnModalConfirmText">Confirm & Approve</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Permanent Commit Confirmation Modal (Enterprise Authorization Checkpoint) -->
+  <div class="modal-overlay" id="commitModal" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-top">
+        <div>
+          <div class="modal-title-row">
+            <span class="modal-title-text">AUTHORIZE & COMMIT RECONCILIATION</span>
+            <span class="badge badge-matched font-mono">FINAL AUTHORIZATION</span>
+          </div>
+          <div class="modal-subtitle-text">Permanent SQLite ledger commit • Financial authority checkpoint</div>
+        </div>
+        <button class="btn btn-outline btn-sm" id="btnCloseCommitModal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-desc-text">You are authorizing permanent commit for invoice <strong id="commitModalInvId" class="text-white font-mono">--</strong> against PO <strong id="commitModalPoId" class="text-white font-mono">--</strong> into the local SQLite reconciliation ledger.</p>
+
+        <div class="summary-box" id="commitSummaryBox">
+          <!-- Populated dynamically by JS -->
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="commitReviewerName">Authorizing AP Reviewer Name:</label>
+          <input type="text" id="commitReviewerName" class="input-text" value="Senior AP Specialist" />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label" for="commitNotesInput">Commit Authorization Rationale / Reference:</label>
+          <input type="text" id="commitNotesInput" class="input-text" placeholder="e.g., Commercial reconciliation verified and approved for ERP payment voucher." />
+        </div>
+
+        <div class="auth-statement-card">
+          <div class="auth-statement-icon">🛡️</div>
+          <div class="auth-statement-text">
+            <strong>Explicit Reviewer Authorization:</strong>
+            <p>I confirm that this reconciliation has been reviewed against master PO records, all exceptions have been evaluated, and the matched amounts are authorized for commitment to the ERP ledger.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-bottom">
+        <button class="btn btn-outline btn-sm" id="btnCancelCommit">Cancel</button>
+        <button class="btn btn-success btn-sm" id="btnConfirmCommit">
+          <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          <span>Authorize & Commit Transaction</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Batch Benchmark Modal -->
+  <div class="modal-overlay" id="benchmarkModal" style="display: none;">
+    <div class="modal-card modal-lg">
+      <div class="modal-top">
+        <span class="modal-title-text">Batch Simulation Benchmark (24 Invoices • 106 Line Items)</span>
+        <button class="btn btn-outline btn-sm" id="btnCloseBenchmarkModal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="benchmark-kpi-grid" id="benchmarkSummaryGrid">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="benchmark-table-container">
+          <table class="enterprise-table">
+            <thead>
+              <tr>
+                <th>Invoice ID</th>
+                <th>Category</th>
+                <th>Lines</th>
+                <th>Pre-matched</th>
+                <th>Exceptions</th>
+                <th>Discrepancies</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="benchmarkTableBody">
+              <!-- Populated by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="modal-bottom">
+        <div></div>
+        <button class="btn btn-primary btn-sm" id="btnCloseBenchmarkBottom">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>

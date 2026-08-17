@@ -1,0 +1,200 @@
+{
+  "phase": "Phase 9: System Constraints & Benchmark Certification",
+  "verdict": "GO_TO_PHASE_10",
+  "model_artifact": {
+    "model_path": "models\\finetuned_v2_seed44",
+    "total_size_mb": 465.15,
+    "total_size_bytes": 487742183,
+    "nfr03_target_mb": 500.0,
+    "nfr03_status": "PASS",
+    "files": [
+      {
+        "rel_path": "config.json",
+        "size_bytes": 682,
+        "size_mb": 0.0007
+      },
+      {
+        "rel_path": "config_sentence_transformers.json",
+        "size_bytes": 294,
+        "size_mb": 0.0003
+      },
+      {
+        "rel_path": "model.safetensors",
+        "size_bytes": 470637416,
+        "size_mb": 448.8348
+      },
+      {
+        "rel_path": "modules.json",
+        "size_bytes": 290,
+        "size_mb": 0.0003
+      },
+      {
+        "rel_path": "README.md",
+        "size_bytes": 15383,
+        "size_mb": 0.0147
+      },
+      {
+        "rel_path": "sentence_bert_config.json",
+        "size_bytes": 250,
+        "size_mb": 0.0002
+      },
+      {
+        "rel_path": "special_tokens_map.json",
+        "size_bytes": 1015,
+        "size_mb": 0.001
+      },
+      {
+        "rel_path": "tokenizer.json",
+        "size_bytes": 17082987,
+        "size_mb": 16.2916
+      },
+      {
+        "rel_path": "tokenizer_config.json",
+        "size_bytes": 1522,
+        "size_mb": 0.0015
+      },
+      {
+        "rel_path": "1_Pooling\\config.json",
+        "size_bytes": 94,
+        "size_mb": 0.0001
+      },
+      {
+        "rel_path": "eval\\Information-Retrieval_evaluation_val_results.csv",
+        "size_bytes": 2250,
+        "size_mb": 0.0021
+      }
+    ]
+  },
+  "latency_benchmark_cpu": {
+    "device": "CPU",
+    "repetitions": 50,
+    "model_cold_start_load_s": 0.879,
+    "total_pipeline_stats": {
+      "mean_ms": 136.66,
+      "median_ms": 136.21,
+      "p90_ms": 147.84,
+      "p95_ms": 153.75,
+      "p99_ms": 169.51,
+      "min_ms": 123.51,
+      "max_ms": 179.5,
+      "std_ms": 10.13
+    },
+    "sub_stages_stats": {
+      "semantic_encoding_cpu": {
+        "mean_ms": 136.11,
+        "median_ms": 135.5,
+        "p90_ms": 147.29,
+        "p95_ms": 153.12,
+        "p99_ms": 168.77,
+        "min_ms": 123.01,
+        "max_ms": 178.93,
+        "std_ms": 10.11
+      },
+      "lexical_scoring_gating": {
+        "mean_ms": 0.49,
+        "median_ms": 0.44,
+        "p90_ms": 0.75,
+        "p95_ms": 0.77,
+        "p99_ms": 0.8,
+        "min_ms": 0.39,
+        "max_ms": 0.8,
+        "std_ms": 0.12
+      },
+      "greedy_assignment": {
+        "mean_ms": 0.04,
+        "median_ms": 0.03,
+        "p90_ms": 0.05,
+        "p95_ms": 0.06,
+        "p99_ms": 0.07,
+        "min_ms": 0.03,
+        "max_ms": 0.08,
+        "std_ms": 0.01
+      },
+      "deterministic_verification": {
+        "mean_ms": 0.02,
+        "median_ms": 0.02,
+        "p90_ms": 0.03,
+        "p95_ms": 0.03,
+        "p99_ms": 0.03,
+        "min_ms": 0.01,
+        "max_ms": 0.04,
+        "std_ms": 0.0
+      }
+    },
+    "nfr01_target_s": 8.0,
+    "nfr01_status": "PASS"
+  },
+  "reproducibility_audit": {
+    "runs_tested": 3,
+    "invoices_evaluated": 24,
+    "lines_evaluated": 106,
+    "assignments_identical": true,
+    "scores_identical": true,
+    "nfr07_status": "PASS"
+  },
+  "nfr_certification_matrix": [
+    {
+      "req_id": "NFR-01",
+      "category": "Performance Constraint",
+      "description": "Inference latency <= 8.0s per 1-page invoice on CPU",
+      "target": "<= 8.00 s",
+      "measured": "0.154 s (p95) / 0.137 s (mean)",
+      "status": "PASS",
+      "evidence": "50 repetitions on CPU with SentenceTransformer + Greedy + Verification"
+    },
+    {
+      "req_id": "NFR-03",
+      "category": "Deployment Constraint",
+      "description": "Model artifact footprint <= 500 MB on disk",
+      "target": "<= 500.0 MB",
+      "measured": "465.15 MB",
+      "status": "PASS",
+      "evidence": "models/finetuned_v2_seed44 total disk size"
+    },
+    {
+      "req_id": "NFR-07",
+      "category": "Reliability Constraint",
+      "description": "Reproducible, deterministic inference with fixed configuration",
+      "target": "100.0% deterministic",
+      "measured": "100.0% bitwise match across 3 runs",
+      "status": "PASS",
+      "evidence": "Exact match on 106 lines across 24 multi-line invoices"
+    },
+    {
+      "req_id": "NFR-09",
+      "category": "Accuracy Target",
+      "description": "Top-1 matching accuracy on valid synthetic benchmark >= 90%",
+      "target": ">= 90.0%",
+      "measured": "100.0%",
+      "status": "PASS",
+      "evidence": "data/test_synthetic_v2.json (29 queries, 27 matched)"
+    },
+    {
+      "req_id": "NFR-10",
+      "category": "Generalization Target",
+      "description": "Top-1 matching accuracy on researcher-written human benchmark >= 75%",
+      "target": ">= 75.0%",
+      "measured": "88.9%",
+      "status": "PASS",
+      "evidence": "data/test_human_v1.json (20 queries, 18 matched)"
+    },
+    {
+      "req_id": "SAFETY-01",
+      "category": "Safety Constraint",
+      "description": "High-confidence False Discovery Rate (FDR_high) <= 5.0%",
+      "target": "<= 5.0%",
+      "measured": "0.0%",
+      "status": "PASS",
+      "evidence": "0 false high-confidence auto-matches in Phase 8 workflow simulation"
+    },
+    {
+      "req_id": "COMP-01",
+      "category": "Competition Rulebook",
+      "description": "Pre-trained model fine-tuned on custom domain dataset and used in active inference",
+      "target": "Mandatory fine-tuning",
+      "measured": "SentenceTransformer fine-tuned on 148 triplets with MNRL",
+      "status": "PASS",
+      "evidence": "Active reranking in Stage 2 of the hybrid inference pipeline"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 686 >>
+stream
+BT
+/F1 10 Tf
+15 TL
+50 780 Td
+(COMMERCIAL TAX INVOICE) '
+(INVOICE NUMBER: INV-2026-015) '
+(PO REFERENCE: PO-2026-015) '
+(VENDOR: CV Multi Kabel Jaya) '
+(DATE: 2026-08-15) '
+(CATEGORY: uom_discrepancy) '
+() '
+(LINE ITEMS:) '
+(# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
+(-------------------------------------------------------------------------------------) '
+(1 | NYY Power Cable 4x2.5mm2 \(Roll @ 100m\) | 5.0 | roll | 2,850,000 | 14,250,000) '
+(2 | Cable Tie 300mm Black \(Pack @ 100pcs\) | 20.0 | pack | 45,000 | 900,000) '
+(3 | Terminal Block 10P 25A | 30.0 | pcs | 35,000 | 1,050,000) '
+(4 | Isolasi Listrik PVC 3M Scotch 20m | 50.0 | pcs | 18,000 | 900,000) '
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000977 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1047
+%%EOF
