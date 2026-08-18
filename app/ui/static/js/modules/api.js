@@ -43,6 +43,17 @@ export async function postReviewAction(payload) {
   return await res.json();
 }
 
+export async function postStagingReviewAction(stagingId, payload) {
+  /** DB-backed review: persists action to SQLite staging, captures audit trail. */
+  const res = await fetch(`/api/staging/${encodeURIComponent(stagingId)}/review`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  });
+  if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+  return await res.json();
+}
+
 export async function postCommit(stagingId, payload) {
   const res = await fetch(`/api/staging/${encodeURIComponent(stagingId)}/commit`, {
     method: "POST",

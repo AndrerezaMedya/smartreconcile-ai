@@ -3,7 +3,7 @@
  */
 
 import { state } from "./state.js";
-import { postReviewAction } from "./api.js";
+import { postReviewAction, postStagingReviewAction } from "./api.js";
 import { formatNumber, formatFlagLabel, escapeHtml } from "./ui.js";
 import { renderReconciliationView, renderReviewQueueView } from "./reconciliation.js";
 
@@ -260,11 +260,16 @@ export async function submitReviewApprovalOrOverride() {
   };
 
   try {
-    const prevStagingId = state.currentStagedData.staging_id;
-    const updatedData = await postReviewAction(payload);
-    // Restore staging_id — /api/review is in-memory and doesn't return one
-    if (prevStagingId && !updatedData.staging_id) {
-      updatedData.staging_id = prevStagingId;
+    const stagingId = state.currentStagedData?.staging_id;
+    // Prefer DB-backed staging review (persists to SQLite, captures audit trail).
+    // Fall back to in-memory /api/review only if no staging_id is present.
+    const updatedData = stagingId
+      ? await postStagingReviewAction(stagingId, payload)
+      : await postReviewAction(payload);
+
+    // Restore staging_id only needed for in-memory fallback path
+    if (!stagingId && state.currentStagedData?.staging_id) {
+      updatedData.staging_id = state.currentStagedData.staging_id;
     }
     state.currentStagedData = updatedData;
     renderReconciliationView(updatedData);
@@ -289,11 +294,13 @@ export async function submitReviewRejection() {
   };
 
   try {
-    const prevStagingId = state.currentStagedData.staging_id;
-    const updatedData = await postReviewAction(payload);
-    // Restore staging_id — /api/review is in-memory and doesn't return one
-    if (prevStagingId && !updatedData.staging_id) {
-      updatedData.staging_id = prevStagingId;
+    const stagingId = state.currentStagedData?.staging_id;
+    const updatedData = stagingId
+      ? await postStagingReviewAction(stagingId, payload)
+      : await postReviewAction(payload);
+
+    if (!stagingId && state.currentStagedData?.staging_id) {
+      updatedData.staging_id = state.currentStagedData.staging_id;
     }
     state.currentStagedData = updatedData;
     renderReconciliationView(updatedData);

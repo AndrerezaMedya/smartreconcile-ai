@@ -339,6 +339,20 @@ class StagingRepository:
         now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         commit_id = f"COM-{uuid.uuid4().hex[:8].upper()}"
 
+        # Guard: prevent committing the same invoice_id twice (e.g. demo re-run without DB reset)
+        cursor.execute(
+            "SELECT commit_id FROM committed_invoices WHERE invoice_id = ?",
+            (staged["invoice_id"],)
+        )
+        existing_commit = cursor.fetchone()
+        if existing_commit:
+            conn.close()
+            raise ValueError(
+                f"Invoice '{staged['invoice_id']}' has already been committed "
+                f"(Commit ID: {existing_commit['commit_id']}). "
+                f"To re-run this demo scenario, reset the committed ledger first."
+            )
+
         total_inv_amt = sum(l.invoice_line_total for l in staged["lines"])
         total_matched_amt = sum(
             (l.assigned_po_qty or 0) * (l.assigned_po_unit_price or 0)
