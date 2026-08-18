@@ -19,6 +19,26 @@ let auditSearchBound = false;
 export function openCommitModal() {
   if (!state.currentStagedData) return;
 
+  // ── FR-25: Block commit if any UNMATCHED line has not been reviewed ──────────
+  const unmatchedUnresolved = state.currentStagedData.lines.filter(
+    l => l.status === "UNMATCHED" && !l.is_reviewed
+  );
+  if (unmatchedUnresolved.length > 0) {
+    const lineNums = unmatchedUnresolved.map(l => `#${l.line_no}`).join(", ");
+    const lineWord = unmatchedUnresolved.length === 1 ? "line" : "lines";
+    alert(
+      `⛔ Commit Blocked — Unresolved Exception${unmatchedUnresolved.length > 1 ? "s" : ""}\n\n` +
+      `${unmatchedUnresolved.length} invoice ${lineWord} still have status UNMATCHED and have not been reviewed:\n` +
+      `  Line(s): ${lineNums}\n\n` +
+      `Please open the Review panel for each flagged line and either:\n` +
+      `  • Approve or Override it to a valid PO line, or\n` +
+      `  • Reject it (mark as exception)\n\n` +
+      `All lines must be reviewed before committing to the ledger.`
+    );
+    return; // ← halt — do NOT open commit modal
+  }
+  // ────────────────────────────────────────────────────────────────────────────
+
   const invId = state.currentStagedData.invoice_id || "--";
   const poId = state.currentStagedData.po_id || "--";
   const vendor = state.currentStagedData.vendor_name || "Authorized Supplier";
