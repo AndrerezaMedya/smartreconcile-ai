@@ -268,7 +268,9 @@ async def get_demo_scenario(request: Request):
 
 
 async def run_reconciliation(request: Request):
-    """Executes hybrid matching, greedy 1:1 assignment, numeric verification, and confidence gating."""
+    """Executes hybrid matching, greedy 1:1 assignment, numeric verification, and confidence gating.
+    Also persists the result to SQLite staging so the commit endpoint can find it by staging_id.
+    """
     try:
         data = await request.json()
         inv_data = data.get("invoice", {})
@@ -278,7 +280,16 @@ async def run_reconciliation(request: Request):
         po = PurchaseOrder(**po_data)
 
         res = _engine.reconcile(invoice, po)
-        return JSONResponse(json.loads(res.model_dump_json()))
+
+        # Persist to SQLite so commit endpoint can find it
+        staging_id = StagingRepository.create_staged_reconciliation(
+            rec_response=res,
+            file_name=f"demo_{res.invoice_id}.json"
+        )
+
+        payload = json.loads(res.model_dump_json())
+        payload["staging_id"] = staging_id
+        return JSONResponse(payload)
     except Exception as e:
         return JSONResponse({"error": f"Reconciliation error: {str(e)}"}, status_code=500)
 
