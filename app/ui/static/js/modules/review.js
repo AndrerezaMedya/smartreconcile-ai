@@ -260,7 +260,12 @@ export async function submitReviewApprovalOrOverride() {
   };
 
   try {
+    const prevStagingId = state.currentStagedData.staging_id;
     const updatedData = await postReviewAction(payload);
+    // Restore staging_id — /api/review is in-memory and doesn't return one
+    if (prevStagingId && !updatedData.staging_id) {
+      updatedData.staging_id = prevStagingId;
+    }
     state.currentStagedData = updatedData;
     renderReconciliationView(updatedData);
     if (state.currentView === "viewReviewQueue") renderReviewQueueView(updatedData);
@@ -284,7 +289,12 @@ export async function submitReviewRejection() {
   };
 
   try {
+    const prevStagingId = state.currentStagedData.staging_id;
     const updatedData = await postReviewAction(payload);
+    // Restore staging_id — /api/review is in-memory and doesn't return one
+    if (prevStagingId && !updatedData.staging_id) {
+      updatedData.staging_id = prevStagingId;
+    }
     state.currentStagedData = updatedData;
     renderReconciliationView(updatedData);
     if (state.currentView === "viewReviewQueue") renderReviewQueueView(updatedData);
