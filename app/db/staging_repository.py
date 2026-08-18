@@ -94,6 +94,44 @@ class StagingRepository:
         return staging_id
 
     @staticmethod
+    def upsert_staged_reconciliation(
+        rec_response: "ReconciliationResponse",
+        file_name: Optional[str] = None
+    ) -> str:
+        """
+        Idempotent version of create_staged_reconciliation.
+        If a STAGED_PENDING_REVIEW record already exists for the same invoice_id,
+        it is deleted first (cascading to staged_lines; audit_logs cleaned manually).
+        Records with status COMMITTED are never touched.
+        Returns the new staging_id.
+        """
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        # Find any existing non-committed staging for this invoice
+        cursor.execute(
+            "SELECT staging_id FROM staged_reconciliations "
+            "WHERE invoice_id = ? AND status = 'STAGED_PENDING_REVIEW'",
+            (rec_response.invoice_id,)
+        )
+        existing_rows = cursor.fetchall()
+        for row in existing_rows:
+            old_id = row["staging_id"]
+            # Delete audit_logs first (no CASCADE defined)
+            cursor.execute("DELETE FROM audit_logs WHERE staging_id = ?", (old_id,))
+            # Delete staged_reconciliations (staged_lines cascade automatically)
+            cursor.execute("DELETE FROM staged_reconciliations WHERE staging_id = ?", (old_id,))
+
+        conn.commit()
+        conn.close()
+
+        # Now create a fresh staging record
+        return StagingRepository.create_staged_reconciliation(
+            rec_response=rec_response,
+            file_name=file_name
+        )
+
+    @staticmethod
     def get_staged_reconciliation(staging_id: str) -> Optional[Dict[str, Any]]:
         """Fetches full staged reconciliation data by staging_id."""
         conn = get_db_connection()

@@ -281,8 +281,9 @@ async def run_reconciliation(request: Request):
 
         res = _engine.reconcile(invoice, po)
 
-        # Persist to SQLite so commit endpoint can find it
-        staging_id = StagingRepository.create_staged_reconciliation(
+        # Persist to SQLite (upsert: replaces any previous STAGED_PENDING_REVIEW
+        # for the same invoice_id, leaves COMMITTED records untouched)
+        staging_id = StagingRepository.upsert_staged_reconciliation(
             rec_response=res,
             file_name=f"demo_{res.invoice_id}.json"
         )
