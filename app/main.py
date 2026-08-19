@@ -2,6 +2,7 @@
 Main Starlette application entry point for SmartReconcile AI.
 """
 
+import os
 from pathlib import Path
 from starlette.applications import Starlette
 from starlette.requests import Request
@@ -77,7 +78,9 @@ routes = [
     Mount("/static", app=StaticFiles(directory=str(STATIC_DIR)), name="static"),
 ]
 
-app = Starlette(debug=True, routes=routes)
+DEBUG = os.getenv("APP_DEBUG", "false").lower() == "true"
+
+app = Starlette(debug=DEBUG, routes=routes)
 
 if __name__ == "__main__":
     import uvicorn
