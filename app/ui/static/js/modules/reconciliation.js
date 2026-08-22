@@ -4,17 +4,12 @@
 
 import { state } from "./state.js";
 import { fetchScenarios, fetchScenarioDetail, postReconcile } from "./api.js";
-import { formatNumber, formatFlagLabel, escapeHtml, getCategoryIcon, formatCategoryLabel } from "./ui.js";
+import { formatNumber, formatFlagValue, escapeHtml, getCategoryIcon, formatCategoryLabel, getPriceVariance } from "./ui.js";
 
 let onOpenReviewModalCallback = null;
-let onRefreshAuditCountCallback = null;
 
 export function setOpenReviewModalHandler(handler) {
   onOpenReviewModalCallback = handler;
-}
-
-export function setRefreshAuditCountHandler(handler) {
-  onRefreshAuditCountCallback = handler;
 }
 
 export async function loadScenarios() {
@@ -48,14 +43,22 @@ export function renderScenarioChips() {
   if (!chipsContainer) return;
   chipsContainer.innerHTML = "";
   const filtered = getFilteredScenarios();
+  // Scenarios of the same category sit consecutively, so repeating the category
+  // label on every chip just restates what the chip next to it already said.
+  // Show it once, at the start of each category run, like a section label.
+  let prevCategory = null;
   filtered.forEach((sc) => {
     const chip = document.createElement("div");
     chip.className = `scenario-chip ${sc.invoice_id === state.currentActiveInvoiceId ? "active" : ""}`;
+    const showCategoryLabel = sc.scenario_category !== prevCategory;
+    prevCategory = sc.scenario_category;
     chip.innerHTML = `
       <span>${getCategoryIcon(sc.scenario_category)}</span>
       <span style="font-weight: 600;">${sc.invoice_id}</span>
-      <span style="color: var(--text-dim);">•</span>
-      <span style="color: var(--text-muted);">${formatCategoryLabel(sc.scenario_category)}</span>
+      ${showCategoryLabel ? `
+        <span style="color: var(--text-dim);">•</span>
+        <span style="color: var(--text-muted);">${formatCategoryLabel(sc.scenario_category)}</span>
+      ` : ""}
     `;
     chip.addEventListener("click", () => loadAndReconcileScenario(sc.invoice_id));
     chipsContainer.appendChild(chip);
@@ -161,7 +164,7 @@ export function renderReconciliationView(data) {
     tableBody.innerHTML = "";
     data.lines.forEach((line) => {
       const row = document.createElement("div");
-      row.className = "recon-row";
+      row.className = lineNeedsAttention(line) ? "recon-row recon-row-exception" : "recon-row recon-row-clean";
       row.innerHTML = buildRowHTML(line);
       tableBody.appendChild(row);
     });
@@ -174,13 +177,17 @@ export function renderReconciliationView(data) {
       });
     });
   }
+}
 
-  if (onRefreshAuditCountCallback) onRefreshAuditCountCallback();
+// A line needs a reviewer's attention if the AI didn't confidently match it,
+// or the 4-way verifier found a discrepancy on an otherwise-matched line.
+// Shared by the row wrapper (emphasis styling) and the review queue filter.
+export function lineNeedsAttention(line) {
+  return line.status !== "MATCHED" || (line.verification && line.verification.has_discrepancy);
 }
 
 export function buildRowHTML(line) {
   const v = line.verification || {};
-  const hasDiscrepancy = v.has_discrepancy;
   const isReviewed = line.is_reviewed;
 
   // 1. Left Column: Billed Invoice Line
@@ -234,22 +241,29 @@ export function buildRowHTML(line) {
   if (line.assigned_po_line_no) {
     let flagsHtml = "";
     if (v.qty_flag && v.qty_flag !== "QTY_MATCH") {
-      flagsHtml += `<span class="flag-chip flag-var">QTY: ${formatFlagLabel(v.qty_flag)}</span>`;
+      flagsHtml += `<span class="flag-chip flag-var">QTY: ${formatFlagValue(v.qty_flag, "QTY")}</span>`;
     }
     if (v.price_flag && v.price_flag !== "PRICE_MATCH") {
-      flagsHtml += `<span class="flag-chip flag-var">PRICE: ${formatFlagLabel(v.price_flag)}</span>`;
+      const variance = getPriceVariance(line);
+      const deltaText = variance
+        ? ` ${variance.pct > 0 ? "+" : ""}${variance.pct.toFixed(1)}% &middot; &Delta; Rp ${formatNumber(Math.abs(variance.totalDiff))}`
+        : "";
+      flagsHtml += `<span class="flag-chip flag-var">PRICE: ${formatFlagValue(v.price_flag, "PRICE")}${deltaText}</span>`;
     }
     if (v.uom_flag && v.uom_flag !== "UOM_MATCH") {
-      flagsHtml += `<span class="flag-chip flag-var">UOM: ${formatFlagLabel(v.uom_flag)}</span>`;
+      flagsHtml += `<span class="flag-chip flag-var">UOM: ${formatFlagValue(v.uom_flag, "UOM")}</span>`;
     }
     if (v.math_flag && v.math_flag !== "MATH_CORRECT") {
-      flagsHtml += `<span class="flag-chip flag-var">MATH: ${formatFlagLabel(v.math_flag)}</span>`;
+      flagsHtml += `<span class="flag-chip flag-var">MATH: ${formatFlagValue(v.math_flag, "MATH")}</span>`;
     }
 
     const reviewStateBadge = isReviewed
       ? `<span class="flag-chip flag-ok font-mono">✓ ${line.review_action || "REVIEWED"}</span>`
       : "";
 
+    // A clean line's absence of any flag chip already reads as "nothing wrong" —
+    // restating "4-WAY VERIFIED CLEAN"/"MATCH OK" on every clean row (most rows,
+    // most of the time) buried the handful of rows that actually need a decision.
     rightHtml = `
       <div class="col-po">
         <div class="po-details">
@@ -261,18 +275,16 @@ export function buildRowHTML(line) {
           <div class="item-commercial-row">
             <span class="font-mono">PO: ${line.assigned_po_qty} ${escapeHtml(line.assigned_po_uom || "")} @ Rp ${formatNumber(line.assigned_po_unit_price)}</span>
           </div>
-          ${flagsHtml ? `<div class="po-flags-row">${flagsHtml}</div>` : `<div class="po-flags-row"><span class="flag-chip flag-ok font-mono">✓ 4-WAY VERIFIED CLEAN</span></div>`}
+          ${flagsHtml ? `<div class="po-flags-row">${flagsHtml}</div>` : ""}
         </div>
-        <div>
-          ${hasDiscrepancy || line.status !== "MATCHED" ? `
+        ${lineNeedsAttention(line) ? `
+          <div>
             <button class="btn btn-warning btn-sm btn-resolve-exception" data-line-no="${line.line_no}">
               <svg class="nav-svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               <span>Resolve</span>
             </button>
-          ` : `
-            <span class="font-mono" style="color: var(--emerald); font-size: 11px; font-weight: 600;">MATCH OK</span>
-          `}
-        </div>
+          </div>
+        ` : ""}
       </div>
     `;
   } else {
@@ -297,7 +309,7 @@ export function renderReviewQueueView(data) {
   const reviewQueueTableBody = document.getElementById("reviewQueueTableBody");
   if (!reviewQueueTableBody) return;
   reviewQueueTableBody.innerHTML = "";
-  const exceptionLines = data.lines.filter(l => l.status !== "MATCHED" || (l.verification && l.verification.has_discrepancy));
+  const exceptionLines = data.lines.filter(lineNeedsAttention);
 
   if (exceptionLines.length === 0) {
     reviewQueueTableBody.innerHTML = `
@@ -310,7 +322,7 @@ export function renderReviewQueueView(data) {
 
   exceptionLines.forEach((line) => {
     const row = document.createElement("div");
-    row.className = "recon-row";
+    row.className = "recon-row recon-row-exception";
     row.innerHTML = buildRowHTML(line);
     reviewQueueTableBody.appendChild(row);
   });

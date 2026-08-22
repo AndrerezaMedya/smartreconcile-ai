@@ -4,7 +4,7 @@
 
 import { state } from "./state.js";
 import { postReviewAction, postStagingReviewAction } from "./api.js";
-import { formatNumber, formatFlagLabel, escapeHtml } from "./ui.js";
+import { formatNumber, formatFlagValue, escapeHtml, getPriceVariance } from "./ui.js";
 import { renderReconciliationView, renderReviewQueueView } from "./reconciliation.js";
 
 export function openReviewModal(lineNo) {
@@ -52,10 +52,17 @@ export function openReviewModal(lineNo) {
       qtyDeltaHtml = `<span class="delta-badge ${qtyVarPct > 0 ? 'err' : 'warn'}">${qtyVarPct > 0 ? '+' : ''}${qtyVarPct.toFixed(1)}% (${(invQty - poQty) > 0 ? '+' : ''}${(invQty - poQty).toFixed(1)})</span>`;
     }
 
-    let priceDeltaHtml = `<span class="delta-badge ok">✓ MATCH</span>`;
-    if (poPrice > 0 && Math.abs(invPrice - poPrice) > (poPrice * 0.01)) {
-      const priceVarPct = ((invPrice - poPrice) / poPrice) * 100;
-      priceDeltaHtml = `<span class="delta-badge ${priceVarPct > 0 ? 'err' : 'warn'}">${priceVarPct > 0 ? '+' : ''}${priceVarPct.toFixed(1)}% (Rp ${formatNumber(invPrice - poPrice)})</span>`;
+    const uomMismatches = line.assigned_po_uom && line.invoice_uom.toLowerCase() !== line.assigned_po_uom.toLowerCase();
+
+    // A per-roll price and a per-meter price aren't directly comparable — when
+    // the UOM itself differs, a raw unit-price percentage would be meaningless
+    // (not "matching" either), so say so instead of claiming either verdict.
+    let priceDeltaHtml = uomMismatches
+      ? `<span class="delta-badge warn">UOM differs — see Total</span>`
+      : `<span class="delta-badge ok">✓ MATCH</span>`;
+    const priceVariance = getPriceVariance(line);
+    if (priceVariance) {
+      priceDeltaHtml = `<span class="delta-badge ${priceVariance.pct > 0 ? 'err' : 'warn'}">${priceVariance.pct > 0 ? '+' : ''}${priceVariance.pct.toFixed(1)}% (Rp ${formatNumber(priceVariance.unitDiff)})</span>`;
     }
 
     let totalDeltaHtml = `<span class="delta-badge ok">✓ EQUAL</span>`;
@@ -64,7 +71,7 @@ export function openReviewModal(lineNo) {
     }
 
     let uomDeltaHtml = `<span class="delta-badge ok">✓ MATCH</span>`;
-    if (line.assigned_po_uom && line.invoice_uom.toLowerCase() !== line.assigned_po_uom.toLowerCase()) {
+    if (uomMismatches) {
       uomDeltaHtml = `<span class="delta-badge err">MISMATCH (${escapeHtml(line.invoice_uom)} vs ${escapeHtml(line.assigned_po_uom)})</span>`;
     }
 
@@ -157,19 +164,19 @@ export function openReviewModal(lineNo) {
       <div class="strip-4way-grid">
         <div class="strip-pill ${qtyClass}">
           <span>QTY</span>
-          <span>${v.qty_flag ? formatFlagLabel(v.qty_flag) : 'MATCH'}</span>
+          <span>${formatFlagValue(v.qty_flag, "QTY")}</span>
         </div>
         <div class="strip-pill ${priceClass}">
           <span>PRICE</span>
-          <span>${v.price_flag ? formatFlagLabel(v.price_flag) : 'MATCH'}</span>
+          <span>${formatFlagValue(v.price_flag, "PRICE")}</span>
         </div>
         <div class="strip-pill ${uomClass}">
           <span>UOM</span>
-          <span>${v.uom_flag ? formatFlagLabel(v.uom_flag) : 'MATCH'}</span>
+          <span>${formatFlagValue(v.uom_flag, "UOM")}</span>
         </div>
         <div class="strip-pill ${mathClass}">
           <span>MATH</span>
-          <span>${v.math_flag ? formatFlagLabel(v.math_flag) : 'CORRECT'}</span>
+          <span>${formatFlagValue(v.math_flag, "MATH")}</span>
         </div>
       </div>
     `;
