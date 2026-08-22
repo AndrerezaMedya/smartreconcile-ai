@@ -396,28 +396,3 @@ class StagingRepository:
             "commit_timestamp": now_str,
             "status": "COMMITTED"
         }
-
-    @staticmethod
-    def list_committed_invoices() -> List[Dict[str, Any]]:
-        """Lists all permanently committed reconciliations."""
-        conn = get_db_connection()
-        cursor = conn.cursor()
-        cursor.execute("SELECT * FROM committed_invoices ORDER BY commit_timestamp DESC")
-        rows = cursor.fetchall()
-        conn.close()
-
-        return [
-            {
-                "commit_id": r["commit_id"],
-                "staging_id": r["staging_id"],
-                "invoice_id": r["invoice_id"],
-                "po_id": r["po_id"],
-                "vendor_name": r["vendor_name"],
-                "total_invoiced_amount": r["total_invoiced_amount"],
-                "total_matched_amount": r["total_matched_amount"],
-                "reviewer_name": r["reviewer_name"],
-                "commit_timestamp": r["commit_timestamp"],
-                "notes": r["notes"]
-            }
-            for r in rows
-        ]

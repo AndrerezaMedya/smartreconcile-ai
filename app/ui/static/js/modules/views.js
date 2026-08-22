@@ -7,9 +7,7 @@ import { state } from "./state.js";
 const viewTitles = {
   viewReconcile: "Reconciliation Workspace",
   viewReviewQueue: "Review Queue & Exceptions",
-  viewUpload: "Invoice File Ingestion",
-  viewLedger: "Committed ERP Ledger",
-  viewAudit: "Compliance Audit Trail"
+  viewUpload: "Invoice File Ingestion"
 };
 
 let onViewSwitchCallbacks = {};

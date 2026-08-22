@@ -19,7 +19,6 @@ from app.core.reconciler import ReconciliationEngine
 from app.core.matcher import HybridMatcher
 from app.db.po_repository import PORepository
 from app.db.staging_repository import StagingRepository
-from app.db.database import get_db_connection
 from app.services.staging_service import StagingService
 
 # Singleton engine instance for direct simulation & scenario fallback
@@ -191,12 +190,6 @@ async def commit_staged_draft(request: Request):
         return JSONResponse({"error": f"Commit error: {str(e)}"}, status_code=500)
 
 
-async def list_committed_ledger(request: Request):
-    """Lists all permanently committed reconciliation transactions."""
-    commits = StagingRepository.list_committed_invoices()
-    return JSONResponse({"total_commits": len(commits), "commits": commits})
-
-
 async def list_master_pos(request: Request):
     """Lists all master Purchase Orders in the database."""
     pos = PORepository.list_all_pos()
@@ -307,30 +300,6 @@ async def submit_human_review(request: Request):
         return JSONResponse({"error": str(ve)}, status_code=400)
     except Exception as e:
         return JSONResponse({"error": f"Review error: {str(e)}"}, status_code=500)
-
-
-async def get_session_audit_log(request: Request):
-    """Returns persistent compliance audit log from SQLite (survives server restarts).
-    Includes all staging creation, human review, and commit events.
-    """
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute(
-        "SELECT timestamp, action, line_no, details, user "
-        "FROM audit_logs ORDER BY id DESC LIMIT 500"
-    )
-    rows = cursor.fetchall()
-    conn.close()
-    return JSONResponse([
-        {
-            "timestamp": r["timestamp"],
-            "action": r["action"],
-            "line_no": r["line_no"],
-            "details": r["details"],
-            "user": r["user"]
-        }
-        for r in rows
-    ])
 
 
 async def run_batch_simulation_benchmark(request: Request):

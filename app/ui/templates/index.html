@@ -57,21 +57,6 @@
             </div>
           </button>
 
-          <button class="sidebar-item" data-view="viewLedger" id="navItemLedger">
-            <div class="item-left">
-              <svg class="nav-svg-icon" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-              <span>Committed Ledger</span>
-            </div>
-            <span class="item-counter" id="sidebarLedgerBadge">0</span>
-          </button>
-
-          <button class="sidebar-item" data-view="viewAudit" id="navItemAudit">
-            <div class="item-left">
-              <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <span>Compliance Audit</span>
-            </div>
-            <span class="item-counter" id="sidebarAuditBadge">0</span>
-          </button>
         </nav>
       </div>
 
@@ -106,16 +91,6 @@
             <span class="pill-divider">•</span>
             <span class="font-mono">Offline / 100% Deterministic</span>
           </div>
-
-          <button class="btn btn-outline" id="btnBenchmarkAll" title="Run batch simulation benchmark across all 24 invoices">
-            <svg class="nav-svg-icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-            <span>Batch Benchmark (24)</span>
-          </button>
-
-          <button class="btn btn-primary" id="btnHeaderAuditLog">
-            <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg>
-            <span>Audit Trail</span>
-          </button>
         </div>
       </header>
 
@@ -397,92 +372,6 @@
           </section>
         </div>
 
-        <!-- ────────────────────────────────────────────────────────────────── -->
-        <!-- VIEW 4: COMMITTED DATABASE LEDGER (ENTERPRISE TRANSACTION LEDGER) -->
-        <!-- ────────────────────────────────────────────────────────────────── -->
-        <div class="view-container" id="viewLedger" style="display: none;">
-          <section class="ledger-panel">
-            <div class="panel-header-bar">
-              <div>
-                <h3 class="panel-title">COMMITTED RECONCILIATION LEDGER</h3>
-                <p class="panel-subtitle">Permanent SQLite transaction record of reviewer-authorized invoice reconciliations.</p>
-              </div>
-              <div class="panel-controls-group">
-                <input type="text" id="ledgerSearchInput" class="input-search-box" placeholder="Filter by Invoice, PO, Supplier, Commit ID..." />
-                <span class="badge badge-staging font-mono" id="ledgerRecordCount">0 records</span>
-                <button class="btn btn-outline btn-sm" id="btnRefreshLedger">
-                  <svg class="nav-svg-icon" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-                  <span>Refresh</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="table-scroll-container">
-              <table class="enterprise-table">
-                <thead>
-                  <tr>
-                    <th>Commit ID</th>
-                    <th>Staging Ref</th>
-                    <th>Invoice ID</th>
-                    <th>PO Reference</th>
-                    <th>Supplier / Vendor</th>
-                    <th style="text-align: right;">Invoiced (Rp)</th>
-                    <th style="text-align: right;">Authorized (Rp)</th>
-                    <th>Reviewer</th>
-                    <th>Timestamp</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody id="committedLedgerTableBody">
-                  <!-- Populated dynamically by JS -->
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </div>
-
-        <!-- ────────────────────────────────────────────────────────────────── -->
-        <!-- VIEW 5: COMPLIANCE AUDIT TRAIL (CHRONOLOGICAL EVENT TIMELINE)     -->
-        <!-- ────────────────────────────────────────────────────────────────── -->
-        <div class="view-container" id="viewAudit" style="display: none;">
-          <section class="ledger-panel">
-            <div class="panel-header-bar">
-              <div>
-                <div class="audit-title-row">
-                  <h3 class="panel-title">COMPLIANCE & HUMAN ACTION AUDIT TRAIL</h3>
-                  <span class="audit-principle-badge font-mono">AI recommends • Rules verify • Humans decide</span>
-                </div>
-                <p class="panel-subtitle">Complete chronological event trail of AI model scoring, deterministic verifications, and human decisions.</p>
-              </div>
-              <div class="panel-controls-group">
-                <input type="text" id="auditSearchInput" class="input-search-box" placeholder="Filter events, actions, operators..." />
-                <span class="badge badge-staging font-mono" id="auditRecordCount">0 events</span>
-                <button class="btn btn-outline btn-sm" id="btnExportAudit">
-                  <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                  <span>Export JSON Log</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="table-scroll-container">
-              <table class="enterprise-table">
-                <thead>
-                  <tr>
-                    <th style="width: 170px;">Timestamp</th>
-                    <th style="width: 160px;">Event / Action</th>
-                    <th style="width: 80px;">Line #</th>
-                    <th>Details & Commercial Rationale</th>
-                    <th style="width: 180px;">Actor / Authority</th>
-                  </tr>
-                </thead>
-                <tbody id="auditTableBody">
-                  <!-- Populated dynamically by JS -->
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </div>
-
       </main>
     </div>
   </div>
@@ -579,7 +468,7 @@
         <button class="btn btn-outline btn-sm" id="btnCloseCommitModal">✕</button>
       </div>
 
-      <div class="modal-body">
+      <div class="modal-body" id="commitModalFormBody">
         <p class="modal-desc-text">You are authorizing permanent commit for invoice <strong id="commitModalInvId" class="text-white font-mono">--</strong> against PO <strong id="commitModalPoId" class="text-white font-mono">--</strong> into the local SQLite reconciliation ledger.</p>
 
         <div class="summary-box" id="commitSummaryBox">
@@ -605,52 +494,34 @@
         </div>
       </div>
 
-      <div class="modal-bottom">
+      <!-- Shown in place of the form above once this invoice's commit succeeds —
+           the single-interaction output (FR-26: post-commit summary), not a
+           browsable history of other invoices. -->
+      <div class="modal-body" id="commitModalSuccessBody" style="display: none;">
+        <div class="commit-success-panel">
+          <div class="commit-success-icon">✓</div>
+          <h3 class="commit-success-title">Reconciliation Committed</h3>
+          <p class="commit-success-sub">Permanently written to the local SQLite ledger.</p>
+          <div class="commit-success-grid">
+            <div><span>Commit ID</span><strong id="commitResultId" class="font-mono">--</strong></div>
+            <div><span>Invoice</span><strong id="commitResultInvoice" class="font-mono">--</strong></div>
+            <div><span>Authorized Amount</span><strong id="commitResultAmount" class="font-mono text-emerald">--</strong></div>
+            <div><span>Reviewer</span><strong id="commitResultReviewer">--</strong></div>
+            <div><span>Timestamp</span><strong id="commitResultTimestamp" class="font-mono">--</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-bottom" id="commitModalFormFooter">
         <button class="btn btn-outline btn-sm" id="btnCancelCommit">Cancel</button>
         <button class="btn btn-success btn-sm" id="btnConfirmCommit">
           <svg class="nav-svg-icon" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
           <span>Authorize & Commit Transaction</span>
         </button>
       </div>
-    </div>
-  </div>
-
-  <!-- Batch Benchmark Modal -->
-  <div class="modal-overlay" id="benchmarkModal" style="display: none;">
-    <div class="modal-card modal-lg">
-      <div class="modal-top">
-        <span class="modal-title-text">Batch Simulation Benchmark (24 Invoices • 106 Line Items)</span>
-        <button class="btn btn-outline btn-sm" id="btnCloseBenchmarkModal">✕</button>
-      </div>
-
-      <div class="modal-body">
-        <div class="benchmark-kpi-grid" id="benchmarkSummaryGrid">
-          <!-- Populated by JS -->
-        </div>
-
-        <div class="benchmark-table-container">
-          <table class="enterprise-table">
-            <thead>
-              <tr>
-                <th>Invoice ID</th>
-                <th>Category</th>
-                <th>Lines</th>
-                <th>Pre-matched</th>
-                <th>Exceptions</th>
-                <th>Discrepancies</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody id="benchmarkTableBody">
-              <!-- Populated by JS -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="modal-bottom">
+      <div class="modal-bottom" id="commitModalSuccessFooter" style="display: none;">
         <div></div>
-        <button class="btn btn-primary btn-sm" id="btnCloseBenchmarkBottom">Close</button>
+        <button class="btn btn-primary btn-sm" id="btnCloseCommitSuccess">Close</button>
       </div>
     </div>
   </div>

@@ -121,11 +121,11 @@ class TestIngestionAndStagingWorkflow(unittest.TestCase):
         com_data = com_res.json()
         self.assertTrue(com_data["commit_id"].startswith("COM-"))
 
-        # 4. GET /api/committed
-        ledger_res = self.client.get("/api/committed")
-        self.assertEqual(ledger_res.status_code, 200)
-        commits = ledger_res.json()["commits"]
-        self.assertTrue(any(c["commit_id"] == com_data["commit_id"] for c in commits))
+        # 4. Commit persisted: staging record flips to COMMITTED status.
+        # (No GET /api/committed — a browse-all ledger endpoint is out of scope
+        # for the qualifying MVP; persistence is verified directly instead.)
+        staged_after_commit = StagingRepository.get_staged_reconciliation(staging_id)
+        self.assertEqual(staged_after_commit["status"], "COMMITTED")
 
 
 if __name__ == "__main__":

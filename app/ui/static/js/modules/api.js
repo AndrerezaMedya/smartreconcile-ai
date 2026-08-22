@@ -64,22 +64,6 @@ export async function postCommit(stagingId, payload) {
   return await res.json();
 }
 
-export async function fetchCommittedLedger() {
-  const res = await fetch("/api/committed");
-  if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-  return await res.json();
-}
-
-export async function fetchAuditLog() {
-  const res = await fetch("/api/audit-log");
-  if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-  return await res.json();
-}
-
-export async function postBenchmarkRunAll() {
-  const res = await fetch("/api/benchmark/run-all", {
-    method: "POST"
-  });
-  if (!res.ok) throw new Error(`HTTP error ${res.status}`);
-  return await res.json();
-}
+// NOTE: /api/benchmark/run-all is intentionally not exposed in the UI.
+// The endpoint remains available for generating benchmark figures offline
+// (see scripts/), but batch tooling is out of scope for the MVP surface.

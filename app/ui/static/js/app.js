@@ -4,15 +4,14 @@
  */
 
 import { state } from "./modules/state.js";
-import { initSidebarNavigation, registerViewCallback, switchView } from "./modules/views.js";
+import { initSidebarNavigation, registerViewCallback } from "./modules/views.js";
 import {
   loadScenarios,
   renderScenarioChips,
   getFilteredScenarios,
   loadAndReconcileScenario,
   renderReviewQueueView,
-  setOpenReviewModalHandler,
-  setRefreshAuditCountHandler
+  setOpenReviewModalHandler
 } from "./modules/reconciliation.js";
 import {
   openReviewModal,
@@ -22,13 +21,7 @@ import {
 import { initUploadDropzone } from "./modules/upload.js";
 import {
   openCommitModal,
-  submitCommitToDatabase,
-  loadCommittedLedger,
-  loadAuditTrail,
-  refreshLedgerCount,
-  refreshAuditCount,
-  exportAuditLog,
-  runBatchBenchmark
+  submitCommitToDatabase
 } from "./modules/ledger.js";
 
 // ── 1. Lifecycle Bootstrap ───────────────────────────────────────────────────
@@ -36,11 +29,8 @@ import {
 document.addEventListener("DOMContentLoaded", () => {
   // Wire inter-module handlers
   setOpenReviewModalHandler(openReviewModal);
-  setRefreshAuditCountHandler(refreshAuditCount);
 
   // Register view-switching hooks
-  registerViewCallback("viewLedger", loadCommittedLedger);
-  registerViewCallback("viewAudit", loadAuditTrail);
   registerViewCallback("viewReviewQueue", () => {
     if (state.currentStagedData) renderReviewQueueView(state.currentStagedData);
   });
@@ -50,8 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initEventListeners();
   initUploadDropzone();
   loadScenarios();
-  refreshLedgerCount();
-  refreshAuditCount();
 });
 
 // ── 2. Event Listeners ───────────────────────────────────────────────────────
@@ -82,7 +70,6 @@ function initEventListeners() {
   // Modal Close Controls
   const reviewModal = document.getElementById("reviewModal");
   const commitModal = document.getElementById("commitModal");
-  const benchmarkModal = document.getElementById("benchmarkModal");
 
   const btnCloseModal = document.getElementById("btnCloseModal");
   const btnModalCancel = document.getElementById("btnModalCancel");
@@ -91,30 +78,10 @@ function initEventListeners() {
 
   const btnCloseCommitModal = document.getElementById("btnCloseCommitModal");
   const btnCancelCommit = document.getElementById("btnCancelCommit");
+  const btnCloseCommitSuccess = document.getElementById("btnCloseCommitSuccess");
   if (btnCloseCommitModal) btnCloseCommitModal.addEventListener("click", () => { if (commitModal) commitModal.style.display = "none"; });
   if (btnCancelCommit) btnCancelCommit.addEventListener("click", () => { if (commitModal) commitModal.style.display = "none"; });
-
-  const btnCloseBenchmarkModal = document.getElementById("btnCloseBenchmarkModal");
-  const btnCloseBenchmarkBottom = document.getElementById("btnCloseBenchmarkBottom");
-  if (btnCloseBenchmarkModal) btnCloseBenchmarkModal.addEventListener("click", () => { if (benchmarkModal) benchmarkModal.style.display = "none"; });
-  if (btnCloseBenchmarkBottom) btnCloseBenchmarkBottom.addEventListener("click", () => { if (benchmarkModal) benchmarkModal.style.display = "none"; });
-
-  // Top Bar & Action Triggers
-  const btnHeaderAuditLog = document.getElementById("btnHeaderAuditLog");
-  if (btnHeaderAuditLog) {
-    btnHeaderAuditLog.addEventListener("click", () => {
-      switchView("viewAudit");
-    });
-  }
-
-  const btnBenchmarkAll = document.getElementById("btnBenchmarkAll");
-  if (btnBenchmarkAll) btnBenchmarkAll.addEventListener("click", runBatchBenchmark);
-
-  const btnExportAudit = document.getElementById("btnExportAudit");
-  if (btnExportAudit) btnExportAudit.addEventListener("click", exportAuditLog);
-
-  const btnRefreshLedger = document.getElementById("btnRefreshLedger");
-  if (btnRefreshLedger) btnRefreshLedger.addEventListener("click", loadCommittedLedger);
+  if (btnCloseCommitSuccess) btnCloseCommitSuccess.addEventListener("click", () => { if (commitModal) commitModal.style.display = "none"; });
 
   // Commit Modal Actions
   const btnOpenCommitModal = document.getElementById("btnOpenCommitModal");

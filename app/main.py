@@ -17,13 +17,11 @@ from app.api.routes import (
     get_staged_draft,
     review_staged_line,
     commit_staged_draft,
-    list_committed_ledger,
     list_master_pos,
     list_demo_scenarios,
     get_demo_scenario,
     run_reconciliation,
     submit_human_review,
-    get_session_audit_log,
     run_batch_simulation_benchmark
 )
 
@@ -63,7 +61,6 @@ routes = [
     Route("/api/staging/{staging_id}", endpoint=get_staged_draft, methods=["GET"]),
     Route("/api/staging/{staging_id}/review", endpoint=review_staged_line, methods=["POST"]),
     Route("/api/staging/{staging_id}/commit", endpoint=commit_staged_draft, methods=["POST"]),
-    Route("/api/committed", endpoint=list_committed_ledger, methods=["GET"]),
     Route("/api/pos", endpoint=list_master_pos, methods=["GET"]),
 
     # Fallback & simulation demo endpoints
@@ -71,7 +68,6 @@ routes = [
     Route("/api/scenarios/{invoice_id}", endpoint=get_demo_scenario, methods=["GET"]),
     Route("/api/reconcile", endpoint=run_reconciliation, methods=["POST"]),
     Route("/api/review", endpoint=submit_human_review, methods=["POST"]),
-    Route("/api/audit-log", endpoint=get_session_audit_log, methods=["GET"]),
     Route("/api/benchmark/run-all", endpoint=run_batch_simulation_benchmark, methods=["POST"]),
     
     # Static assets
