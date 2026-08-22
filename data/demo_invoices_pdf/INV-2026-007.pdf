@@ -9,7 +9,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 762 >>
+<< /Length 725 >>
 stream
 BT
 /F1 10 Tf
@@ -20,7 +20,6 @@ BT
 (PO REFERENCE: PO-2026-007) '
 (VENDOR: PT Steelindo Jaya Mandiri) '
 (DATE: 2026-08-07) '
-(CATEGORY: abbreviation_variation) '
 () '
 (LINE ITEMS:) '
 (# | Description | Qty | UOM | Unit Price (Rp) | Total (Rp)) '
@@ -43,9 +42,9 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000241 00000 n 
-0000001053 00000 n 
+0000001016 00000 n 
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-1123
+1086
 %%EOF

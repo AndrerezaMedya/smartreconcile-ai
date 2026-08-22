@@ -75,15 +75,17 @@ def main():
         po_id = inv["po_id"]
         vendor = inv["vendor_name"]
         date_str = inv["invoice_date"]
-        category = inv.get("scenario_category", "Standard")
 
+        # NOTE: the scenario_category is deliberately NOT printed on the document.
+        # A supplier invoice would never label its own expected reconciliation
+        # outcome, and emitting it would make the fixtures look like they leak
+        # the answer to the matching engine.
         title_lines = [
             f"COMMERCIAL TAX INVOICE",
             f"INVOICE NUMBER: {inv_id}",
             f"PO REFERENCE: {po_id}",
             f"VENDOR: {vendor}",
-            f"DATE: {date_str}",
-            f"CATEGORY: {category}"
+            f"DATE: {date_str}"
         ]
 
         table_lines = []
