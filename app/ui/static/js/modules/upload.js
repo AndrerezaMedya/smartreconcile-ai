@@ -3,7 +3,7 @@
  */
 
 import { state } from "./state.js";
-import { postUploadFile, fetchScenarioDetail, postReconcile } from "./api.js";
+import { postUploadFile } from "./api.js";
 import { renderReconciliationView } from "./reconciliation.js";
 import { switchView } from "./views.js";
 
@@ -135,56 +135,27 @@ export async function handleUploadedFile(file) {
 }
 
 export async function loadDemoPdfAndUpload(pdfName) {
+  // Fetches the actual PDF file and runs it through the same real upload path
+  // as drag-and-drop (/api/upload -> pdfplumber -> hybrid matcher). This used
+  // to shortcut through the /api/scenarios JSON fixture while still labeling
+  // the step "EXTRACTING PDF VIA PDFPLUMBER" — a claim that wasn't true, since
+  // no PDF was actually read. A "quick demo" convenience must still do what it
+  // says on screen.
+  const badgeEl = document.getElementById("uploadResultStatusBadge");
   const resultPanel = document.getElementById("uploadResultPanel");
   if (resultPanel) resultPanel.style.display = "flex";
-
-  const filenameEl = document.getElementById("uploadResultFilename");
-  if (filenameEl) filenameEl.textContent = `${pdfName} (Sample PDF Invoice)`;
-
-  const badgeEl = document.getElementById("uploadResultStatusBadge");
   if (badgeEl) {
     badgeEl.className = "badge badge-ambiguous font-mono";
-    badgeEl.textContent = "◌ EXTRACTING PDF VIA PDFPLUMBER...";
+    badgeEl.textContent = "◌ FETCHING SAMPLE PDF...";
   }
 
-  updatePipelineStep("upload", "Completed ✓", true);
-  updatePipelineStep("validate", "Format Validated ✓", true);
-  updatePipelineStep("extract", "Extracting with pdfplumber...", false);
-
   try {
-    const invId = pdfName.replace(".pdf", "");
-    const scData = await fetchScenarioDetail(invId);
+    const res = await fetch(`/demo-pdfs/${encodeURIComponent(pdfName)}`);
+    if (!res.ok) throw new Error(`Could not load sample PDF (HTTP ${res.status})`);
+    const blob = await res.blob();
+    const file = new File([blob], pdfName, { type: "application/pdf" });
 
-    updatePipelineStep("extract", "Header & Lines Extracted ✓", true);
-    updatePipelineStep("match", "Executing Hybrid Matcher on CPU...", false);
-
-    const recData = await postReconcile(scData);
-
-    updatePipelineStep("match", "Hybrid Matching Complete ✓", true);
-
-    if (badgeEl) {
-      badgeEl.className = "badge badge-matched font-mono";
-      badgeEl.textContent = "✓ INGESTION & AI MATCHING COMPLETE";
-    }
-
-    // Populate Extracted Summary
-    const invIdEl = document.getElementById("resExtractedInvId");
-    if (invIdEl) invIdEl.textContent = recData.invoice_id || "--";
-
-    const poIdEl = document.getElementById("resExtractedPoId");
-    if (poIdEl) poIdEl.textContent = recData.po_id || "--";
-
-    const vendorEl = document.getElementById("resExtractedVendor");
-    if (vendorEl) vendorEl.textContent = recData.vendor_name || "--";
-
-    const linesEl = document.getElementById("resExtractedLines");
-    if (linesEl) linesEl.textContent = `${recData.lines ? recData.lines.length : 0} items`;
-
-    const matchRateEl = document.getElementById("resExtractedMatchRate");
-    if (matchRateEl) matchRateEl.textContent = `${recData.summary ? recData.summary.first_pass_rate_pct.toFixed(1) : 0}%`;
-
-    state.currentStagedData = recData;
-    renderReconciliationView(recData);
+    await handleUploadedFile(file);
   } catch (err) {
     if (badgeEl) {
       badgeEl.className = "badge badge-unmatched font-mono";

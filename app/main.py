@@ -10,7 +10,7 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.routing import Route, Mount
 from starlette.staticfiles import StaticFiles
 
-from app.core.config import APP_TITLE, APP_VERSION, APP_DESCRIPTION
+from app.core.config import APP_TITLE, APP_VERSION, APP_DESCRIPTION, DATA_DIR
 from app.api.routes import (
     upload_invoice_file,
     list_staged_drafts,
@@ -28,6 +28,7 @@ from app.api.routes import (
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "ui" / "static"
 TEMPLATES_DIR = BASE_DIR / "ui" / "templates"
+DEMO_PDF_DIR = DATA_DIR / "demo_invoices_pdf"
 
 STATIC_DIR.mkdir(parents=True, exist_ok=True)
 TEMPLATES_DIR.mkdir(parents=True, exist_ok=True)
@@ -72,6 +73,10 @@ routes = [
     
     # Static assets
     Mount("/static", app=StaticFiles(directory=str(STATIC_DIR)), name="static"),
+    # Read-only source PDFs for the Upload tab's "Quick Demo" cards — served so
+    # the browser can fetch the real file and upload it through /api/upload,
+    # instead of faking extraction via the /api/scenarios JSON shortcut.
+    Mount("/demo-pdfs", app=StaticFiles(directory=str(DEMO_PDF_DIR)), name="demo-pdfs"),
 ]
 
 DEBUG = os.getenv("APP_DEBUG", "false").lower() == "true"
