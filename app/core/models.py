@@ -33,9 +33,13 @@ class InvoiceLine(BaseModel):
 
 
 class Invoice(BaseModel):
+    # invoice_id is the document's identity and is required: a document we cannot
+    # identify cannot be staged or audited. Every other header field is nullable
+    # (FR-08) — a field that could not be extracted stays None rather than being
+    # filled with an invented value.
     invoice_id: str
-    po_id: str
-    vendor_name: str
+    po_id: Optional[str] = None
+    vendor_name: Optional[str] = None
     invoice_date: Optional[str] = None
     scenario_category: Optional[str] = "custom"
     scenario_description: Optional[str] = ""
@@ -53,7 +57,7 @@ class POLine(BaseModel):
 
 class PurchaseOrder(BaseModel):
     po_id: str
-    vendor_name: str
+    vendor_name: Optional[str] = None
     po_date: Optional[str] = None
     po_lines: List[POLine]
 
@@ -135,8 +139,8 @@ class AuditLogEntry(BaseModel):
 
 class ReconciliationResponse(BaseModel):
     invoice_id: str
-    po_id: str
-    vendor_name: str
+    po_id: Optional[str] = None
+    vendor_name: Optional[str] = None
     scenario_category: Optional[str] = "custom"
     summary: ReconciliationSummary
     lines: List[LineReconciliationResult]

@@ -13,6 +13,19 @@ import pdfplumber
 from app.core.models import Invoice, InvoiceLine, PurchaseOrder, POLine
 
 
+class ExtractionError(ValueError):
+    """
+    Raised when a document cannot be extracted into an identifiable invoice.
+
+    Carries the list of header fields that could not be read so the caller can
+    tell the user exactly what was missing instead of returning a guessed value.
+    """
+
+    def __init__(self, message: str, missing_fields: Optional[List[str]] = None):
+        super().__init__(message)
+        self.missing_fields = missing_fields or []
+
+
 class InvoiceExtractor:
 
     @classmethod
@@ -53,11 +66,18 @@ class InvoiceExtractor:
             for l in inv_data.get("invoice_lines", [])
         ]
 
+        invoice_id = inv_data.get("invoice_id") or None
+        if not invoice_id:
+            raise ExtractionError(
+                "Invoice number could not be read from the document.",
+                missing_fields=["invoice_id"]
+            )
+
         invoice = Invoice(
-            invoice_id=inv_data.get("invoice_id", "INV-UNKNOWN"),
-            po_id=po_id_ref or "PO-UNKNOWN",
-            vendor_name=inv_data.get("vendor_name", "Unknown Vendor"),
-            invoice_date=inv_data.get("invoice_date", "2026-08-14"),
+            invoice_id=invoice_id,
+            po_id=po_id_ref or None,
+            vendor_name=inv_data.get("vendor_name") or None,
+            invoice_date=inv_data.get("invoice_date") or None,
             scenario_category=inv_data.get("scenario_category", "uploaded_custom"),
             scenario_description=inv_data.get("scenario_description", "Uploaded invoice document"),
             invoice_lines=lines
@@ -73,10 +93,11 @@ class InvoiceExtractor:
             text = content_bytes.decode("latin-1")
 
         lines = text.strip().splitlines()
-        invoice_id = "INV-UPLOADED"
+        # Start every header field as unknown. Only a successful parse fills it in.
+        invoice_id = None
         po_id = None
-        vendor_name = "Uploaded Vendor"
-        invoice_date = "2026-08-14"
+        vendor_name = None
+        invoice_date = None
 
         data_rows = []
         for line in lines:
@@ -136,9 +157,15 @@ class InvoiceExtractor:
             except Exception:
                 continue
 
+        if not invoice_id:
+            raise ExtractionError(
+                "Invoice number could not be read from the CSV header.",
+                missing_fields=["invoice_id"]
+            )
+
         invoice = Invoice(
             invoice_id=invoice_id,
-            po_id=po_id or "PO-UNKNOWN",
+            po_id=po_id,
             vendor_name=vendor_name,
             invoice_date=invoice_date,
             scenario_category="uploaded_csv",
@@ -162,8 +189,9 @@ class InvoiceExtractor:
         if not full_text.strip():
             raise ValueError("PDF does not contain extractable digital text.")
 
-        # Extract Header Heuristics
-        invoice_id = "INV-UPLOADED"
+        # Extract Header Heuristics. Each field stays None if no pattern matches —
+        # a document we cannot read is reported as missing, not guessed (FR-08).
+        invoice_id = None
         m_inv_code = re.search(r"(INV-[\w\-]+)", full_text, re.I)
         if m_inv_code:
             invoice_id = m_inv_code.group(1).upper().strip()
@@ -181,15 +209,21 @@ class InvoiceExtractor:
             if m_po:
                 po_id = m_po.group(1).strip()
 
-        vendor_name = "Extracted Vendor"
+        vendor_name = None
         m_ven = re.search(r"VENDOR\s*[:=]?\s*([^\n\r]+)", full_text, re.I)
         if m_ven:
             vendor_name = m_ven.group(1).strip()
 
-        invoice_date = "2026-08-14"
+        invoice_date = None
         m_date = re.search(r"DATE\s*[:=]?\s*(\d{4}-\d{2}-\d{2})", full_text, re.I)
         if m_date:
             invoice_date = m_date.group(1).strip()
+
+        if not invoice_id:
+            raise ExtractionError(
+                "Invoice number could not be read from the PDF.",
+                missing_fields=["invoice_id"]
+            )
 
         # Parse Line Items (matches rows like: 1 | Pipa Galvanis 2 inch Sch 40 | 50.0 | btg | 450000 | 22500000)
         inv_lines = []
@@ -244,7 +278,7 @@ class InvoiceExtractor:
 
         invoice = Invoice(
             invoice_id=invoice_id,
-            po_id=po_id or "PO-UNKNOWN",
+            po_id=po_id,
             vendor_name=vendor_name,
             invoice_date=invoice_date,
             scenario_category="uploaded_pdf",

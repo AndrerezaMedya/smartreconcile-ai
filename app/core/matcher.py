@@ -70,7 +70,9 @@ class HybridMatcher:
         n_po = len(po_lines)
 
         if n_inv == 0 or n_po == 0:
-            return np.zeros((n_inv, n_po)), np.zeros((n_inv, n_po)), np.zeros((n_inv, n_po)), []
+            # is_ambiguous_flags must stay length n_inv: match_and_assign indexes it
+            # per invoice line regardless of how many PO lines are available to score.
+            return np.zeros((n_inv, n_po)), np.zeros((n_inv, n_po)), np.zeros((n_inv, n_po)), [False] * n_inv
 
         # Stage 1: Lexical scoring & gating check
         lex_matrix = np.zeros((n_inv, n_po))

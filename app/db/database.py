@@ -56,8 +56,8 @@ def init_database():
     CREATE TABLE IF NOT EXISTS staged_reconciliations (
         staging_id TEXT PRIMARY KEY,
         invoice_id TEXT NOT NULL,
-        po_id TEXT NOT NULL,
-        vendor_name TEXT NOT NULL,
+        po_id TEXT,        -- nullable: FR-08, unresolved/unreadable PO reference
+        vendor_name TEXT,  -- nullable: FR-08, field not extracted from the document
         invoice_date TEXT,
         file_name TEXT,
         status TEXT NOT NULL, -- STAGED_PENDING_REVIEW, COMMITTED, REJECTED
@@ -110,8 +110,8 @@ def init_database():
         commit_id TEXT PRIMARY KEY,
         staging_id TEXT NOT NULL,
         invoice_id TEXT NOT NULL,
-        po_id TEXT NOT NULL,
-        vendor_name TEXT NOT NULL,
+        po_id TEXT,        -- nullable: FR-08, unresolved/unreadable PO reference
+        vendor_name TEXT,  -- nullable: FR-08, field not extracted from the document
         total_invoiced_amount REAL,
         total_matched_amount REAL,
         reviewer_name TEXT NOT NULL,
